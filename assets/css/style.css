@@ -70,6 +70,14 @@ body {
     line-height: 130%;
 }
 
+.lh_136 {
+    line-height: 136%;
+}
+
+.lh_140 {
+    line-height: 140%;
+}
+
 .lh_150 {
     line-height: 150%;
 }
@@ -78,7 +86,16 @@ body {
     line-height: 160%;
 }
 
+/* -------------------------colors------------------------- */
+.text_lightblack {
+    color: var(--color-lightblack);
+}
+
 /* ----------------------------opacity---------------------------- */
+.opacity_70 {
+    opacity: 70%;
+}
+
 .opacity_80 {
     opacity: 80%;
 }
@@ -140,23 +157,23 @@ body {
 }
 
 .mt_benefitcard {
-    margin-top: 100px;
+    margin-top: 100px !important;
+}
+
+.mw_558 {
+    max-width: 558px;
 }
 
 .highreturn_card {
-    /* padding: 20px 39px 30px 20px; */
-    /* background: #FFFFFF0D; */
-    border: 1px solid;
-    /* background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
-        linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%); */
+    padding: 20px 39px 30px 20px;
 }
 
 .border_highreturn {
-    border-radius: 20px;
+    border-radius: 16px;
     background: #FFFFFF0D;
     backdrop-filter: blur(31.478700637817383px);
     position: relative;
-    padding: 1.259px;
+    padding: 1px;
 }
 
 .border_highreturn::after {
@@ -171,6 +188,65 @@ body {
     pointer-events: none;
     border: 1px solid;
     background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
+    /* background: linear-gradient(149.31deg, #FFFFFF 28.09%, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%); */
+
+}
+
+.mb_10 {
+    margin-bottom: 10px;
+}
+
+.bg_mobile {
+    background-image: url('../images/png/benefit-mobilescreen.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    max-width: 551px !important;
+    height: 1080px;
+}
+
+.benefit_mobilecontent {
+    padding: 97.5px 24.78px 0 26.85px !important;
+}
+
+.ai-revolution-img {
+    max-width: 429px;
+    border-radius: 10.33px;
+}
+
+.mw_429 {
+    max-width: 429px;
+}
+
+.mb_41 {
+    margin-bottom: 41.3px !important;
+}
+
+.mb_30 {
+    margin-bottom: 30.98px !important;
+}
+
+/* ============================Buying Power============================ */
+.pt_buyingpower {
+    padding-top: 200px;
+}
+
+.mw_812 {
+    max-width: 812px;
+}
+
+.pt_buyingcard {
+    padding-top: 50px;
+}
+
+.buyingpower_card {
+    background: linear-gradient(105.5deg, #AE00FF 0%, rgba(5, 0, 255, 0.35) 182.75%);
+    border: 1px solid #000000;
+    padding: 25px 50px 0 25px;
+}
+
+.mw_72 {
+    max-width: 72px;
 }
 
 /* ---------------------root------------------------ */
@@ -185,6 +261,8 @@ body {
     --fs-lg: 40px;
     --fs-xl: 48px;
     --fs-xxl: 88.24px;
+    /* color */
+    --color-lightblack: #020507;
 }
 
 @media (min-width:1200px) {
@@ -194,6 +272,19 @@ body {
 }
 
 @media (max-width:1200px) {
+    .py_header {
+        padding-top: 70px;
+        padding-bottom: unset;
+    }
+
+    .pt_highreturn {
+        padding-top: 90px;
+    }
+
+    .mt_benefitcard {
+        margin-top: 80px !important;
+    }
+
     :root {
         --fs-xl: 39px;
     }
@@ -206,24 +297,74 @@ body {
         background-size: cover !important;
     }
 
+    .mw_429,
     .mw_590,
     .mw_468 {
         max-width: unset !important;
     }
 
+    .bg_mobile {
+        height: 870px !important;
+    }
+
+    .benefit_mobilecontent {
+        padding: 97.5px 24.78px 24px 26.85px !important;
+    }
+
+    .mb_41 {
+        margin-bottom: unset !important;
+    }
+
+    .mb_30 {
+        margin-bottom: unset !important;
+    }
+
+    .pt_highreturn {
+        padding-top: 70px;
+    }
+
+    .py_header {
+        padding-top: 70px;
+        padding-bottom: unset;
+    }
+
     :root {
         --fs-lg: 36px !important;
         --fs-xl: 30px !important;
+        --fs-3md: 26px !important;
     }
 }
 
 @media (max-width:576px) {
     :root {
-        --fs-lg: 26px !important;
+        --fs-lg: 24px !important;
         --fs-xl: 23px !important;
+        --fs-3md: 19px !important;
+        --fs-7md: 32.17px !important;
     }
 
     .common_btn {
         padding: 10.21px 25px 10.21px 25px !important;
+    }
+
+    .bg_mobile {
+        height: 690px !important;
+    }
+
+    .benefit_mobilecontent {
+        padding: 73.5px 24.78px 24px 26.85px !important;
+    }
+
+    .mt_benefitcard {
+        margin-top: 50px !important;
+    }
+
+    .pt_highreturn {
+        padding-top: 50px;
+    }
+
+    .py_header {
+        padding-top: 50px;
+        padding-bottom: unset;
     }
 }
