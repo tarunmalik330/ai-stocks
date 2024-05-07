@@ -100,6 +100,11 @@ body {
     opacity: 80%;
 }
 
+/* ----------------------------gap---------------------------- */
+.gap_17 {
+    gap: 17px;
+}
+
 /* ---------------------------common btn------------------------- */
 .common_btn {
     background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
@@ -243,6 +248,8 @@ body {
     background: linear-gradient(105.5deg, #AE00FF 0%, rgba(5, 0, 255, 0.35) 182.75%);
     border: 1px solid #000000;
     padding: 25px 50px 0 25px;
+    max-width: 524px;
+    min-height: 260px;
 }
 
 .mw_72 {
