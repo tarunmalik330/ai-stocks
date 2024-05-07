@@ -459,4 +459,8 @@ body {
     .mw_72 {
         max-width: 50px;
     }
+
+    .border_slide {
+        min-width: unset;
+    }
 }
