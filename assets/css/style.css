@@ -256,6 +256,27 @@ body {
     max-width: 72px;
 }
 
+.mw_471 {
+    max-width: 471px;
+}
+
+.br_15 {
+    border-radius: 15px;
+}
+
+.transltateY_15 {
+    transform: translateY(-15%);
+}
+
+.mb_20 {
+    margin-bottom: -20px;
+}
+
+/* 
+.mt_maxprofit_btn {
+    margin-top: 50px !important;
+} */
+
 /* ---------------------root------------------------ */
 :root {
     --fs-xxs: 12px;
@@ -284,7 +305,8 @@ body {
         padding-bottom: unset;
     }
 
-    .pt_highreturn {
+    .pt_highreturn,
+    .pt_buyingpower {
         padding-top: 90px;
     }
 
@@ -326,7 +348,8 @@ body {
         margin-bottom: unset !important;
     }
 
-    .pt_highreturn {
+    .pt_highreturn,
+    .pt_buyingpower {
         padding-top: 70px;
     }
 
@@ -362,16 +385,37 @@ body {
         padding: 73.5px 24.78px 24px 26.85px !important;
     }
 
+    .buyingpower_card {
+        padding: 25px 18px 20px 25px;
+    }
+
     .mt_benefitcard {
         margin-top: 50px !important;
     }
 
-    .pt_highreturn {
+    .transltateY_15 {
+        transform: translateY(-4px);
+    }
+
+    .pt_highreturn,
+    .pt_buyingpower {
         padding-top: 50px;
     }
 
     .py_header {
         padding-top: 50px;
         padding-bottom: unset;
+    }
+
+    .buyingpower_card {
+        min-height: unset !important;
+    }
+
+    .mb_20 {
+        margin-bottom: unset;
+    }
+
+    .mw_72 {
+        max-width: 50px;
     }
 }
