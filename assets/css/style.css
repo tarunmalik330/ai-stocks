@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+html,
+body {
+    background-color: #17151A !important;
+}
+
+/* ==========================common-classes========================== */
+/* -----------------------font-family----------------------- */
+.ff_opensans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.ff_montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -------------------font-size------------------- */
+.fs_xxs {
+    font-size: var(--fs-xxs);
+}
+
+.fs_xs {
+    font-size: var(--fs-xs);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_3md {
+    font-size: var(--fs-3md);
+}
+
+.fs_6md {
+    font-size: var(--fs-6md);
+}
+
+.fs_7md {
+    font-size: var(--fs-7md);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg) !important;
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.fs_xxl {
+    font-size: var(--fs-xxl);
+}
+
+/* -----------------------line height----------------------- */
+.lh_122 {
+    line-height: 122%;
+}
+
+.lh_130 {
+    line-height: 130%;
+}
+
+.lh_150 {
+    line-height: 150%;
+}
+
+.lh_160 {
+    line-height: 160%;
+}
+
+/* ----------------------------opacity---------------------------- */
+.opacity_80 {
+    opacity: 80%;
+}
+
+/* ---------------------------common btn------------------------- */
+.common_btn {
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
+    box-shadow: 0px 2px 10px 0px #AE01FF66;
+    border: none;
+    padding: 13.21px 28px 13.21px 28px;
+    border-radius: 100px;
+}
+
+/* =================================header================================= */
+.bg_header {
+    background-image: url("../images/png/bgheader.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.py_nav {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.nav_border {
+    border-bottom: 1px solid #FFFFFF4D
+}
+
+
+.py_header {
+    padding-top: 70px;
+    padding-bottom: 158px;
+}
+
+.mw_590 {
+    max-width: 590px;
+}
+
+.mw_468 {
+    max-width: 468px;
+}
+
+.mb_18 {
+    margin-bottom: 18px;
+}
+
+/* ===================================High Returns=================================== */
+.bg_highreturn {
+    background-image: url("../images/png/bg-highreturn.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.pt_highreturn {
+    padding-top: 150px;
+}
+
+.mt_benefitcard {
+    margin-top: 100px;
+}
+
+.highreturn_card {
+    /* padding: 20px 39px 30px 20px; */
+    /* background: #FFFFFF0D; */
+    border: 1px solid;
+    /* background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+        linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%); */
+}
+
+.border_highreturn {
+    border-radius: 20px;
+    background: #FFFFFF0D;
+    backdrop-filter: blur(31.478700637817383px);
+    position: relative;
+    padding: 1.259px;
+}
+
+.border_highreturn::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    padding: inherit;
+    inset: 0;
+    padding: inherit;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    border: 1px solid;
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
+}
+
+/* ---------------------root------------------------ */
+:root {
+    --fs-xxs: 12px;
+    --fs-xs: 16px;
+    --fs-sm: 20px;
+    --fs-md: 32px;
+    --fs-3md: 33.04px;
+    --fs-6md: 36px;
+    --fs-7md: 37.17px;
+    --fs-lg: 40px;
+    --fs-xl: 48px;
+    --fs-xxl: 88.24px;
+}
+
+@media (min-width:1200px) {
+    .custom_container {
+        max-width: 1164px !important;
+    }
+}
+
+@media (max-width:1200px) {
+    :root {
+        --fs-xl: 39px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .bg_header,
+    .bg_highreturn {
+        background-size: cover !important;
+    }
+
+    .mw_590,
+    .mw_468 {
+        max-width: unset !important;
+    }
+
+    :root {
+        --fs-lg: 36px !important;
+        --fs-xl: 30px !important;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --fs-lg: 26px !important;
+        --fs-xl: 23px !important;
+    }
+
+    .common_btn {
+        padding: 10.21px 25px 10.21px 25px !important;
+    }
+}
