@@ -336,6 +336,13 @@ body {
     padding-top: 200px;
 }
 
+.bg_aistocks {
+    background-image: url('../images/png/bg-aistocks.png');
+    background-position: center;
+    box-sizing: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 .aistocks_layer {
     background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
     height: 84px;
@@ -346,12 +353,20 @@ body {
     max-width: 557px;
 }
 
-.mw_461 {
+.aistocks_images {
     max-width: 461px;
 }
 
 .pt_nvidia {
     padding-top: 100px;
+}
+
+.commom_padding_aistocks {
+    padding-top: 150px;
+}
+
+.pb_aistocks {
+    padding-bottom: 150px;
 }
 
 /* ---------------------root------------------------ */
@@ -387,8 +402,9 @@ body {
     }
 
     .pt_highreturn,
-    .pt_buyingpower {
-        padding-top: 90px;
+    .pt_buyingpower,
+    .commom_padding_aistocks {
+        padding-top: 90px !important;
     }
 
     .mt_benefitcard {
@@ -400,10 +416,11 @@ body {
     }
 
     .pt_nvidia {
-        padding-top: 50px;
+        padding-top: 50px !important;
     }
 
-    .pt_slider {
+    .pt_slider,
+    .pt_aistocks {
         padding-top: 160px;
     }
 
@@ -419,7 +436,8 @@ body {
 @media (max-width:992px) {
 
     .bg_header,
-    .bg_highreturn {
+    .bg_highreturn,
+    .bg_aistocks {
         background-size: cover !important;
     }
 
@@ -447,8 +465,22 @@ body {
     }
 
     .pt_highreturn,
-    .pt_buyingpower {
-        padding-top: 70px;
+    .pt_buyingpower,
+    .commom_padding_aistocks {
+        padding-top: 70px !important;
+    }
+
+    .pt_slider,
+    .pt_aistocks {
+        padding-top: 120px !important;
+    }
+
+    .pb_aistocks {
+        padding-bottom: 120px !important;
+    }
+
+    .pt_nvidia {
+        padding-top: unset !important;
     }
 
     .py_header {
@@ -491,6 +523,7 @@ body {
 @media (max-width:576px) {
     :root {
         --fs-xs: 14px !important;
+        --fs-md: 24px !important;
         --fs-lg: 24px !important;
         --fs-xl: 25px !important;
         --fs-3md: 19px !important;
@@ -517,7 +550,8 @@ body {
         padding: 20px;
     }
 
-    .mt_benefitcard {
+    .mt_benefitcard,
+    .mt_aistocks {
         margin-top: 50px !important;
     }
 
@@ -532,12 +566,18 @@ body {
     }
 
     .pt_highreturn,
-    .pt_buyingpower {
-        padding-top: 48px;
+    .pt_buyingpower,
+    .commom_padding_aistocks {
+        padding-top: 48px !important;
     }
 
-    .pt_slider {
-        padding-top: 60px;
+    .pt_slider,
+    .pt_aistocks {
+        padding-top: 60px !important;
+    }
+
+    .pb_aistocks {
+        padding-bottom: 60px !important;
     }
 
     .py_header {
@@ -561,4 +601,7 @@ body {
         margin-top: 24px !important;
     }
 
+    .aistocks_images {
+        max-width: 315px !important;
+    }
 }
