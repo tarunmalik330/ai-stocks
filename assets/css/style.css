@@ -369,6 +369,11 @@ body {
     padding-bottom: 150px;
 }
 
+.aistocks_bottomlayer {
+    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    height: 90px;
+}
+
 /* ---------------------root------------------------ */
 :root {
     --fs-xxs: 12px;
