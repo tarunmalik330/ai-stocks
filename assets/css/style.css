@@ -66,6 +66,10 @@ body {
     line-height: 122%;
 }
 
+.lh_125 {
+    line-height: 125%;
+}
+
 .lh_130 {
     line-height: 130%;
 }
@@ -487,6 +491,98 @@ body {
     height: 90px;
 }
 
+/* ========================================How it Works======================================== */
+.bg_work {
+    background-image: url('../images/png/bg-work.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mw_710 {
+    max-width: 710px;
+}
+
+.py_roadmap {
+    padding-top: 73px;
+    padding-bottom: 118.43px;
+}
+
+.mw_roadmap {
+    max-width: 716.88px;
+}
+
+.pt_work {
+    padding-top: 180px;
+}
+
+/* ===================================Statistics for Today=================================== */
+
+/* =================================Frequently Asked Questions================================= */
+.accordion-item {
+    background-color: var(--light-yellow) !important;
+}
+
+
+.text_white {
+    color: #ffffffe6;
+}
+
+.mw_593 {
+    max-width: 593px;
+}
+
+.mw_670 {
+    max-width: 670px;
+}
+
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
+.accordion-item {
+    border: none !important;
+    border-bottom: 0.5px solid #BB19ED !important;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+    padding: 20px 26px 20px 0px !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    margin-bottom: 14px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: #000000;
+    box-shadow: none !important;
+    padding: 20px 26px 0px 0px !important;
+
+}
+
+.accordion-body {
+    padding: 0 !important;
+    padding-bottom: 20px !important;
+}
+
+.accordion-button::after {
+    background-color: #BB19ED !important;
+    padding: 15px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 4px !important;
+    background-image: url("/assets/images/png/accordian_btn.png") !important;
+    background-repeat: no-repeat;
+}
+
 /* =========================================footer========================================= */
 .pt_footer {
     padding-top: 252px;
@@ -593,6 +689,11 @@ body {
         height: 785px !important;
     }
 
+    .py_roadmap {
+        padding-top: 73px !important;
+        padding-bottom: 73.43px !important;
+    }
+
     .benefit_mobilecontent {
         padding: 71.5px 24.78px 0 26.85px !important;
     }
@@ -607,6 +708,14 @@ body {
 
     .pt_footer {
         padding-top: 178px;
+    }
+
+    .pt_work {
+        padding-top: 140px !important;
+    }
+
+    .pb_aistocks {
+        padding-bottom: 60px !important;
     }
 
     :root {
@@ -661,6 +770,14 @@ body {
         margin-bottom: unset !important;
     }
 
+    .mw_1164 {
+        max-width: unset;
+    }
+
+    .mw_555 {
+        max-width: unset;
+    }
+
     .pt_highreturn,
     .pt_buyingpower,
     .commom_padding_aistocks {
@@ -673,7 +790,7 @@ body {
     }
 
     .pb_aistocks {
-        padding-bottom: 120px !important;
+        padding-bottom: 60px !important;
     }
 
     .pt_nvidia {
@@ -683,6 +800,10 @@ body {
     .py_header {
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+
+    .mw_roadmap {
+        max-width: 630px !important;
     }
 
     .mw_97 {
@@ -712,6 +833,15 @@ body {
 
     .pt_footer {
         padding-top: 125px;
+    }
+
+    .py_roadmap {
+        padding-top: 40px !important;
+        padding-bottom: 70.43px !important;
+    }
+
+    .pt_work {
+        padding-top: 90px !important;
     }
 
     :root {
@@ -827,7 +957,24 @@ body {
         max-width: 50px !important;
     }
 
+    .mw_roadmap {
+        max-width: 270px !important;
+    }
+
     .pt_footer {
         padding-top: 70px;
+    }
+
+    .py_roadmap {
+        padding-top: 33px !important;
+        padding-bottom: 48.43px !important;
+    }
+
+    .pt_work {
+        padding-top: 60px !important;
+    }
+
+    .pb_aistocks {
+        padding-bottom: 48px !important;
     }
 }
