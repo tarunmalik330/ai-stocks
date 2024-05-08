@@ -136,7 +136,6 @@ body {
     border-bottom: 1px solid #FFFFFF4D
 }
 
-
 .py_header {
     padding-top: 70px;
     padding-bottom: 158px;
@@ -158,6 +157,10 @@ body {
     max-width: 166px;
     top: 17%;
     left: -2%;
+}
+
+.mw_650 {
+    max-width: 650px;
 }
 
 /* ==============================slider============================== */
@@ -199,6 +202,16 @@ body {
 
 .mw_97 {
     max-width: 97px;
+}
+
+.slider_star {
+    max-width: 438px;
+    left: -5%;
+}
+
+.sunstars_img {
+    max-width: 438px;
+    top: -34%;
 }
 
 /* ===================================High Returns=================================== */
@@ -552,7 +565,7 @@ body {
     }
 
     .highreturn_card {
-        padding: 20px;
+        padding: 18px !important;
     }
 
     .mt_benefitcard,
@@ -608,5 +621,9 @@ body {
 
     .aistocks_images {
         max-width: 315px !important;
+    }
+
+    .highreturn_card img {
+        max-width: 50px !important;
     }
 }
