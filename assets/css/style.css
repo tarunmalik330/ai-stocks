@@ -317,6 +317,32 @@ body {
 .mt_maxprofit_btn {
     margin-top: 50px !important;
 } */
+/* =================================Top 7 AI Stocks================================= */
+.mt_aistocks {
+    margin-top: 208px;
+}
+
+.pt_aistocks {
+    padding-top: 200px;
+}
+
+.aistocks_layer {
+    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    height: 84px;
+    top: 33%;
+}
+
+.mw_557 {
+    max-width: 557px;
+}
+
+.mw_461 {
+    max-width: 461px;
+}
+
+.pt_nvidia {
+    padding-top: 100px;
+}
 
 /* ---------------------root------------------------ */
 :root {
@@ -338,6 +364,10 @@ body {
     .custom_container {
         max-width: 1164px !important;
     }
+
+    .mw_1120 {
+        max-width: 1120px !important;
+    }
 }
 
 @media (max-width:1200px) {
@@ -355,6 +385,10 @@ body {
         margin-top: 80px !important;
     }
 
+    .pt_slider {
+        padding-top: 220px;
+    }
+
     :root {
         --fs-xl: 39px;
     }
@@ -369,7 +403,8 @@ body {
 
     .mw_429,
     .mw_590,
-    .mw_468 {
+    .mw_468,
+    .mw_557 {
         max-width: unset !important;
     }
 
@@ -397,6 +432,19 @@ body {
     .py_header {
         padding-top: 70px;
         padding-bottom: unset;
+    }
+
+    .mw_97 {
+        max-width: 72px;
+    }
+
+    .border_slide {
+        min-width: unset;
+    }
+
+    .px_12 {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     :root {
@@ -443,6 +491,10 @@ body {
         padding-top: 50px;
     }
 
+    .pt_slider {
+        padding-top: 124px;
+    }
+
     .py_header {
         padding-top: 50px;
         padding-bottom: unset;
@@ -460,7 +512,4 @@ body {
         max-width: 50px;
     }
 
-    .border_slide {
-        min-width: unset;
-    }
 }
