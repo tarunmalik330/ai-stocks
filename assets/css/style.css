@@ -13,11 +13,11 @@ body {
 /* ==========================common-classes========================== */
 /* -----------------------font-family----------------------- */
 .ff_opensanssans {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif !important;
 }
 
 .ff_montserrat {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 /* -------------------font-size------------------- */
@@ -29,8 +29,16 @@ body {
     font-size: var(--fs-xs);
 }
 
+.fs_8xs {
+    font-size: var(--fs-8xs);
+}
+
 .fs_sm {
     font-size: var(--fs-sm);
+}
+
+.fs_4sm {
+    font-size: var(--fs-4sm);
 }
 
 .fs_md {
@@ -105,6 +113,10 @@ body {
 
 .text_purple {
     color: var(--color-purple);
+}
+
+.text_green {
+    color: var(--color-green);
 }
 
 /* ----------------------------opacity---------------------------- */
@@ -191,6 +203,7 @@ body {
     max-width: 166px;
     top: 11%;
     left: -2%;
+    pointer-events: none;
 }
 
 .mw_655 {
@@ -342,6 +355,11 @@ body {
     position: relative;
     padding: 1px;
     min-width: 364px;
+    transition: all .3s linear;
+}
+
+.border_slide:hover {
+    box-shadow: 0px 8px 10px 0px #ffffff85;
 }
 
 .border_slide::after {
@@ -356,6 +374,10 @@ body {
     pointer-events: none;
     border: 1px solid;
     background: linear-gradient(149.31deg, #AE00FF 28.09%, #FFFFFF 101.38%, rgba(5, 0, 255, 0.35));
+}
+
+.slick-track {
+    padding-bottom: 10px !important;
 }
 
 .slide_content {
@@ -373,6 +395,7 @@ body {
 .sunstars_img {
     top: -30%;
     max-width: 166px;
+    pointer-events: none;
 }
 
 .slide_ellips {
@@ -382,6 +405,10 @@ body {
     filter: blur(150px);
     filter: blur(90px);
     opacity: 70%;
+}
+
+.pb_2 {
+    padding-bottom: 2px;
 }
 
 /* ===================================High Returns=================================== */
@@ -491,12 +518,19 @@ body {
     border-radius: 16px;
 }
 
+.leveraged_card {
+    padding: 20px;
+    border: 1px solid #0000001A;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
 .mw_72 {
     max-width: 72px;
 }
 
 .leveraged_img {
-    transform: translateY(-15%);
+    transform: translateY(-13%);
     max-width: 471px;
     border-radius: 15px;
 }
@@ -505,10 +539,22 @@ body {
     margin-bottom: -20px;
 }
 
-/* 
-.mt_maxprofit_btn {
-    margin-top: 50px !important;
-} */
+.text_purplegradient {
+
+    background:
+        linear-gradient(135deg, #A001FE 0%, #7E05FB 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.earning_btn {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11.1px 0px #0000001A;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 0 13px 8px;
+}
+
 /* =================================Top 7 AI Stocks================================= */
 .mt_aistocks {
     margin-top: 208px;
@@ -528,7 +574,8 @@ body {
 .aistocks_layer {
     background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
     height: 84px;
-    top: 33%;
+    top: 4%;
+    z-index: 1 !important;
 }
 
 .mw_557 {
@@ -556,6 +603,45 @@ body {
     height: 90px;
 }
 
+
+.ailogo_border {
+    border-radius: 400px;
+    background: #FFFFFF0D;
+    /* backdrop-filter: blur(31.478700637817383px); */
+    position: relative;
+    padding: 1px;
+    transition: all .3s linear;
+}
+
+.ailogo_border::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    padding: inherit;
+    inset: 0;
+    padding: inherit;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    border: 2px solid;
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
+}
+
+.ailogo_circle {
+    width: 461px;
+    height: 461px;
+}
+
+.ailogo_ellips {
+    width: 460px;
+    height: 25px;
+    background: linear-gradient(135deg, #7A00F3 0%, #D221EB 100%);
+    filter: blur(45px);
+}
+
+.mw_ailogo1 {
+    max-width: 288px;
+}
 
 /* ========================================How it Works======================================== */
 .bg_work {
@@ -627,17 +713,17 @@ body {
     align-items: center !important;
     justify-content: center !important;
     width: 100%;
-    padding: 20px 26px 20px 0px !important;
+    padding: 20px 26px 22px 0px !important;
     background-color: transparent !important;
     border-radius: 0 !important;
-    margin-bottom: 14px !important;
+    /* margin-bottom: 14px !important; */
 }
 
 .accordion-button:not(.collapsed) {
     background-color: transparent !important;
     color: #000000;
     box-shadow: none !important;
-    padding: 20px 26px 0px 0px !important;
+    padding: 20px 26px 10px 0px !important;
 
 }
 
@@ -648,10 +734,10 @@ body {
 
 .accordion-button::after {
     background-size: cover !important;
-    width: 32px !important;
-    height: 32px !important;
+    width: 28px !important;
+    height: 28px !important;
     font-size: 32px !important;
-    margin-top: -4px !important;
+    /* margin-top: -4px !important; */
     background-image: url("../images/svg/accordian-btn.svg") !important;
 }
 
@@ -664,9 +750,6 @@ body {
     max-width: 523px;
 }
 
-.pl_20 {
-    padding-left: 20px;
-}
 
 /* =========================================footer========================================= */
 .pt_footer {
@@ -703,7 +786,9 @@ body {
 :root {
     --fs-xxs: 12px;
     --fs-xs: 16px;
+    --fs-8xs: 18px;
     --fs-sm: 20px;
+    --fs-4sm: 24px;
     --fs-md: 32px;
     --fs-3md: 33.04px;
     --fs-6md: 36px;
@@ -714,6 +799,7 @@ body {
     /* color */
     --color-lightblack: #020507;
     --color-purple: #AE00FF;
+    --color-green: #2DB965;
 }
 
 @media (min-width:1200px) {
@@ -729,12 +815,25 @@ body {
         margin-bottom: 30.98px !important;
     }
 
+    .pl_20 {
+        padding-left: 20px;
+    }
+
 }
 
 @media (max-width:1200px) {
+    .ailogo_circle {
+        width: 402px;
+        height: 402px;
+    }
+
+    .mw_ailogo1 {
+        max-width: 260px;
+    }
+
     .py_header {
         padding-top: 70px;
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
 
     .leveraged_img {
@@ -745,7 +844,7 @@ body {
     .pt_highreturn,
     .pt_buyingpower,
     .commom_padding_aistocks {
-        padding-top: 90px !important;
+        padding-top: 60px !important;
     }
 
     .mt_benefitcard {
@@ -827,6 +926,11 @@ body {
         opacity: 40%;
     }
 
+    .py_faq {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
     :root {
         --fs-xl: 31px !important;
         --fs-3md: 23.04px !important;
@@ -841,8 +945,25 @@ body {
         background-size: cover !important;
     }
 
+    .mw_ailogo1 {
+        max-width: 180px;
+    }
+
+    .ailogo_circle {
+        width: 333px;
+        height: 333px;
+    }
+
+    .mt_aistocks {
+        margin-top: 70px;
+    }
+
     .aistocks_images {
         max-width: 250px !important;
+    }
+
+    .highreturn_card {
+        padding: 20px !important;
     }
 
     .mw_429,
@@ -854,12 +975,24 @@ body {
     }
 
     .bg_mobile {
-        height: 650px !important;
-        max-width: 400px !important;
+        height: 570px !important;
+        max-width: 343px !important;
+    }
+
+    .mw_558 {
+        max-width: 502px !important;
+    }
+
+    .mb_41 {
+        margin-bottom: 16px !important;
     }
 
     .countdown_gap {
         gap: 35px !important;
+    }
+
+    .common_btn {
+        padding: 11.21px 26px 11.21px 26px !important;
     }
 
     .countdown_border {
@@ -872,7 +1005,7 @@ body {
     }
 
     .benefit_mobilecontent {
-        padding: 75.5px 24.78px 24px 26.85px !important;
+        padding: 50.5px 20.78px 24px 20.85px !important;
     }
 
     .mw_1164 {
@@ -905,13 +1038,18 @@ body {
         padding-top: 24px !important;
     }
 
-    .py_header {
+    .py_header,
+    .py_faq {
         padding-top: 70px;
         padding-bottom: 70px;
     }
 
     .mw_roadmap {
         max-width: 630px !important;
+    }
+
+    .form_content {
+        padding: 53.33px 28.83px 20px 28.44px;
     }
 
     .h_289 {
@@ -940,7 +1078,7 @@ body {
     }
 
     .mt_benefitcard {
-        margin-top: 40px !important;
+        margin-top: 30px !important;
     }
 
     .sun_img,
@@ -965,10 +1103,15 @@ body {
         top: -119px !important;
     }
 
+    .bg_form {
+        height: 624px;
+    }
+
     :root {
         --fs-sm: 18px !important;
+        --fs-md: 23px !important;
         --fs-lg: 36px !important;
-        --fs-xl: 30px !important;
+        --fs-xl: 38px !important;
         --fs-3md: 18px !important;
         --fs-7md: 30.17px !important;
     }
@@ -977,11 +1120,25 @@ body {
 @media (max-width:576px) {
     :root {
         --fs-xs: 14px !important;
+        --fs-4sm: 18px;
         --fs-md: 24px !important;
         --fs-lg: 24px !important;
-        --fs-xl: 25px !important;
-        --fs-3md: 19px !important;
-        --fs-7md: 32.17px !important;
+        --fs-xl: 32px !important;
+        --fs-3md: 16px !important;
+        --fs-7md: 26.17px !important;
+    }
+
+    .mw_ailogo1 {
+        max-width: 140px;
+    }
+
+    .ailogo_circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .h_289 {
+        height: 198px;
     }
 
     .common_btn {
@@ -989,7 +1146,8 @@ body {
     }
 
     .bg_mobile {
-        height: 635px !important;
+        height: 549px !important;
+        max-width: 328px !important;
     }
 
     .benefit_mobilecontent {
@@ -1027,7 +1185,7 @@ body {
 
     .leveraged_img {
         transform: translateY(-10px) !important;
-        max-width: 275px !important;
+        max-width: 299px !important;
 
     }
 
@@ -1048,7 +1206,7 @@ body {
     }
 
     .py_header {
-        padding-top: 48px;
+        padding-top: 24px !important;
         padding-bottom: 248px !important;
     }
 
@@ -1078,10 +1236,6 @@ body {
 
     .highreturn_card img {
         max-width: 50px !important;
-    }
-
-    .mb_41 {
-        margin-bottom: 16px !important;
     }
 
     .mw_roadmap {
@@ -1120,5 +1274,18 @@ body {
 
     .video_border {
         height: 201px;
+    }
+
+    .bg_form {
+        height: 616px;
+    }
+
+    .mb_30 {
+        margin-bottom: 8px !important;
+    }
+
+    .py_faq {
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 }
