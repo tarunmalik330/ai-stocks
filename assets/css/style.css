@@ -103,6 +103,10 @@ body {
     color: var(--color-lightblack);
 }
 
+.text_purple {
+    color: var(--color-purple);
+}
+
 /* ----------------------------opacity---------------------------- */
 .opacity_70 {
     opacity: 70%;
@@ -141,7 +145,7 @@ body {
 
 
 .common_btn:hover {
-    background: white;
+    background: white !important;
     color: #020507 !important;
 }
 
@@ -151,7 +155,7 @@ body {
 
 /* =================================header================================= */
 .bg_header {
-    background-image: url("../images/png/bgheader.png");
+    background-image: url("../images/webp/bgheader.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -225,7 +229,7 @@ body {
 }
 
 .bg_form {
-    background-image: url("../images/png/bg_form.png");
+    background-image: url("../images/webp/bg_form.webp");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -263,6 +267,12 @@ body {
     color: white !important;
 }
 
+.header_layer {
+    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    height: 84px;
+}
+
+/* 
 .spot_btn {
     background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
     box-shadow: 0px 2px 10px 0px #AE01FF66;
@@ -275,7 +285,7 @@ body {
 .spot_btn:hover {
     background: #000000 !important;
     color: white !important;
-}
+} */
 
 /* ==============================slider============================== */
 .pt_slider {
@@ -318,19 +328,26 @@ body {
     max-width: 97px;
 }
 
-.slider_star {
-    max-width: 438px;
-    left: -5%;
+.mw_166 {
+    max-width: 166px;
 }
 
 .sunstars_img {
-    max-width: 438px;
-    top: -34%;
+    top: -36px;
+}
+
+.slide_ellips {
+    background: linear-gradient(135deg, #7A00F3 0%, #D221EB 100%);
+    width: 362px;
+    height: 25px;
+    filter: blur(150px);
+    filter: blur(90px);
+    opacity: 70%;
 }
 
 /* ===================================High Returns=================================== */
 /* .bg_highreturn {
-    background-image: url("../images/png/bg-highreturn.png");
+    background-image: url("../images/webp/bg-highreturn.webp");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -384,7 +401,7 @@ body {
 }
 
 .bg_mobile {
-    background-image: url('../images/png/benefit-mobilescreen.png');
+    background-image: url('../images/webp/benefit-mobilescreen.webp');
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -405,14 +422,13 @@ body {
     max-width: 429px;
 }
 
+.mb_30 {
+    margin-bottom: 16px !important;
+}
+
 .mb_41 {
     margin-bottom: 41.3px !important;
 }
-
-.mb_30 {
-    margin-bottom: 30.98px !important;
-}
-
 
 /* ============================Buying Power============================ */
 .pt_buyingpower {
@@ -503,7 +519,7 @@ body {
 
 /* ========================================How it Works======================================== */
 .bg_work {
-    background-image: url('../images/png/bg-work.png');
+    background-image: url('../images/webp/bg-work.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -589,7 +605,7 @@ body {
     justify-content: center !important;
     align-items: center !important;
     border-radius: 4px !important;
-    background-image: url("/assets/images/png/accordian_btn.png") !important;
+    background-image: url("/assets/images/webp/accordian_btn.webp") !important;
     background-repeat: no-repeat;
 }
 
@@ -632,6 +648,7 @@ body {
     --fs-xxl: 88.24px;
     /* color */
     --color-lightblack: #020507;
+    --color-purple: #AE00FF;
 }
 
 @media (min-width:1200px) {
@@ -642,6 +659,11 @@ body {
     .mw_1120 {
         max-width: 1120px !important;
     }
+
+    .mb_30 {
+        margin-bottom: 30.98px !important;
+    }
+
 }
 
 @media (max-width:1200px) {
@@ -683,7 +705,7 @@ body {
     }
 
     .aistocks_images {
-        max-width: 425px !important;
+        max-width: 350px !important;
     }
 
     .lh_headings {
@@ -772,14 +794,6 @@ body {
         padding: 75.5px 24.78px 24px 26.85px !important;
     }
 
-    .mb_41 {
-        margin-bottom: unset !important;
-    }
-
-    .mb_30 {
-        margin-bottom: unset !important;
-    }
-
     .mw_1164 {
         max-width: unset;
     }
@@ -804,7 +818,7 @@ body {
     }
 
     .pt_nvidia {
-        padding-top: unset !important;
+        padding-top: 70px !important;
     }
 
     .py_header {
@@ -855,6 +869,7 @@ body {
     }
 
     :root {
+        --fs-sm: 18px !important;
         --fs-lg: 36px !important;
         --fs-xl: 30px !important;
         --fs-3md: 18px !important;
@@ -921,7 +936,8 @@ body {
 
     .pt_highreturn,
     .pt_buyingpower,
-    .commom_padding_aistocks {
+    .commom_padding_aistocks,
+    .pt_nvidia {
         padding-top: 48px !important;
     }
 
@@ -936,7 +952,7 @@ body {
 
     .py_header {
         padding-top: 48px;
-        padding-bottom: 230px;
+        padding-bottom: 248px !important;
     }
 
     .buyingpower_card {
@@ -949,6 +965,10 @@ body {
 
     .mb_20 {
         margin-bottom: unset;
+    }
+
+    .lh_160 {
+        line-height: 140% !important;
     }
 
     .mw_72 {
@@ -965,6 +985,10 @@ body {
 
     .highreturn_card img {
         max-width: 50px !important;
+    }
+
+    .mb_41 {
+        margin-bottom: 16px !important;
     }
 
     .mw_roadmap {
@@ -986,5 +1010,9 @@ body {
 
     .pb_aistocks {
         padding-bottom: 48px !important;
+    }
+
+    .slide_content {
+        padding: 18px !important;
     }
 }

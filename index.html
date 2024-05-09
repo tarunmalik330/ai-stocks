@@ -7,7 +7,7 @@
     <!-- ---------tittle--------- -->
     <title>Ai-Stocks</title>
     <!-- ---------favicon--------- -->
-    <link rel="shortcut icon" href="./assets/images/png/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/webp/favicon.webp" type="image/x-icon">
     <!-- --------------css link-------------- -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- ------------bootstrap link------------ -->
@@ -26,7 +26,8 @@
 <body>
     <!-- ===================================header=================================== -->
     <header class="bg_header min-vh-100 position-relative z-1">
-        <img src="./assets/images/png/sunimg.png" alt="sunimg" class="position-absolute w-100 sun_img">
+        <img src="./assets/images/webp/sunimg.webp" alt="sunimg" class="position-absolute w-100 sun_img">
+        <div class="position-absolute w-100 header_layer bottom-0"></div>
         <div class="nav_border">
             <div class="container custom_container">
                 <nav class="py_nav">
@@ -52,22 +53,22 @@
                 <p class="lh_150 mw_468 text-white ff_montserrat text-lg-start text-center fw-medium fs_xs mb-0">Major
                     AI Stocks such as Microsoft
                     and
-                    Nvidia have surged over 80% in
+                    Nvidia have surged over <span class="fw-bold text_purple">80%</span> in
                     the past year. This giants are
-                    expected to grow
-                    130.66% in 2024</p>
+                    expected to grow <span class="fw-bold text_purple">130.66%</span>
+                    in <span class="fw-bold text_purple">2024</span></p>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div
                     class="col-lg-7 col-12 d-flex flex-column justify-content-lg-start justify-content-center align-items-lg-start align-items-center">
                     <div class="position-relative mw_650 mb-3">
                         <img src="./assets/images/svg/playsvg.svg" alt="playsvg"
                             class="position-absolute m-auto top-50 bottom-50 start-0 end-0">
-                        <img src="./assets/images/png/headerimg.png" alt="headerimg" class="w-100 mw_650">
+                        <img src="./assets/images/webp/headerimg.webp" alt="headerimg" class="w-100 mw_650">
                     </div>
-                    <div class="d-sm-flex flex-column align-items-lg-start align-items-center d-none">
+                    <div class="d-sm-flex flex-column align-items-xl-start align-items-center d-none">
                         <p
-                            class="ff_montserrat fw-medium fs_xs text-lg-start text-center text-white mb-4 lh_150 mw_558">
+                            class="ff_montserrat fw-medium fs_xs text-xl-start text-center text-white mb-4 lh_150 mw_558">
                             Due
                             to extremely high demand
                             for media coverage,
@@ -106,7 +107,7 @@
                 </div>
                 <div class="col-lg-5 pt-sm-5 pt-4 pt-lg-0 col-12 d-flex justify-content-center">
                     <div class="bg_form form_content">
-                        <p class="mb-2 text-center ff_opensanssans fw-bold fs_xs lh_140 text_lightblack mw_271 mx-auto">
+                        <p class="mb-3 text-center ff_opensanssans fw-bold fs_xs lh_140 text_lightblack mw_271 mx-auto">
                             This Is The
                             Right Time to Invest In AI Stocks</p>
                         <p
@@ -146,9 +147,10 @@
                             <button
                                 class="text-capitalize ff_montserrat fw-bold text-white w-100 mt-4 fs_xxs w-100 d-flex justify-content-center mx-auto form_btn lh_160">Get
                                 Started</button>
-                            <button
-                                class="ff_opensanssans fw-bold fs_xxs text-white lh_140 mt-3 d-flex mx-auto spot_btn">3
-                                Spot Left</button>
+                            <p
+                                class="ff_opensanssans text-center d-flex justify-content-center fw-bold fs_xxs text-black lh_140 mt-3 d-flex mx-auto">
+                                3
+                                Spot Left</p>
                         </form>
                         <div class="d-flex align-items-center flex-column d-sm-none mt-5 pt-5">
                             <p
@@ -199,18 +201,17 @@
     </header>
     <!-- ===================================slider=================================== -->
     <section class="position-relative pt_slider overflow-hidden">
-        <!-- <img src="./assets/images/png/slider-stars.png" alt="slider-stars"
-            class="position-absolute slider_star top-0 z-1"> -->
-        <!-- <img src="./assets/images/png/sun-stars.png" alt="sun-stars"
-            class="position-absolute end-0 w-100 z-3 sunstars_img"> -->
-        <img src="./assets/images/png/slider-circleimg.png" alt="slider-circleimg"
+        <img src="./assets/images/webp/sun-stars.webp" alt="sun-stars"
+            class="position-absolute end-0 w-100 mw_166 sunstars_img">
+        <img src="./assets/images/webp/slider-circleimg.webp" alt="slider-circleimg"
             class="w-100 position-absolute top-0">
         <div class="responsive">
             <div class="px_12">
-                <div class="border_slide w-100">
+                <div class="border_slide w-100 position-relative overflow-hidden">
+                    <div class="position-absolute slide_ellips bottom-0"></div>
                     <div class="slide_content">
                         <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/png/brentimg.webp" alt="brentimg" class="w-100 mw_97">
+                            <img src="./assets/images/webp/brentimg.jpg" alt="brentimg" class="w-100 mw_97">
                             <div>
                                 <p class="mb-0 ff_montserrat fw-bold text-white lh_150 fs_sm mb-2">Brent</p>
                                 <p class="mb-0 fw-semibold  text-white lh_150 fs_sm ff_montserrat"><span
@@ -224,10 +225,11 @@
                 </div>
             </div>
             <div class="px_12">
-                <div class="border_slide w-100">
+                <div class="border_slide w-100 position-relative overflow-hidden">
+                    <div class="slide_ellips position-absolute bottom-0"></div>
                     <div class="slide_content">
                         <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/png/felicia.webp" alt="felicia" class="w-100 mw_97">
+                            <img src="./assets/images/webp/felicia.jpg" alt="felicia" class="w-100 mw_97">
                             <div>
                                 <p class="mb-0 ff_montserrat fw-bold text-white lh_150 fs_sm text-capitalize mb-2">
                                     Felicia</p>
@@ -242,10 +244,11 @@
                 </div>
             </div>
             <div class="px_12">
-                <div class="border_slide w-100">
+                <div class="border_slide w-100 position-relative overflow-hidden">
+                    <div class="slide_ellips position-absolute bottom-0"></div>
                     <div class="slide_content">
                         <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/png/brian.webp" alt="brian" class="w-100 mw_97">
+                            <img src="./assets/images/webp/brian.jpg" alt="brian" class="w-100 mw_97">
                             <div>
                                 <p class="mb-0 ff_montserrat fw-bold text-white lh_150 fs_sm mb-2">Brent</p>
                                 <p class="mb-0 fw-semibold  text-white lh_150 fs_sm ff_montserrat"><span
@@ -259,10 +262,11 @@
                 </div>
             </div>
             <div class="px_12">
-                <div class="border_slide w-100">
+                <div class="border_slide w-100 position-relative overflow-hidden">
+                    <div class="slide_ellips position-absolute bottom-0"></div>
                     <div class="slide_content">
                         <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/png/murray.webp" alt="brentimg" class="w-100 mw_97">
+                            <img src="./assets/images/webp/murray.jpg" alt="brentimg" class="w-100 mw_97">
                             <div>
                                 <p class="mb-0 ff_montserrat fw-bold text-white lh_150 fs_sm mb-2">Brent</p>
                                 <p class="mb-0 fw-semibold  text-white lh_150 fs_sm ff_montserrat"><span
@@ -276,10 +280,11 @@
                 </div>
             </div>
             <div class="px_12">
-                <div class="border_slide w-100">
+                <div class="border_slide w-100 position-relative overflow-hidden">
+                    <div class="slide_ellips position-absolute bottom-0"></div>
                     <div class="slide_content">
                         <div class="d-flex align-items-center gap-3">
-                            <img src="./assets/images/png/tamara.webp" alt="tamara" class="w-100 mw_97">
+                            <img src="./assets/images/webp/tamara.jpg" alt="tamara" class="w-100 mw_97">
                             <div>
                                 <p class="mb-0 ff_montserrat fw-bold text-white lh_150 fs_sm mb-2">Tamara</p>
                                 <p class="mb-0 fw-semibold  text-white lh_150 fs_sm ff_montserrat"><span
@@ -302,7 +307,7 @@
                         class="d-lg-block">How
                         to
                         Benefit By Investing
-                        In AI</span>
+                        In </span>AI
                     Stocks For High Returns
                 </h2>
                 <p class="text-center ff_montserrat fw-normal fs_xs lh_150 text-white opacity_80"><span
@@ -311,80 +316,99 @@
                     grow
                     130.66% in 2024</p>
                 <div class="row mt_benefitcard justify-content-xl-between justify-content-center">
-                    <div class="col-xl-6 col-lg-8 col-md-10 col-12 d-flex flex-column gap-4">
-                        <div class="border_highreturn">
-                            <div class="highreturn_card">
-                                <img src="./assets/images/svg/artificialsvg.svg" alt="artificialsvg"
-                                    class="mb-3 pb-sm-1">
-                                <p class="text-capitalize lh_150 text-white ff_montserrat fw-bold fs_sm mb_10">
-                                    Artificial
-                                    Intelligence Stocks</p>
-                                <p class="mb-0 text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">As per our
-                                    research and
-                                    data
-                                    evaluation from experts,
-                                    the price of these AI
-                                    Stocks will
-                                    rise over time. Today's
-                                    Investment can give a return of more than 130.66% in 2024.</p>
+                    <div class="col-xl-6 col-12 d-flex flex-column">
+                        <div class="row gap-xl-4">
+                            <div class="col-xl-12 col-md-6 mb-4 mb-xl-0">
+                                <div class="border_highreturn h-100">
+                                    <div class="highreturn_card">
+                                        <img src="./assets/images/svg/artificialsvg.svg" alt="artificialsvg"
+                                            class="mb-3 pb-sm-1">
+                                        <p class="text-capitalize lh_150 text-white ff_montserrat fw-bold fs_sm mb_10">
+                                            Artificial
+                                            Intelligence Stocks</p>
+                                        <p class="mb-0 text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">As
+                                            per
+                                            our
+                                            research and
+                                            data
+                                            evaluation from experts,
+                                            the price of these AI
+                                            Stocks will
+                                            rise over time. Today's
+                                            Investment can give a return of more than 130.66% in 2024.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="border_highreturn">
-                            <div class="highreturn_card">
-                                <img src="./assets/images/svg/revolutionsvg.svg" alt="revolutionsvg"
-                                    class="mb-3 pb-sm-1">
-                                <p class="text-capitalize lh_150 text-white ff_montserrat fw-bold fs_sm mb_10">AI
-                                    Revolution!</p>
-                                <p class="mb-0 text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">As per our
-                                    research and
-                                    data
-                                    evaluation from experts,
-                                    the price of these AI
-                                    Stocks will
-                                    rise over time. Today's
-                                    Investment can give a return of more than 130.66% in 2024.</p>
+                            <div class="col-xl-12 col-md-6 mb-4 mb-xl-0">
+                                <div class="border_highreturn h-100">
+                                    <div class="highreturn_card">
+                                        <img src="./assets/images/svg/revolutionsvg.svg" alt="revolutionsvg"
+                                            class="mb-3 pb-sm-1">
+                                        <p class="text-capitalize lh_150 text-white ff_montserrat fw-bold fs_sm mb_10">
+                                            AI
+                                            Revolution!</p>
+                                        <p class="mb-0 text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">As
+                                            per
+                                            our
+                                            research and
+                                            data
+                                            evaluation from experts,
+                                            the price of these AI
+                                            Stocks will
+                                            rise over time. Today's
+                                            Investment can give a return of more than 130.66% in 2024.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="border_highreturn">
-                            <div class="highreturn_card">
-                                <img src="./assets/images/svg/breakthroughsSvg.svg" alt="breakthroughsSvg"
-                                    class="mb-3 pb-sm-1">
-                                <p class="text-capitalize lh_150 text-white ff_montserrat fw-bold fs_sm mb_10">
-                                    Technological
-                                    Breakthroughs</p>
-                                <p class="mb-0 text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">As per our
-                                    research and
-                                    data
-                                    evaluation from experts,
-                                    the price of these AI
-                                    Stocks will
-                                    rise over time. Today's
-                                    Investment can give a return of more than 130.66% in 2024.</p>
+                            <div class="col-xl-12 col-md-6 mb-4 mb-md-0">
+                                <div class="border_highreturn h-100">
+                                    <div class="highreturn_card">
+                                        <img src="./assets/images/svg/breakthroughsSvg.svg" alt="breakthroughsSvg"
+                                            class="mb-3 pb-sm-1">
+                                        <p class="text-capitalize lh_150 text-white ff_montserrat fw-bold fs_sm mb_10">
+                                            Technological
+                                            Breakthroughs</p>
+                                        <p class="mb-0 text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">As
+                                            per
+                                            our
+                                            research and
+                                            data
+                                            evaluation from experts,
+                                            the price of these AI
+                                            Stocks will
+                                            rise over time. Today's
+                                            Investment can give a return of more than 130.66% in 2024.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="border_highreturn">
-                            <div class="highreturn_card">
-                                <img src="./assets/images/svg/intelligencesvg.svg" alt="intelligencesvg"
-                                    class="mb-3 pb-sm-1">
-                                <p class="text-capitalize lh_150 text-white ff_montserrat fw-bold fs_sm mb_10">
-                                    Artificial
-                                    Intelligence</p>
-                                <p class="mb-0 text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">As per our
-                                    research and
-                                    data
-                                    evaluation from experts,
-                                    the price of these AI
-                                    Stocks will
-                                    rise over time. Today's
-                                    Investment can give a return of more than 130.66% in 2024.</p>
+                            <div class="col-xl-12 col-md-6">
+                                <div class="border_highreturn h-100">
+                                    <div class="highreturn_card">
+                                        <img src="./assets/images/svg/intelligencesvg.svg" alt="intelligencesvg"
+                                            class="mb-3 pb-sm-1">
+                                        <p class="text-capitalize lh_150 text-white ff_montserrat fw-bold fs_sm mb_10">
+                                            Artificial
+                                            Intelligence</p>
+                                        <p class="mb-0 text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">As
+                                            per
+                                            our
+                                            research and
+                                            data
+                                            evaluation from experts,
+                                            the price of these AI
+                                            Stocks will
+                                            rise over time. Today's
+                                            Investment can give a return of more than 130.66% in 2024.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 bg_mobile mt-sm-5 mt-4 mt-xl-0">
                         <div class="benefit_mobilecontent d-flex flex-column align-items-center justify-content-center">
-                            <img src="./assets/images/png/ai-revolution.png" alt="ai-revolution"
-                                class="w-100 ai-revolution-img mb_41 mb-sm-4 mb-3">
-                            <p class="text_lightblack ff_opensanssans fw-bold lh_136 fs_7md mb_30 mb-3">Al revolution!
+                            <img src="./assets/images/webp/ai-revolution.webp" alt="ai-revolution"
+                                class="w-100 ai-revolution-img mb_41">
+                            <p class="text_lightblack ff_opensanssans fw-bold lh_136 fs_7md mb_30">Al revolution!
                             </p>
                             <p
                                 class="mb-0 lh_140 text_lightblack opacity_70 ff_opensanssans fw-normal text-center fs_3md mw_429 px-xl-0 px-2">
@@ -401,7 +425,7 @@
         <section class="pt_buyingpower">
             <div class="container custom_container">
                 <h2 class="text-white text-center ff_montserrat fw-bold lh_headings fs_lg mb-sm-3"><span
-                        class="d-lg-block">Understanding Leveraged</span>
+                        class="d-md-block">Understanding Leveraged</span>
                     Accounts and
                     Buying Power</h2>
                 <p class="mw_812 text-center mx-auto text-white opacity_80 ff_montserrat mb-0 fs_xs fw-normal lh_150">
@@ -421,7 +445,7 @@
                         class="col-lg-6 col-12 pt-4 pt-sm-0 mb_20 d-flex flex-column justify-content-center align-items-center">
                         <div class="buyingpower_card">
                             <div class=" d-flex gap_17 align-items-start">
-                                <img src="./assets/images/png/johnimg.png" alt="johnimg" class="w-100 mw_72">
+                                <img src="./assets/images/webp/johnimg.webp" alt="johnimg" class="w-100 mw_72">
                                 <p class="ff_montserrat text-white fw-normal fs_xs lh_160 mb-0"><span
                                         class="fw-bolder">John
                                         invested</span> $250
@@ -438,7 +462,7 @@
                         class="col-lg-6 col-12 mb_20 pt-4 pt-sm-0 d-flex flex-column justify-content-center align-items-center">
                         <div class="buyingpower_card">
                             <div class=" d-flex gap_17 align-items-start">
-                                <img src="./assets/images/png/mikeimg.png" alt="mikeimg" class="w-100 mw_72">
+                                <img src="./assets/images/webp/mikeimg.webp" alt="mikeimg" class="w-100 mw_72">
                                 <p class="ff_montserrat text-white fw-normal fs_xs lh_160 mb-0"><span
                                         class="fw-bolder">Mike
                                         invested</span>
@@ -450,12 +474,13 @@
                                     potential gains.
                             </div>
                         </div>
-                        <img src="./assets/images/png/leveragedimg.png" alt="leveragedimg" class="w-100 leveraged_img">
+                        <img src="./assets/images/webp/leveragedimg.webp" alt="leveragedimg"
+                            class="w-100 leveraged_img">
                     </div>
 
                 </div>
                 <button
-                    class="text-capitalize d-flex justify-content-center mx-auto ff_montserrat fw-bold text-white fs_xs common_btn lh_160 mt-4 mt-sm-0">Maximize
+                    class="text-capitalize d-flex justify-content-center mx-auto ff_montserrat fw-bold text-white fs_xs common_btn lh_160 mt-4 mt-xl-0">Maximize
                     Your
                     Profit</button>
                 <p class="mt-3 mb-0 text-center text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">With
@@ -468,11 +493,12 @@
     <section class="mt_aistocks position-relative">
         <div class="position-absolute aistocks_layer d-xl-block d-none w-100"></div>
         <h2
-            class="text-white mb-0 ff_montserrat fw-bold fs_lg text-center lh_headings mb-sm-3 mb-4 px_12 px-lg-0 pt_aistocks position-relative z-2">
+            class="text-white mb-0 ff_montserrat fw-bold fs_lg text-center lh_headings mb-sm-3 px_12 px-lg-0 pt_aistocks position-relative z-2">
             Top 7
             AI Stocks 
         </h2>
-        <img src="./assets/images/png/stocks-circle.png" alt="stocks-circle" class="position-absolute w-100 top-0 z-1">
+        <img src="./assets/images/webp/stocks-circle.webp" alt="stocks-circle"
+            class="position-absolute w-100 top-0 z-1">
         <div class="bg_aistocks position-relative pb_aistocks z-2">
             <div class="position-absolute aistocks_bottomlayer w-100 bottom-0"></div>
             <div class="container mw_1120">
@@ -503,13 +529,14 @@
                             class="ff_montserrat d-flex mx-lg-0 mx-auto fw-bold text-white fs_xs common_btn lh_160">Read
                             more</button>
                     </div>
-                    <div class="col-xl-6 col-lg-5 col-12 d-flex justify-content-center">
+                    <div class="col-xl-6 col-lg-5 col-sm-7 col-12 d-flex justify-content-lg-end justify-content-center">
                         <img src="./assets/images/png/nvidiaimg.png" alt="nvidiaimg" class="w-100 aistocks_images">
                     </div>
                 </div>
                 <div
                     class="row align-items-center justify-content-xl-center justify-content-lg-between justify-content-center commom_padding_aistocks">
-                    <div class="col-xl-6 col-lg-5 col-12 d-flex justify-content-center">
+                    <div
+                        class="col-xl-6 col-lg-5 col-sm-7 col-12 d-flex justify-content-center justify-content-lg-start">
                         <img src="./assets/images/png/microsoft_img.png" alt="microsoft_img"
                             class="w-100 aistocks_images">
                     </div>
@@ -552,13 +579,15 @@
                             class="ff_montserrat d-flex mx-lg-0 mx-auto fw-bold text-white fs_xs common_btn lh_160">Read
                             more</button>
                     </div>
-                    <div class="col-xl-6 col-lg-5 col-12 pt-lg-0 pt-md-5 pt-4 d-flex justify-content-center">
-                        <img src="./assets/images/png/aws-img.png" alt="aws-img" class="w-100 aistocks_images">
+                    <div
+                        class="col-xl-6 col-lg-5 col-sm-7 col-12 pt-lg-0 pt-md-5 pt-4 d-flex justify-content-center justify-content-lg-end">
+                        <img src="./assets/images/webp/aws-img.webp" alt="aws-img" class="w-100 aistocks_images">
                     </div>
                 </div>
                 <div
                     class="row align-items-center justify-content-xl-center justify-content-lg-between justify-content-center commom_padding_aistocks">
-                    <div class="col-xl-6 col-lg-5 col-12 d-flex justify-content-center">
+                    <div
+                        class="col-xl-6 col-lg-5 col-sm-7 col-12 d-flex justify-content-center justify-content-lg-start">
                         <img src="./assets/images/png/palantirimg.png" alt="palantirimg" class="w-100 aistocks_images">
                     </div>
                     <div class="col-lg-6 col-12  pt-lg-0 pt-md-5 pt-4">
@@ -603,14 +632,15 @@
                             class="ff_montserrat d-flex mx-lg-0 mx-auto fw-bold text-white fs_xs common_btn lh_160">Read
                             more</button>
                     </div>
-                    <div class="col-xl-6 col-lg-5 col-12 d-flex justify-content-center">
-                        <img src="./assets/images/png/crowd-strike-img.png" alt="crowd-strike-img"
+                    <div class="col-xl-6 col-lg-5 col-sm-7 col-12 d-flex justify-content-center justify-content-lg-end">
+                        <img src="./assets/images/webp/crowd-strike-img.webp" alt="crowd-strike-img"
                             class="w-100 aistocks_images">
                     </div>
                 </div>
                 <div
                     class="row align-items-center justify-content-xl-center justify-content-lg-between justify-content-center commom_padding_aistocks">
-                    <div class="col-xl-6 col-lg-5 col-12 d-flex justify-content-center">
+                    <div
+                        class="col-xl-6 col-lg-5 col-sm-7 col-12 d-flex justify-content-center justify-content-lg-start">
                         <img src="./assets/images/png/pathimg.png" alt="pathimg" class="w-100 aistocks_images">
                     </div>
                     <div class="col-lg-6 col-12  pt-lg-0 pt-md-5 pt-4">
@@ -654,8 +684,8 @@
                             class="ff_montserrat d-flex mx-lg-0 mx-auto fw-bold text-white fs_xs common_btn lh_160">Read
                             more</button>
                     </div>
-                    <div class="col-xl-6 col-lg-5 col-12 d-flex justify-content-center">
-                        <img src="./assets/images/png/arista-img.png" alt="arista-img" class="w-100 aistocks_images">
+                    <div class="col-xl-6 col-lg-5 col-sm-7 col-12 d-flex justify-content-lg-end justify-content-center">
+                        <img src="./assets/images/webp/arista-img.webp" alt="arista-img" class="w-100 aistocks_images">
                     </div>
                 </div>
             </div>
@@ -664,7 +694,7 @@
     <!-- ==================================How it Works================================== -->
     <div class="mt-xl-4 pt-xl-3 mt-0 pt-0">
         <section class="position-relative pt_work overflow-hidden">
-            <img src="./assets/images/png/work-circleimg.png" alt="work-circleimg"
+            <img src="./assets/images/webp/work-circleimg.webp" alt="work-circleimg"
                 class="position-absolute w-100 top-0">
             <h2
                 class="ff_montserrat fw-bold fs_lg mb-3 text-center text-white lh_150 px-lg-0 px-3 position-relative z-1">
@@ -690,7 +720,7 @@
                         companies,
                         eliminating the need to research and choose individual stocks on your own.</p>
                     <div class="py_roadmap d-flex justify-content-center">
-                        <img src="./assets/images/png/roadmap-img.png" alt="roadmap-img" class="w-100 mw_roadmap">
+                        <img src="./assets/images/webp/roadmap-img.webp" alt="roadmap-img" class="w-100 mw_roadmap">
                     </div>
                 </div>
                 <!-- ===================================Statistics for Today=================================== -->
@@ -796,7 +826,7 @@
 
     <!-- ========================================footer======================================== -->
     <footer class="pt_footer position-relative overflow-hidden">
-        <img src="./assets/images/png/footer_circle.png" alt="footer_circle" class="position-absolute w-100 top-0">
+        <img src="./assets/images/webp/footer_circle.webp" alt="footer_circle" class="position-absolute w-100 top-0">
         <div class="container custom_container position-relative z-2">
             <div class="row justify-content-between flex-sm-row flex-column align-items-center pb-sm-4 mb-3">
                 <div class="col-lg-4 col-sm-5 w_100">
@@ -866,8 +896,8 @@
             arrows: false,
             infinite: true,
             speed: 2000,
-            autoplay: true,
-            autoplaySpeed: 1000,
+            // autoplay: true,
+            // autoplaySpeed: 1000,
             slidesToShow: 3.75,
             slidesToScroll: 1,
             responsive: [
