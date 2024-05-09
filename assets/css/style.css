@@ -12,7 +12,7 @@ body {
 
 /* ==========================common-classes========================== */
 /* -----------------------font-family----------------------- */
-.ff_opensanssans {
+.ff_opensans {
     font-family: "Open Sans", sans-serif !important;
 }
 
@@ -145,6 +145,10 @@ body {
     gap: 17px;
 }
 
+.cursor_pointer {
+    cursor: pointer;
+}
+
 /* ---------------------------common btn------------------------- */
 .common_btn {
     background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%) !important;
@@ -157,8 +161,7 @@ body {
 
 
 .common_btn:hover {
-    background: white !important;
-    color: #020507 !important;
+    box-shadow: 0px 2px 10px 0px #ffffff !important;
 }
 
 .lh_headings {
@@ -689,7 +692,6 @@ body {
     background-color: var(--light-yellow) !important;
 }
 
-
 .text_white {
     color: #ffffffe6;
 }
@@ -702,11 +704,9 @@ body {
     max-width: 670px;
 }
 
-
 .accordion-button:focus {
     box-shadow: none !important;
 }
-
 
 .accordion-item {
     border: none !important;
@@ -754,7 +754,6 @@ body {
 .mw_523 {
     max-width: 523px;
 }
-
 
 /* =========================================footer========================================= */
 .pt_footer {
@@ -808,6 +807,10 @@ body {
 }
 
 @media (min-width:1200px) {
+    .mt_xl_73 {
+        margin-top: 73px !important;
+    }
+
     .custom_container {
         max-width: 1164px !important;
     }
@@ -892,7 +895,7 @@ body {
     }
 
     .bg_mobile {
-        max-width: 473px !important;
+        max-width: 419px !important;
         height: 785px !important;
     }
 
@@ -943,7 +946,7 @@ body {
     }
 
     :root {
-        --fs-xl: 31px !important;
+        --fs-xl: 34px !important;
         --fs-3md: 23.04px !important;
         --fs-7md: 30.17px !important;
     }
