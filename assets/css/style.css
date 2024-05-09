@@ -189,16 +189,29 @@ body {
 
 .sun_img {
     max-width: 166px;
-    top: 17%;
+    top: 11%;
     left: -2%;
 }
 
-.mw_650 {
-    max-width: 650px;
+.mw_655 {
+    max-width: 655px;
 }
 
 .countdown_box {
     padding: 16px 83px 16px 82px;
+}
+
+.hero_vdio {
+    border-radius: 11.49px;
+}
+
+
+.video_border {
+    border-radius: 11.49px;
+    position: relative;
+    padding: 2px;
+    height: 368px;
+    background: linear-gradient(111.53deg, rgba(174, 0, 255, 0) 6.57%, rgba(169, 0, 255, 0.982394) 57.76%, rgba(5, 0, 255, 0.35) 92.4%);
 }
 
 .countdown_border {
@@ -244,8 +257,6 @@ body {
 .mw_271 {
     max-width: 271px;
 }
-
-
 
 .form_btn {
     box-shadow: 0px 2px 10px 0px #AE01FF66;
@@ -344,7 +355,7 @@ body {
     -webkit-mask-composite: xor;
     pointer-events: none;
     border: 1px solid;
-    background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, #FFFFFF 101.38%, rgba(5, 0, 255, 0.35));
 }
 
 .slide_content {
@@ -360,7 +371,7 @@ body {
 }
 
 .sunstars_img {
-    top: -36px;
+    top: -30%;
     max-width: 166px;
 }
 
@@ -417,7 +428,7 @@ body {
     -webkit-mask-composite: xor;
     pointer-events: none;
     border: 1px solid;
-    background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
+    background: linear-gradient(150.31deg, #AE00FF 45.09%, rgba(5, 0, 255, 0.35), #FFFFFF 116.38%);
 }
 
 .border_highreturn:hover {
@@ -571,6 +582,13 @@ body {
     padding-top: 180px;
 }
 
+.work_layer {
+    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    height: 84px;
+    top: 17%;
+    /* z-index: 2; */
+}
+
 /* ===================================Statistics for Today=================================== */
 
 /* =================================Frequently Asked Questions================================= */
@@ -637,13 +655,22 @@ body {
     background-image: url("../images/svg/accordian-btn.svg") !important;
 }
 
-.pt_faq {
+.py_faq {
     padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.mw_523 {
+    max-width: 523px;
+}
+
+.pl_20 {
+    padding-left: 20px;
 }
 
 /* =========================================footer========================================= */
 .pt_footer {
-    padding-top: 252px;
+    padding-top: 300px;
 }
 
 .mw_1140 {
@@ -667,10 +694,9 @@ body {
 }
 
 .bg_footer {
-    background-image: url('../images/png/bg_footer.png');
+    height: 500px;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 /* ---------------------root------------------------ */
@@ -775,6 +801,10 @@ body {
 
     .countdown_box {
         padding: 16px 32px 16px 32px;
+    }
+
+    .video_border {
+        height: 307px;
     }
 
     .pt_footer {
@@ -882,6 +912,14 @@ body {
 
     .mw_roadmap {
         max-width: 630px !important;
+    }
+
+    .h_289 {
+        height: 279px;
+    }
+
+    .video_border {
+        height: 275px;
     }
 
     .mw_97 {
@@ -1078,5 +1116,9 @@ body {
     .sunstars_img {
         top: -56px !important;
         max-width: 72px !important;
+    }
+
+    .video_border {
+        height: 201px;
     }
 }

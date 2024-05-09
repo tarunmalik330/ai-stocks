@@ -61,10 +61,16 @@
             <div class="row align-items-center">
                 <div
                     class="col-lg-7 col-12 d-flex flex-column justify-content-lg-start justify-content-center align-items-lg-start align-items-center">
-                    <div class="position-relative mw_650 mb-3">
+                    <div class="position-relative mw_655 mb-3 h_289">
                         <img src="./assets/images/svg/playsvg.svg" alt="playsvg"
-                            class="position-absolute m-auto top-50 bottom-50 start-0 end-0">
-                        <img src="./assets/images/webp/headerimg.webp" alt="headerimg" class="w-100 mw_650">
+                            class="position-absolute m-auto top-50 bottom-50 d-md-block d-none start-0 end-0 z-1">
+                        <!-- <img src="./assets/images/webp/headerimg.webp" alt="headerimg" class="w-100 mw_650"> -->
+                        <div class="video_border">
+                            <video autoplay="" loop="" controls="" class="w-100 h-100 hero_vdio">
+                                <source type="video/mp4" src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4">
+                            </video>
+                        </div>
+
                     </div>
                     <div class="d-sm-flex flex-column align-items-xl-start align-items-center d-none">
                         <p
@@ -122,7 +128,7 @@
                                         for="">First
                                         Name</label>
                                     <div class="input_gradient">
-                                        <input type="text"
+                                        <input required type="text"
                                             class="input_border w-100 ff_opensanssans fw-semibold fs_xxs text-black opacity_70">
                                     </div>
                                 </div>
@@ -131,7 +137,7 @@
                                         for="">Last
                                         Name</label>
                                     <div class="input_gradient">
-                                        <input type="text"
+                                        <input required type="text"
                                             class="input_border w-100 ff_opensanssans fw-semibold fs_xxs text-black opacity_70">
                                     </div>
                                 </div>
@@ -139,7 +145,7 @@
                                     <label class="ff_opensanssans fw-semibold fs_xxs text-black opacity_70 lh_130"
                                         for="">Email</label>
                                     <div class="input_gradient">
-                                        <input type="text"
+                                        <input required type="text"
                                             class="input_border w-100 ff_opensanssans fw-semibold fs_xxs text-black opacity_70">
                                     </div>
                                 </div>
@@ -148,7 +154,7 @@
                                         for="">Phone
                                         Number</label>
                                     <div class="input_gradient">
-                                        <input type="text"
+                                        <input required type="text"
                                             class="input_border w-100 ff_opensanssans fw-semibold fs_xxs text-black opacity_70">
                                     </div>
                                 </div>
@@ -431,7 +437,7 @@
             </div>
         </section>
         <!-- ===================================Buying Power=================================== -->
-        <section class="pt_buyingpower">
+        <section class="pt_buyingpower position-relative z-1">
             <div class="container custom_container">
                 <h2 class="text-white text-center ff_montserrat fw-bold lh_headings fs_lg mb-sm-3"><span
                         class="d-md-block">Understanding Leveraged</span>
@@ -703,6 +709,7 @@
     <!-- ==================================How it Works================================== -->
     <div class="mt-xl-4 pt-xl-3 mt-0 pt-0">
         <div class="position-relative pt_work overflow-hidden">
+            <div class="position-absolute w-100 work_layer"></div>
             <img src="./assets/images/webp/work-circleimg.webp" alt="work-circleimg"
                 class="position-absolute w-100 top-0">
             <h2
@@ -733,16 +740,20 @@
                     </div>
                 </div>
                 <!-- ===================================Statistics for Today=================================== -->
-                <div class="position-relative z-1">
-                    <h2 class="text-capitalize text-white text-center mb_statistics ff_montserrat fw-bold fs_lg lh_125">
-                        Statistics For
-                        Today</h2>
-                </div>
+                <!-- <div class="position-relative z-1">
+                    <div class="container custom_container">
+                        <h2
+                            class="text-capitalize text-white text-center mb_statistics ff_montserrat fw-bold fs_lg lh_125">
+                            Statistics For
+                            Today</h2>
+                        <div class="row"></div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
     <!-- ======================================Frequently Asked Questions====================================== -->
-    <section class="pt_faq">
+    <section class="py_faq">
         <div class="container custom_container">
             <h2 class="ff_montserrat fw-bold text-white fs_lg lh_125 mb-5 text-center position-relative z-1">Frequently
                 Asked Questions</h2>
@@ -750,14 +761,14 @@
                 <div class="accordion mx-auto mt-2 position-relative" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button ff_opensans text-white fw-bold fs_xs text_white lh_140 "
+                            <button class="accordion-button ff_opensans text-white fw-bold fs_xs text_white lh_160 "
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                 aria-expanded="true" aria-controls="collapseOne">
                                 1. Do I need trading experience to invest in AI Stocks?
                             </button>
                         </h2>
                         <div id="collapseOne"
-                            class="accordion-collapse collapse show text-white opacity_80 ff_opensans fw-normal mw_593"
+                            class="accordion-collapse collapse show text-white opacity_80 lh_160 ff_opensans fw-normal mw_593"
                             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 Not at all! Our platform is user-friendly and suitable for traders of all levels, from
@@ -770,14 +781,14 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button
-                                class="accordion-button collapsed ff_opensans text-white fw-bold fs_xs text_white lh_140"
+                                class="accordion-button collapsed lh_160 ff_opensans text-white fw-bold fs_xs text_white lh_140"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                 aria-expanded="false" aria-controls="collapseTwo">
                                 2. How does AI improve my trading results?
                             </button>
                         </h2>
                         <div id="collapseTwo"
-                            class="accordion-collapse collapse text-white opacity_80 ff_opensans fw-normal mw_593"
+                            class="accordion-collapse collapse lh_160 text-white opacity_80 ff_opensans fw-normal mw_593"
                             aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 Not at all! Our platform is user-friendly and suitable for traders of all levels, from
@@ -790,15 +801,19 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button
-                                class="accordion-button collapsed ff_opensans text-white fw-bold fs_xs text_white lh_140"
+                                class="accordion-button collapsed ff_opensans text-white fw-bold fs_xs text_white lh_160"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                 aria-expanded="false" aria-controls="collapseThree">
-                                3. How much does it cost to use the AI Trading Platform, and are there any discounts
-                                available?
+                                <p class="mw_523">
+                                    3. How much does it cost to use the AI Trading Platform, and are <span
+                                        class="pl_20">there any
+                                        discounts
+                                        available?</span>
+                                </p>
                             </button>
                         </h2>
                         <div id="collapseThree"
-                            class="accordion-collapse collapse text-white opacity_80 ff_opensans fw-normal lh_ 150 mw_593"
+                            class="accordion-collapse collapse text-white opacity_80 ff_opensans fw-normal lh_ 160 mw_593"
                             aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 Not at all! Our platform is user-friendly and suitable for traders of all levels, from
@@ -811,14 +826,14 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                             <button
-                                class="accordion-button collapsed ff_opensans text-white fw-bold fs_xs text_white lh_140"
+                                class="accordion-button collapsed ff_opensans text-white fw-bold fs_xs text_white lh_160"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                 aria-expanded="false" aria-controls="collapseFour">
                                 4. How can i start using the trading platform?
                             </button>
                         </h2>
                         <div id="collapseFour"
-                            class="accordion-collapse collapse text-white opacity_80 ff_opensans fw-normal lh_ 150 mw_593"
+                            class="accordion-collapse collapse text-white opacity_80 ff_opensans fw-normal lh_ 160 mw_593"
                             aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 Not at all! Our platform is user-friendly and suitable for traders of all levels, from
@@ -834,13 +849,16 @@
     </section>
 
     <!-- ========================================footer======================================== -->
-    <footer class="pt_footer bg_footer position-relative z-2 overflow-hidden">
+    <footer class="pt_footer position-relative z-2 overflow-hidden">
         <img src="./assets/images/webp/footer_circle.webp" alt="footer_circle"
             class="position-absolute w-100 top-0 z-0">
+        <img src="./assets/images/png/bg_footer.png" alt="bg_footer"
+            class="position-absolute bottom-0 start-0 object-fit-cover bg_footer w-100">
         <div class="container custom_container position-relative z-2">
             <div class="row justify-content-between flex-sm-row flex-column align-items-center pb-sm-4 mb-3">
                 <div class="col-lg-4 col-sm-5 w_100">
-                    <h2 class="ff_opensans fw_bold text-lg-start text-center fs_40 text-white mb-2 mb-lg-3 lh_137">AI
+                    <h2 class="ff_opensans fw_bold text-lg-start text-center fs_40 text-white mb-2 mb-lg-3 lh_137">
+                        AI
                         STOCKS</h2>
                     <p class="ff_opensans text-lg-start text-center fw-normal fs_xs mb-0 text-white opacity_80 lh_163">
                         Empowering Your Financial
@@ -862,21 +880,26 @@
                     </div>
                 </div>
             </div>
-            <h3 class="ff_opensans fw-bold text-lg-start text-center fs_sm text-white lh_140 mb-2 mb-lg-3">Disclaimer
+            <h3 class="ff_opensans fw-bold text-lg-start text-center fs_sm text-white lh_140 mb-2 mb-lg-3">
+                Disclaimer
             </h3>
             <p class="ff_opensans fw-normal text-lg-start text-center fs_xs opacity_80 text-white lh_163 mw_1140 mb-4">
                 This website is not a news
                 agency, information website, or blog. It is a webpage aimed at promotional publications that
                 use the technique of storytelling to illustrate the scope of the services and products offered.
                 Therefore, the story
-                told on this page is an infomercial or advertisement for informational and functional purposes, for an
+                told on this page is an infomercial or advertisement for informational and functional purposes, for
+                an
                 understanding of
-                the potential of what is proposed general, risk warning. Investing activities involve a high level of
+                the potential of what is proposed general, risk warning. Investing activities involve a high level
+                of
                 risk and may
-                result in the total loss of the amount invested. For this reason, these activities may not be suitable
+                result in the total loss of the amount invested. For this reason, these activities may not be
+                suitable
                 for every type of
                 investor. You should not invest money that you cannot afford to lose.</p>
         </div>
+
         <div class="footerline mt-3"></div>
         <div
             class="container mw_1140 d-flex flex-lg-row flex-column justify-content-between align-items-center py-3 py-sm-4 my-md-1">
