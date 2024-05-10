@@ -86,10 +86,11 @@
                 <div
                     class="col-lg-7 col-12 d-flex flex-column justify-content-lg-start justify-content-center align-items-lg-start align-items-center">
                     <div class="position-relative mw_655 mb-3 h_289">
-                        <img src="./assets/images/svg/playsvg.svg" alt="playsvg"
+                        <img id="playButton" src="./assets/images/svg/playsvg.svg" alt="playsvg"
                             class="position-absolute cursor_pointer m-auto top-50 bottom-50 d-md-block d-none start-0 end-0 z-1">
                         <div class="video_border">
-                            <video controls playsinline autoplay muted loop class="w-100 h-100 hero_vdio">
+                            <video id="videoPlayer" controls playsinline muted loop
+                                class="w-100 h-100 hero_vdio">
                                 <source type="video/mp4" src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4">
                             </video>
                         </div>
@@ -606,7 +607,7 @@
                     <div class="col-lg-6 col-12  pt-lg-0 pt-4">
                         <p
                             class="text-capitalize ff_montserrat text-lg-start text-center fw-bold lh_150 text-white fs_md mb-3">
-                            <span class="d-lg-block">Nvidia - AI
+                            <span class="d-lg-block">AI
                                 GPU</span>
                             1 year 228% Growth 
                         </p>
@@ -650,7 +651,7 @@
                     <div class="col-lg-6 col-12 pt-lg-0 pt-4">
                         <p
                             class="text-capitalize ff_montserrat text-lg-start text-center fw-bold lh_headings text-white fs_md mb-3">
-                            <span class="d-lg-block">Microsoft - Co-pilot</span>
+                            <span class="d-lg-block">Co-pilot</span>
                             1 year 64% Growth 
                         </p>
                         <p
@@ -670,7 +671,7 @@
                     <div class="col-lg-6 col-12 pt-lg-0 pt-4">
                         <p
                             class="text-capitalize ff_montserrat text-lg-start text-center fw-bold lh_headings text-white fs_md mb-3">
-                            <span class="d-lg-block">Amazon AWS - AI</span>
+                            AI
                             1 year 69% Growth 
                         </p>
                         <p
@@ -708,7 +709,7 @@
                     <div class="col-lg-6 col-12 pt-lg-0 pt-4">
                         <p
                             class="text-capitalize ff_montserrat text-lg-start text-center fw-bold lh_headings text-white fs_md mb-3">
-                            <span class="d-lg-block">Palantir - AI Analytics</span>
+                            <span class="d-lg-block">AI Analytics</span>
                             1 year 157% Growth 
                         </p>
                         <p
@@ -730,7 +731,7 @@
                     <div class="col-lg-6 col-12 pt-lg-0 pt-4">
                         <p
                             class="text-capitalize ff_montserrat text-lg-start text-center fw-bold lh_headings text-white fs_md mb-3">
-                            <span class="d-lg-block">Crowd strike - Cyber</span>
+                            Cyber
                             1 year 156% Growth 
                         </p>
                         <p
@@ -769,7 +770,7 @@
                     <div class="col-lg-6 col-12 pt-lg-0 pt-4">
                         <p
                             class="text-capitalize ff_montserrat text-lg-start text-center fw-bold lh_headings text-white fs_md mb-3">
-                            <span class="d-lg-block">UI Path - Robotic Automations 1</span>
+                            <span class="d-lg-block">Robotic Automations 1</span>
                             year 82% Growth 
                         </p>
                         <p
@@ -791,7 +792,7 @@
                     <div class="col-lg-6 col-12 pt-lg-0 pt-md-5 pt-4">
                         <p
                             class="text-capitalize ff_montserrat text-lg-start text-center fw-bold lh_headings text-white fs_md mb-3">
-                            <span class="d-lg-block">Arista Networks - AI Cloud</span>
+                            <span class="d-lg-block">AI Cloud</span>
                             Computing 1 year 111% Growth 
                         </p>
                         <p
@@ -820,51 +821,6 @@
         </div>
     </section>
     <!-- ==================================How it Works================================== -->
-    <!-- <div class="mt-xl-4 pt-xl-3 mt-0 pt-0"> -->
-    <!-- <div class="position-relative pt_work overflow-hidden">
-            <div class="position-absolute w-100 work_layer"></div>
-            <img src="./assets/images/webp/work-circleimg.webp" alt="work-circleimg"
-                class="position-absolute w-100 top-0">
-            <h2
-                class="ff_montserrat fw-bold fs_lg mb-3 text-center text-white lh_150 px-lg-0 px-3 position-relative z-1">
-                How it Works</h2>
-            <div class="bg_work position-relative z-1">
-                <div class="container custom_container">
-                    <p
-                        class="ff_montserrat fw-normal mb-3 fs_xs text-white text-center lh_150 mw_710 opacity_80 mx-auto">
-                        If
-                        you've used ChatGPT, the
-                        OpenAl chatbot that has wowed users by writing code and instantly answering complex
-                        questions, you've gotten a glimpse into the next frontier in artificial intelligence, as big
-                        tech
-                        companies are racing
-                        to develop the leading Al chatbot.</p>
-                    <p
-                        class="mb-0 ff_montserrat fw-normal fs_xs text-white text-center lh_150 mw_710 opacity_80 mx-auto">
-                        If you want to get portfolio exposure to Al companies but don't want to identify individual Al
-                        stocks,
-                        you can invest in
-                        an Al-focused exchange-traded fund (ETF). AI ETFs provide exposure to a broad range of the best
-                        Al
-                        companies,
-                        eliminating the need to research and choose individual stocks on your own.</p>
-                    <div class="py_roadmap d-flex justify-content-center">
-                        <img src="./assets/images/webp/roadmap-img.webp" alt="roadmap-img" class="w-100 mw_roadmap">
-                    </div>
-                </div> -->
-    <!-- ===================================Statistics for Today=================================== -->
-    <!-- <div class="position-relative z-1">
-                    <div class="container custom_container">
-                        <h2
-                            class="text-capitalize text-white text-center mb_statistics ff_montserrat fw-bold fs_lg lh_125">
-                            Statistics For
-                            Today</h2>
-                        <div class="row"></div>
-                    </div>
-                </div> -->
-    <!-- </div>
-    </div>
-    </div> -->
     <!-- ======================================Frequently Asked Questions====================================== -->
     <section class="py_faq">
         <div class="container custom_container">
@@ -966,9 +922,10 @@
         <div class="container custom_container position-relative z-2">
             <div class="row justify-content-between flex-sm-row flex-column align-items-center pb-sm-4 mb-3">
                 <div class="col-lg-4 col-sm-5 w_100">
-                    <h2 class="ff_opensans fw_bold text-lg-start text-center fs_40 text-white mb-2 mb-lg-3 lh_137">
+                    <a href="#"
+                        class="ff_opensans fw-bold text-lg-start text-center fs_lg text-white mb-2 mb-lg-3 lh_137">
                         AI
-                        STOCKS</h2>
+                        STOCKS</a>
                     <p
                         class="ff_opensans text-lg-start text-center fw-normal fs_xs mb-sm-0 mb-2 text-white opacity_80 lh_163">
                         Empowering Your Financial
@@ -1015,9 +972,11 @@
         <div class="footerline mt-3"></div>
         <div
             class="container custom_container d-flex flex-lg-row flex-column justify-content-between align-items-center py-3 py-sm-4 my-md-1">
-            <p class="ff_opensans copyright_link cursor_pointer mb-0 fw-normal fs_xs text-white opacity_80 lh_163 mb-2">Privacy Policy
+            <p class="ff_opensans copyright_link cursor_pointer mb-0 fw-normal fs_xs text-white opacity_80 lh_163 mb-2">
+                Privacy Policy
                 | Conditions</p>
-            <p class="ff_opensans cursor_pointer copyright_link mb-0 fw-normal fs_xs text-white opacity_80 lh_163">Report Abuse/ Spam |
+            <p class="ff_opensans cursor_pointer copyright_link mb-0 fw-normal fs_xs text-white opacity_80 lh_163">
+                Report Abuse/ Spam |
                 Copyright@2024</p>
         </div>
 
@@ -1191,6 +1150,22 @@
             });
         });
     </script>
+    <!-- =============================header-video============================= -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('videoPlayer');
+            var playButton = document.getElementById('playButton');
+            playButton.addEventListener('click', function () {
+                if (video.paused) {
+                    video.play();
+                    playButton.style.display = 'none';
+                } else {
+                    video.pause();
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
