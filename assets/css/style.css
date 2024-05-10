@@ -1284,7 +1284,7 @@ body {
     }
 
     .buyingpower_card {
-        min-height: unset !important;
+        min-height: 149px;
     }
 
     .w_100 {
