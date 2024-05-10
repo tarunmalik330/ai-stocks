@@ -821,6 +821,14 @@ body {
 
 }
 
+.copyright_link {
+    transition: all .3s linear;
+}
+
+.copyright_link:hover {
+    color: #AE00FF !important;
+}
+
 /* ---------------------root------------------------ */
 :root {
     --fs-xxs: 12px;
