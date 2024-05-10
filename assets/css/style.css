@@ -846,6 +846,10 @@ body {
 }
 
 @media (min-width:1200px) {
+    .mw_1920 {
+        max-width: 1920px;
+    }
+
     .mw_557 {
         max-width: 557px;
     }
