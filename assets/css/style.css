@@ -346,7 +346,7 @@ body {
     outline: none;
 }
 
-.header_forminput {
+.input_gradient {
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
