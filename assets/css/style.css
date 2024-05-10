@@ -776,6 +776,10 @@ body {
     background-image: url("../images/svg/accordian-btn.svg") !important;
 }
 
+.collapse {
+    transition-duration: 0.2s !important;
+}
+
 .py_faq {
     padding-top: 200px;
     padding-bottom: 200px;
