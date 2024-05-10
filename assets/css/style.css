@@ -203,14 +203,14 @@ body {
 }
 
 /* =================================header================================= */
-.bg_header {
+.header_bg {
     background-image: url("../images/webp/bgheader.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.py_nav {
+.nav_padding {
     padding-top: 19px;
     padding-bottom: 19px;
 }
@@ -219,13 +219,14 @@ body {
     border-bottom: 1px solid #FFFFFF4D
 }
 
-.py_header {
+.header {
     padding-top: 70px;
     padding-bottom: 158px;
 }
 
-.mw_590 {
+.header_heading {
     max-width: 590px;
+    line-height: 130%;
 }
 
 .mw_468 {
@@ -236,7 +237,7 @@ body {
     margin-bottom: 18px;
 }
 
-.sun_img {
+.headersun_img {
     max-width: 166px;
     top: 11%;
     left: -2%;
@@ -255,8 +256,7 @@ body {
     border-radius: 11.49px;
 }
 
-
-.video_border {
+.headervideo {
     border-radius: 11.49px;
     position: relative;
     padding: 2px;
@@ -264,7 +264,7 @@ body {
     background: linear-gradient(111.53deg, rgba(174, 0, 255, 0) 6.57%, rgba(169, 0, 255, 0.982394) 57.76%, rgba(5, 0, 255, 0.35) 92.4%);
 }
 
-.countdown_border {
+.header_countdown {
     border-radius: 16px;
     background: #FFFFFF0D;
     backdrop-filter: blur(31.478700637817383px);
@@ -273,7 +273,7 @@ body {
     transition: all .3s linear;
 }
 
-.countdown_border::after {
+.header_countdown::after {
     content: "";
     position: absolute;
     border-radius: inherit;
@@ -291,8 +291,8 @@ body {
     gap: 81px;
 }
 
-.bg_form {
-    background-image: url("../images/webp/bg_form.webp");
+.headerform_bg {
+    background-image: url("../images/webp/bg-headerform.webp");
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -300,15 +300,11 @@ body {
     max-width: 328px;
 }
 
-.form_content {
+.header_form_content {
     padding: 63.33px 28.83px 20px 28.44px;
 }
 
-.mw_271 {
-    max-width: 271px;
-}
-
-.form_btn {
+.headerform_btn {
     box-shadow: 0px 2px 10px 0px #AE01FF66;
     background: linear-gradient(124.23deg, #AE00FF 32.81%, rgba(5, 0, 255, 0.95) 101.65%);
     border: none;
@@ -318,7 +314,7 @@ body {
     max-width: 268px;
 }
 
-.form_btn:hover {
+.headerform_btn:hover {
     background: #000000 !important;
     color: white !important;
 }
@@ -328,7 +324,7 @@ body {
     height: 84px;
 }
 
-.input_border {
+.header_forminput {
     border: 1px solid #00000033;
     border-radius: 100px;
     max-width: 268px;
@@ -336,7 +332,7 @@ body {
     outline: none;
 }
 
-.input_gradient {
+.header_forminput {
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -361,7 +357,7 @@ body {
 }
 
 /* ==============================slider============================== */
-.pt_slider {
+.slider_padding {
     padding-top: 280px;
 }
 
@@ -406,7 +402,7 @@ body {
     padding: 24px 41px 24px 20px;
 }
 
-.mw_97 {
+.header_slider_img {
     max-width: 97px;
 }
 
@@ -445,7 +441,7 @@ body {
     padding-top: 150px;
 }
 
-.mt_benefitcard {
+.benefitcard {
     margin-top: 100px !important;
 }
 
@@ -513,7 +509,7 @@ body {
     margin-bottom: 10px;
 }
 
-.bg_mobile {
+.highreturn_mobile {
     background-image: url('../images/webp/benefit-mobilescreen.webp');
     background-position: center;
     background-size: 100% 100%;
@@ -531,25 +527,9 @@ body {
     border-radius: 10.33px;
 }
 
-.mw_429 {
-    max-width: 429px;
-}
-
-.mb_30 {
-    margin-bottom: 16px !important;
-}
-
-.mb_41 {
-    margin-bottom: 41.3px !important;
-}
-
 /* ============================Buying Power============================ */
 .pt_buyingpower {
     padding-top: 200px;
-}
-
-.mw_812 {
-    max-width: 812px;
 }
 
 .pt_buyingcard {
@@ -572,7 +552,7 @@ body {
     border-radius: 15px;
 }
 
-.mw_72 {
+.buyingpower_card div img {
     max-width: 72px;
 }
 
@@ -587,7 +567,6 @@ body {
 }
 
 .text_purplegradient {
-
     background:
         linear-gradient(135deg, #A001FE 0%, #7E05FB 100%);
     -webkit-background-clip: text;
@@ -603,7 +582,7 @@ body {
 }
 
 /* =================================Top 7 AI Stocks================================= */
-.mt_aistocks {
+.aistocks {
     margin-top: 208px;
 }
 
@@ -611,7 +590,7 @@ body {
     padding-top: 200px;
 }
 
-.bg_aistocks {
+.aistocks_bg {
     background-image: url('../images/png/bg-aistocks.png');
     background-position: center;
     background-size: 100% 100%;
@@ -625,15 +604,11 @@ body {
     z-index: 1 !important;
 }
 
-.mw_557 {
-    max-width: 557px;
-}
-
 .aistocks_images {
     max-width: 461px;
 }
 
-.pt_nvidia {
+.nvidia_ailogo {
     padding-top: 100px;
 }
 
@@ -723,37 +698,12 @@ body {
 }
 
 /* ========================================How it Works======================================== */
-.bg_work {
-    background-image: url('../images/webp/bg-work.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.mw_710 {
-    max-width: 710px;
-}
 
-.py_roadmap {
-    padding-top: 73px;
-    padding-bottom: 118.43px;
-}
-
-.mw_roadmap {
-    max-width: 716.88px;
-}
-
-.pt_work {
-    padding-top: 180px;
-}
-
-.work_layer {
-    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
-    height: 84px;
-    top: 17%;
-}
 
 /* ===================================Statistics for Today=================================== */
+
+
 
 /* =================================Frequently Asked Questions================================= */
 .accordion-item {
@@ -814,7 +764,7 @@ body {
     transition-duration: 0.2s !important;
 }
 
-.py_faq {
+.faq {
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -824,20 +774,16 @@ body {
 }
 
 /* =========================================footer========================================= */
-.pt_footer {
+.footer_padding {
     padding-top: 300px;
 }
 
-.mw_1140 {
-    max-width: 1140px;
-}
-
-.footerlink {
+.footer_sociallink {
     transition: all 300ms linear !important;
     border-radius: 50%;
 }
 
-.footerlink:hover {
+.footer_sociallink:hover {
     box-shadow: 0px 2px 10px 0px #fff;
 }
 
@@ -860,7 +806,7 @@ body {
 }
 
 .copyright_link:hover {
-    color: #AE00FF !important;
+    color: var(--color-light-purple) !important;
 }
 
 /* ---------------------root------------------------ */
@@ -880,13 +826,14 @@ body {
     /* color */
     --color-lightblack: #020507;
     --color-purple: #AE00FF;
+    --color-light-purple: #e482ff;
     --color-green: #2DB965;
     --color-white: #ffffffe6;
 }
 
 @media (min-width:1200px) {
-    .mt_xl_73 {
-        margin-top: 73px !important;
+    .mw_557 {
+        max-width: 557px;
     }
 
     .custom_container {
@@ -896,15 +843,6 @@ body {
     .mw_1120 {
         max-width: 1120px !important;
     }
-
-    .mb_30 {
-        margin-bottom: 30.98px !important;
-    }
-
-    .pl_20 {
-        padding-left: 20px;
-    }
-
 }
 
 @media (max-width:1200px) {
@@ -917,11 +855,11 @@ body {
         height: 402px;
     }
 
-    .input_border {
+    .header_forminput {
         padding: 6px;
     }
 
-    .bg_form {
+    .headerform_bg {
         height: 590px;
     }
 
@@ -935,7 +873,7 @@ body {
         max-width: 260px;
     }
 
-    .py_header {
+    .header {
         padding-top: 70px;
         padding-bottom: 80px;
     }
@@ -951,19 +889,19 @@ body {
         padding-top: 60px !important;
     }
 
-    .mt_benefitcard {
+    .benefitcard {
         margin-top: 60px !important;
     }
 
-    .mt_aistocks {
+    .aistocks {
         margin-top: 90px;
     }
 
-    .pt_nvidia {
+    .nvidia_ailogo {
         padding-top: 50px !important;
     }
 
-    .pt_slider,
+    .slider_padding,
     .pt_aistocks {
         padding-top: 160px;
     }
@@ -980,18 +918,9 @@ body {
         line-height: normal !important;
     }
 
-    .lh_130 {
-        line-height: normal !important;
-    }
-
-    .bg_mobile {
+    .highreturn_mobile {
         max-width: 419px !important;
         height: 785px !important;
-    }
-
-    .py_roadmap {
-        padding-top: 73px !important;
-        padding-bottom: 73.43px !important;
     }
 
     .benefit_mobilecontent {
@@ -1006,16 +935,12 @@ body {
         padding: 16px 32px 16px 32px;
     }
 
-    .video_border {
+    .headervideo {
         height: 307px;
     }
 
-    .pt_footer {
+    .footer_padding {
         padding-top: 178px;
-    }
-
-    .pt_work {
-        padding-top: 140px !important;
     }
 
     .pb_aistocks {
@@ -1030,7 +955,7 @@ body {
         opacity: 40%;
     }
 
-    .py_faq {
+    .faq {
         padding-top: 90px;
         padding-bottom: 90px;
     }
@@ -1048,7 +973,7 @@ body {
     }
 
     .bg_highreturn,
-    .bg_aistocks {
+    .aistocks_bg {
         background-size: cover !important;
     }
 
@@ -1067,7 +992,7 @@ body {
         height: 310px;
     }
 
-    .mt_aistocks {
+    .aistocks {
         margin-top: 70px;
     }
 
@@ -1075,25 +1000,19 @@ body {
         max-width: 250px !important;
     }
 
-    .mw_429,
-    .mw_590,
+    .header_heading,
     .mw_468,
-    .mw_557,
     .mw_1140 {
         max-width: unset !important;
     }
 
-    .bg_mobile {
+    .highreturn_mobile {
         height: 570px !important;
         max-width: 343px !important;
     }
 
     .mw_558 {
         max-width: 502px !important;
-    }
-
-    .mb_41 {
-        margin-bottom: 16px !important;
     }
 
     .countdown_gap {
@@ -1104,7 +1023,7 @@ body {
         padding: 11.21px 26px 11.21px 26px !important;
     }
 
-    .countdown_border {
+    .header_countdown {
         width: 100%;
         max-width: 390px;
     }
@@ -1134,7 +1053,7 @@ body {
         padding-top: 50px !important;
     }
 
-    .pt_slider,
+    .slider_padding,
     .pt_aistocks {
         padding-top: 120px !important;
     }
@@ -1143,33 +1062,29 @@ body {
         padding-bottom: 60px !important;
     }
 
-    .pt_nvidia {
+    .nvidia_ailogo {
         padding-top: 24px !important;
     }
 
-    .py_header,
-    .py_faq {
+    .header,
+    .faq {
         padding-top: 70px;
         padding-bottom: 70px;
     }
 
-    .mw_roadmap {
-        max-width: 630px !important;
-    }
-
-    .form_content {
+    .header_form_content {
         padding: 53.33px 28.83px 20px 28.44px;
     }
 
-    .h_289 {
+    .header_video {
         height: 279px;
     }
 
-    .video_border {
+    .headervideo {
         height: 275px;
     }
 
-    .mw_97 {
+    .header_slider_img {
         max-width: 72px;
     }
 
@@ -1186,33 +1101,24 @@ body {
         padding-right: 10px;
     }
 
-    .mt_benefitcard {
+    .benefitcard {
         margin-top: 30px !important;
     }
 
-    .sun_img,
+    .headersun_img,
     .sunstars_img {
         opacity: 40%;
     }
 
-    .pt_footer {
+    .footer_padding {
         padding-top: 125px;
-    }
-
-    .py_roadmap {
-        padding-top: 40px !important;
-        padding-bottom: 70.43px !important;
-    }
-
-    .pt_work {
-        padding-top: 90px !important;
     }
 
     .sunstars_img {
         top: -119px !important;
     }
 
-    .bg_form {
+    .headerform_bg {
         height: 580px;
     }
 
@@ -1252,7 +1158,7 @@ body {
         height: 250px;
     }
 
-    .h_289 {
+    .header_video {
         height: 198px;
     }
 
@@ -1260,7 +1166,7 @@ body {
         padding: 10.21px 25px 10.21px 25px !important;
     }
 
-    .bg_mobile {
+    .highreturn_mobile {
         height: 549px !important;
         max-width: 328px !important;
     }
@@ -1273,7 +1179,7 @@ body {
         gap: 24px !important;
     }
 
-    .countdown_border {
+    .header_countdown {
         min-width: 320px !important;
     }
 
@@ -1289,8 +1195,8 @@ body {
         padding: 18px !important;
     }
 
-    .mt_benefitcard,
-    .mt_aistocks {
+    .benefitcard,
+    .aistocks {
         margin-top: 50px !important;
     }
 
@@ -1301,7 +1207,6 @@ body {
     .leveraged_img {
         transform: translateY(-10px) !important;
         max-width: 299px !important;
-
     }
 
     .pt_highreturn,
@@ -1311,7 +1216,7 @@ body {
         padding-top: 42px !important;
     }
 
-    .pt_slider,
+    .slider_padding,
     .pt_aistocks {
         padding-top: 60px !important;
     }
@@ -1320,17 +1225,13 @@ body {
         padding-bottom: 60px !important;
     }
 
-    .py_header {
+    .header {
         padding-top: 24px !important;
         padding-bottom: 248px !important;
     }
 
     .buyingpower_card {
         min-height: 149px;
-    }
-
-    .w_100 {
-        max-width: 100% !important;
     }
 
     .mb_20 {
@@ -1341,11 +1242,11 @@ body {
         line-height: 140% !important;
     }
 
-    .mw_72 {
+    .buyingpower_card div img {
         max-width: 50px;
     }
 
-    .mt_benefitcard {
+    .benefitcard {
         margin-top: 24px !important;
     }
 
@@ -1353,21 +1254,8 @@ body {
         max-width: 45px !important;
     }
 
-    .mw_roadmap {
-        max-width: 270px !important;
-    }
-
-    .pt_footer {
+    .footer_padding {
         padding-top: 70px;
-    }
-
-    .py_roadmap {
-        padding-top: 33px !important;
-        padding-bottom: 48.43px !important;
-    }
-
-    .pt_work {
-        padding-top: 60px !important;
     }
 
     .pb_aistocks {
@@ -1387,24 +1275,20 @@ body {
         max-width: 72px !important;
     }
 
-    .video_border {
+    .headervideo {
         height: 201px;
     }
 
-    .bg_form {
+    .headerform_bg {
         height: 541px;
         max-width: 295px;
     }
 
-    .form_btn {
+    .headerform_btn {
         padding: 10.21px 25px 9.21px 25px;
     }
 
-    .mb_30 {
-        margin-bottom: 8px !important;
-    }
-
-    .py_faq {
+    .faq {
         padding-top: unset;
         padding-bottom: 48px;
     }
