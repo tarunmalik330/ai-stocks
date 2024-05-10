@@ -149,6 +149,10 @@ body {
     color: var(--color-green);
 }
 
+.text_white {
+    color: var(--color-white);
+}
+
 /* ----------------------------opacity---------------------------- */
 .opacity_70 {
     opacity: 70%;
@@ -722,10 +726,6 @@ body {
     background-color: var(--light-yellow) !important;
 }
 
-.text_white {
-    color: #ffffffe6;
-}
-
 .mw_593 {
     max-width: 593px;
 }
@@ -835,6 +835,7 @@ body {
     --color-lightblack: #020507;
     --color-purple: #AE00FF;
     --color-green: #2DB965;
+    --color-white: #ffffffe6;
 }
 
 @media (min-width:1200px) {
