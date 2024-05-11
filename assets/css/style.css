@@ -7,14 +7,14 @@
 
 html,
 body {
-    background-color: #17151A !important;
+    background-color: var(--bg-lightblack) !important;
 }
 
 /* ============================scrollbar============================ */
 ::-webkit-scrollbar {
     border-radius: 3px !important;
     width: 10px !important;
-    border: 1px solid #1A0C83 !important;
+    border: 1px solid #0C00FF !important;
     background-color: transparent !important;
 }
 
@@ -33,7 +33,7 @@ body {
     z-index: 6 !important;
     width: 50px !important;
     height: 50px !important;
-    background: rgba(5, 0, 255, 0.35);
+    background: var(--bg-lightblack);
     border: 1px solid white;
     border-radius: 50px;
     box-shadow: 0px 5px 16px #ffffff;
@@ -216,7 +216,9 @@ body {
 }
 
 
-.common_btn:hover {
+.common_btn:hover,
+.investform_btn:hover,
+.register_btn:hover {
     box-shadow: 0px 2px 10px 0px #ffffff !important;
 }
 
@@ -465,12 +467,12 @@ body {
 }
 
 /* ===================================High Returns=================================== */
-/* .bg_highreturn {
+.bg_highreturn {
     background-image: url("../images/webp/bg-highreturn.webp");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-} */
+}
 
 .pt_highreturn {
     padding-top: 150px;
@@ -633,9 +635,9 @@ body {
 }
 
 .aistocks_layer {
-    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    background: linear-gradient(0deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
     height: 84px;
-    top: 5%;
+    top: 0;
     z-index: 3 !important;
 }
 
@@ -831,14 +833,11 @@ input[type=number] {
     margin-bottom: 10px !important;
 }
 
-.w_4 {
-    width: 4px;
-}
-
 .gradient_line {
     background: linear-gradient(135deg, #7A00F3 0%, #D221EB 100%);
     left: 14px;
     top: 10px;
+    width: 4px;
 }
 
 .gradient_circle {
@@ -868,13 +867,12 @@ input[type=number] {
 }
 
 .work_layer {
-    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    background: linear-gradient(0deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
     height: 84px;
-    top: 12%;
 }
 
 .statistics_layer {
-    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151a57 100%);
     height: 84px;
     bottom: 113px;
 }
@@ -885,6 +883,21 @@ input[type=number] {
 }
 
 /* ================================Average Earnings================================ */
+.earning_bg {
+    background-image: url('../images/png/bg-earning.png') !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.earning_circle {
+    top: -15%;
+}
+
+.earning_padding {
+    padding-top: 200px;
+}
+
 .mw_518 {
     max-width: 518px;
 }
@@ -934,7 +947,14 @@ input[type=number] {
     }
 }
 
-
+.register_btn {
+    box-shadow: 0px 6px 8px 0px #DBB1721A;
+    background: linear-gradient(135deg, #7A00F3 0%, #D221EB 100%);
+    padding: 13px 28px 13px 28px;
+    border-radius: 87px;
+    transition: all .3s linear;
+    border: none;
+}
 
 /* ===================================Statistics for Today=================================== */
 .Statistics {
@@ -943,11 +963,9 @@ input[type=number] {
 
 .counter_box {
     margin-top: 80px !important;
-    /* max-width: 270px; */
 }
 
 .counter_card {
-    /* padding: 34px 46px 50.95px 46px; */
     max-width: 362px;
 }
 
@@ -1073,7 +1091,6 @@ input[type=number] {
 
 .invest_forminput::placeholder {
     color: white !important;
-
 }
 
 .invest_forminput {
@@ -1101,7 +1118,7 @@ input[type=number] {
     border-radius: 100px;
     Padding: 13px 28px 13px 28px;
     border: transparent;
-
+    transition: all .3s linear;
 }
 
 
@@ -1376,6 +1393,7 @@ input[type=number] {
         --fs-xl: 34px !important;
         --fs-3md: 23.04px !important;
         --fs-7md: 30.17px !important;
+        --fs-xxl: 72.24px !important;
     }
 }
 
@@ -1578,9 +1596,10 @@ input[type=number] {
 
 @media (max-width:576px) {
     :root {
-        --fs-6md: 20px;
+        --fs-6md: 20px !important;
         --fs-xs: 14px !important;
-        --fs-4sm: 18px;
+        --fs-8xs: 14px !important;
+        --fs-4sm: 18px !important;
         --fs-md: 24px !important;
         --fs-lg: 24px !important;
         --fs-xl: 32px !important;
@@ -1772,20 +1791,152 @@ input[type=number] {
     }
 }
 
-
-
-
-
-.register_btn {
-    box-shadow: 0px 6px 8px 0px #DBB1721A;
-    background: linear-gradient(135deg, #7A00F3 0%, #D221EB 100%);
-    padding: 13px 28px 13px 28px;
-    border-radius: 87px;
-    transition: all .3s linear;
-    border: none;
+.invest_img1 {
+    max-width: 146px;
 }
 
-.register_btn:hover {
-    background: white !important;
-    color: #000000 !important;
+.invest_img2 {
+    max-width: 173px;
+    right: 17%;
+    bottom: -1%;
+}
+
+.invest_img3 {
+    max-width: 220px;
+    top: 22%;
+}
+
+.invest_img4 {
+    max-width: 164px;
+    top: -2%;
+    right: 30%;
+}
+
+.invest_img5 {
+    max-width: 224px;
+    left: 6%;
+    top: 1%;
+}
+
+.invest_img6 {
+    max-width: 263px;
+    left: 3%;
+    bottom: 0;
+}
+
+.earning_socialcircle {
+    height: 578px;
+}
+
+@media (max-width:1200px) {
+    .aitrade_padding {
+        padding-bottom: 93px;
+    }
+
+    .invest_img3 {
+        max-width: 185px;
+        top: 25%;
+    }
+
+    .invest_img5 {
+        max-width: 187px;
+        left: 3%;
+        top: 14%;
+    }
+
+    .invest_img6 {
+        max-width: 230px;
+        left: 4%;
+    }
+
+    .earning_circle {
+        top: -1%;
+    }
+
+    .earning_padding {
+        padding-top: 159px;
+    }
+}
+
+@media (max-width:992px) {
+    .earning_socialcircle {
+        height: 510px;
+    }
+
+    .earning_padding {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width:768px) {
+    .invest_img3 {
+        max-width: 158px;
+    }
+
+    .invest_img5 {
+        max-width: 176px;
+        left: -4%;
+        top: 20%;
+    }
+
+    .invest_img6 {
+        max-width: 192px;
+        left: -4%;
+    }
+
+    .invest_img2 {
+        right: 8%;
+    }
+}
+
+@media (max-width:576px) {
+    .invest_img3 {
+        max-width: 100px;
+        top: 36%;
+        right: 17px !important;
+    }
+
+    .invest_img1 {
+        max-width: 100px;
+    }
+
+    .invest_img4 {
+        max-width: 120px;
+        top: 12%;
+        right: 33%;
+    }
+
+    .earning_socialcircle {
+        height: 498px;
+    }
+
+    .invest_img6 {
+        max-width: 125px;
+        left: 10%;
+        bottom: 9% !important;
+    }
+
+    .invest_img5 {
+        max-width: 114px;
+        left: 0%;
+        top: 41%;
+    }
+
+    .invest_img2 {
+        max-width: 115px;
+        right: 7%;
+        bottom: 17%;
+    }
+
+    .aitrade_padding {
+        padding-bottom: unset;
+    }
+
+    .earning_padding {
+        padding-top: 80px;
+    }
+
+    .earning_circle {
+        top: -2%;
+    }
 }

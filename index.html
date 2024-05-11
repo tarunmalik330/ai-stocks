@@ -269,8 +269,8 @@
             <img src="./assets/images/webp/sun-stars.webp" alt="sun-stars"
                 class="position-absolute end-0 w-100 sunstars_img z-2">
             <img src="./assets/images/webp/slider-circleimg.webp" alt="slider-circleimg"
-                class="w-100 position-absolute top-0">
-            <div class="responsive">
+                class="w-100 position-absolute top-0 z-1">
+            <div class="responsive position-relative z-2">
                 <div class="px_12">
                     <div class="border_slide w-100 position-relative overflow-hidden">
                         <div class="position-absolute slide_ellips bottom-0"></div>
@@ -372,7 +372,7 @@
                 </div>
             </div>
         </section>
-        <div class="bg_highreturn">
+        <div class="bg_highreturn position-relative z-2">
             <!-- ==================================High Returns================================== -->
             <section class="position-relative z-2">
                 <div class="container custom_container pt_highreturn">
@@ -635,7 +635,6 @@
         </div>
         <!-- ================================= Top 7 AI Stocks ================================= -->
         <section class="aistocks position-relative">
-            <div class="position-absolute aistocks_layer w-100"></div>
             <h2
                 class="text-white ff_montserrat fw-bold fs_lg text-center lh_headings mb-lg mb-sm-4 px_12 px-lg-0 pt_aistocks position-relative z-2">
                 Top 7
@@ -644,6 +643,7 @@
             <img src="./assets/images/webp/stocks-circle.webp" alt="stocks-circle"
                 class="position-absolute w-100 top-0 z-1">
             <div class="aistocks_bg position-relative pb_aistocks z-2">
+                <div class="position-absolute aistocks_layer w-100"></div>
                 <div class="position-absolute aistocks_bottomlayer w-100 bottom-0"></div>
                 <div class="container mw_1120">
                     <div
@@ -1335,12 +1335,12 @@
             </div>
         </section>
         <!-- ==================================How it Works================================== -->
-        <div class="py_work position-relative">
-            <img src="./assets/images/webp/work-circleimg.webp" alt="work-circleimg"
+        <div class="py_work position-relative overflow-hidden">
+            <img src="./assets/images/webp/work-circleimg.png" alt="work-circleimg"
                 class="w-100 position-absolute z-0 top-0">
-            <!-- <div class="work_layer position-absolute w-100 z-2"></div> -->
             <div class="statistics_layer position-absolute d-xl-block d-none z-2 w-100"></div>
-            <div class="work_bg position-relative z-1">
+            <div class="work_bg position-relative ">
+                <div class="work_layer position-absolute top-0 w-100 z-2"></div>
                 <section class="position-relative z-3">
                     <div class="custum_container container">
                         <h2 class="fs_lg ff_montserrat text-center text-white fw-bold lh_150 mb-3">How it Works</h2>
@@ -1367,7 +1367,7 @@
                         <div class="roadmap mw_716 h_737 mx-auto position-relative">
                             <img src="./assets/images/svg/roadmapimg.svg" alt="roadmapimg"
                                 class="position-absolute top -0 bottom-0 start-0 end-0 mw_556 w-100 mx-auto d-md-block d-none">
-                            <div class="position-absolute w_4 h-75 gradient_line d-md-none d-block "></div>
+                            <div class="position-absolute h-75 gradient_line d-md-none d-block "></div>
                             <div class="box_sign position-relative z-1 road_box">
                                 <h3 class="fs_6md ff_montserrat fw-bold text-white lh_145 mb_10 text-white">Sign up</h3>
                                 <p class="mw_md_333 lh_160 ff_montserrat text-white opacity_80 mb-0 fw-normal ">Fill out
@@ -1406,9 +1406,9 @@
                     <div class="container custom_container">
                         <h2 class="mb-0 text-white text-center text-capitalize ff_montserrat fw-bold fs_lg lh_125">
                             Statistics For Today</h2>
-                        <div class="row counter_box justify-content-center mb-4">
+                        <div class="row counter_box justify-content-center">
                             <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
-                                <div class="counter_card d-flex flex-column justify-content-center align-items-center">
+                                <div class="counter_card d-flex flex-column align-items-center">
                                     <div
                                         class="counter_circle_border p-2 d-flex justify-content-center align-items-center">
                                         <div class="counter_circle  d-flex justify-content-center align-items-center">
@@ -1459,8 +1459,10 @@
             </div>
         </div>
         <!-- ============================= Average Earnings ============================= -->
-        <section class="position-relative z-1">
-            <div class="d-flex flex-lg-row flex-column align-items-center gap_32">
+        <section class="position-relative z-1 earning_padding">
+            <img src="./assets/images/png/earning-circle.png" alt="earning-circle"
+                class="position-absolute earning_circle w-100">
+            <div class="d-flex flex-lg-row flex-column align-items-center gap_32 position-relative z-1">
                 <div class="mw_814 w-100 overflow-hidden">
                     <div class="d-flex earning_slide1 slide_container mb-2">
                         <div class="px_6">
@@ -1596,241 +1598,269 @@
                     </div>
                 </div>
                 <div class="mw_518">
-                    <h2 class="ff_montserrat fw-bold fs_lg text-white mb-lg-5 mb-sm-4 mb-3 px-lg-0 px-md-5 mx-lg-0 mx-md-4 px-3 text-lg-start text-center">
+                    <h2
+                        class="ff_montserrat fw-bold fs_lg text-white mb-lg-5 mb-sm-4 mb-3 px-lg-0 px-md-5 mx-lg-0 mx-md-4 px-3 text-lg-start text-center">
                         Average Earnings of a Registered User From a Deposit of $250 = 521$
                     </h2>
-                    <button class="mt-3 text-white ff_montserrat fw-bold mx-lg-0 mx-auto d-flex justify-content-center justify-content-lg-start fs_xs lh_160 bg-transparent register_btn">Register Now</button>
+                    <button
+                        class="mt-3 text-white ff_montserrat fw-bold mx-lg-0 mx-auto d-flex justify-content-center justify-content-lg-start fs_xs lh_160 bg-transparent register_btn">Register
+                        Now</button>
                 </div>
             </div>
         </section>
-        <!-- ======================================Frequently Asked Questions====================================== -->
-        <section class="faq">
-            <div class="container custom_container">
-                <h2
-                    class="ff_montserrat fw-bold text-white fs_lg lh_125 mb-xl-5 mb-sm-4 text-center position-relative z-1">
-                    Frequently
-                    Asked Questions</h2>
-                <div class="mw_670 w-100 mx-auto">
-                    <div class="accordion mx-auto mt-sm-2 position-relative" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header ff_opensans" id="headingOne">
-                                <button class="accordion-button ff_opensans" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <p class="mb-0 ff_opensans fw-bold fs_xs text_white lh_160">1. Do I need
-                                        trading experience to invest in AI Stocks?</p>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div
-                                    class="accordion-body text-white opacity_80 lh_160 ff_opensans fw-normal mw_593 fs_xs">
-                                    Not at all! Our platform is user-friendly and suitable for traders of
-                                    all levels,
-                                    from
-                                    complete beginners to experienced
-                                    professionals. The AI handles the complex analysis, so you dont need to
-                                    have prior
-                                    experience.
+        <div class="earning_bg position-relative z-1">
+            <!-- ======================================Frequently Asked Questions====================================== -->
+            <section class="faq">
+                <div class="container custom_container">
+                    <h2
+                        class="ff_montserrat fw-bold text-white fs_lg lh_125 mb-xl-5 mb-sm-4 text-center position-relative z-1">
+                        Frequently
+                        Asked Questions</h2>
+                    <div class="mw_670 w-100 mx-auto">
+                        <div class="accordion mx-auto mt-sm-2 position-relative" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header ff_opensans" id="headingOne">
+                                    <button class="accordion-button ff_opensans" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <p class="mb-0 ff_opensans fw-bold fs_xs text_white lh_160">1. Do I need
+                                            trading experience to invest in AI Stocks?</p>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show "
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div
+                                        class="accordion-body text-white opacity_80 lh_160 ff_opensans fw-normal mw_593 fs_xs">
+                                        Not at all! Our platform is user-friendly and suitable for traders of
+                                        all levels,
+                                        from
+                                        complete beginners to experienced
+                                        professionals. The AI handles the complex analysis, so you dont need to
+                                        have prior
+                                        experience.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header ff_opensans" id="headingTwo">
-                                <button class="accordion-button collapsed ff_opensans" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    <p class="mb-0 ff_opensans fw-bold fs_xs text_white lh_160">2. How does
-                                        AI improve
-                                        my
-                                        trading results?</p>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body lh_160 text-white opacity_80 ff_opensans fw-normal mw_593">
-                                    Not at all! Our platform is user-friendly and suitable for traders of
-                                    all levels,
-                                    from
-                                    complete beginners to experienced
-                                    professionals. The AI handles the complex analysis, so you dont need to
-                                    have prior
-                                    experience.
+                            <div class="accordion-item">
+                                <h2 class="accordion-header ff_opensans" id="headingTwo">
+                                    <button class="accordion-button collapsed ff_opensans" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <p class="mb-0 ff_opensans fw-bold fs_xs text_white lh_160">2. How does
+                                            AI improve
+                                            my
+                                            trading results?</p>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div
+                                        class="accordion-body lh_160 text-white opacity_80 ff_opensans fw-normal mw_593">
+                                        Not at all! Our platform is user-friendly and suitable for traders of
+                                        all levels,
+                                        from
+                                        complete beginners to experienced
+                                        professionals. The AI handles the complex analysis, so you dont need to
+                                        have prior
+                                        experience.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed ff_opensans" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">
-                                    <p class="mw_523 mb-0 ff_opensans fw-bold fs_xs text_white lh_160">
-                                        3. How much does it cost to use the AI Trading Platform, and are
-                                        <span class="ps-xl-3 ms-xl-1">there any
-                                            discounts
-                                            available?</span>
-                                    </p>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-white opacity_80 ff_opensans fw-normal lh_ 160 mw_593">
-                                    Not at all! Our platform is user-friendly and suitable for traders of
-                                    all levels,
-                                    from
-                                    complete beginners to experienced
-                                    professionals. The AI handles the complex analysis, so you dont need to
-                                    have prior
-                                    experience.
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed ff_opensans" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <p class="mw_523 mb-0 ff_opensans fw-bold fs_xs text_white lh_160">
+                                            3. How much does it cost to use the AI Trading Platform, and are
+                                            <span class="ps-xl-3 ms-xl-1">there any
+                                                discounts
+                                                available?</span>
+                                        </p>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div
+                                        class="accordion-body text-white opacity_80 ff_opensans fw-normal lh_ 160 mw_593">
+                                        Not at all! Our platform is user-friendly and suitable for traders of
+                                        all levels,
+                                        from
+                                        complete beginners to experienced
+                                        professionals. The AI handles the complex analysis, so you dont need to
+                                        have prior
+                                        experience.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header ff_opensans" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <p class="mb-0 ff_opensans fw-bold fs_xs text_white lh_160">4. How can i
-                                        start using
-                                        the
-                                        trading platform?</p>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header ff_opensans" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <p class="mb-0 ff_opensans fw-bold fs_xs text_white lh_160">4. How can i
+                                            start using
+                                            the
+                                            trading platform?</p>
 
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body text-white opacity_80 ff_opensans fw-normal lh_ 160 mw_593">
-                                    Not at all! Our platform is user-friendly and suitable for traders of
-                                    all levels,
-                                    from
-                                    complete beginners to experienced
-                                    professionals. The AI handles the complex analysis, so you dont need to
-                                    have prior
-                                    experience.
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div
+                                        class="accordion-body text-white opacity_80 ff_opensans fw-normal lh_ 160 mw_593">
+                                        Not at all! Our platform is user-friendly and suitable for traders of
+                                        all levels,
+                                        from
+                                        complete beginners to experienced
+                                        professionals. The AI handles the complex analysis, so you dont need to
+                                        have prior
+                                        experience.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- =============================== AI Stock Trading =============================== -->
-        <section class="aitrade_padding">
-            <div class="container custom_container">
-                <h2 class="text-white text-center ff_montserrat mb-4 fs_lg lh_125 fw-bold"><span class="d-lg-block">Take
-                        the first step
-                        into</span>AI
-                    Stock Trading</h2>
-                <p class="mt-1 mb-5 ff_montserrat fw-normal fs_xs text-center text-white opacity_80">
-                    <span class="d-lg-block">In a matter of minutes, one of our AI mentors will contact
-                        you,No</span>
-                    Experience Required!
-                </p>
-                <div class="row mt-5">
-                    <div class="col-5">
-                        <div class="invest_form w-100">
-                            <div class="invest_form_content">
-                                <p class="text-white ff_montserrat fw-bold fs_sm lh_150 mb-3"><span
-                                        class="d-lg-block">This
-                                        Is The Right Time to
-                                        Invest</span> In AI Stocks</p>
-                                <p class="ff_montserrat fw-normal fs_xs text-white lh_150 mb-4 pb-2">In a
-                                    matter of
-                                    minutes, one
-                                    of our AI mentors will contact you, No Experience
-                                    Required!</p>
-                                <div class="d-flex flex-column gap-3">
-                                    <input type="text" placeholder="First Name"
-                                        class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
-                                    <input type="text" placeholder="Last name"
-                                        class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
-                                    <input type="text" placeholder="E-mail"
-                                        class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
-                                    <input type="text" placeholder="Phone Number"
-                                        class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
-                                    <input type="submit" value="Sign Up"
-                                        class="ff_montserrat text-capitalize text-center fw-bold text-white w-100 fs_xs lh_160 investform_btn">
+            </section>
+            <!-- =============================== AI Stock Trading =============================== -->
+            <section class="aitrade_padding">
+                <div class="container custom_container">
+                    <h2 class="text-white text-center ff_montserrat mb-4 fs_lg lh_125 fw-bold"><span
+                            class="d-lg-block">Take
+                            the first step
+                            into</span>AI
+                        Stock Trading</h2>
+                    <p class="mt-1 mb-5 ff_montserrat fw-normal fs_xs text-center text-white opacity_80">
+                        <span class="d-lg-block">In a matter of minutes, one of our AI mentors will contact
+                            you,No</span>
+                        Experience Required!
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-lg-5 col-12">
+                            <div class="invest_form w-100">
+                                <div class="invest_form_content">
+                                    <p class="text-white ff_montserrat fw-bold fs_sm lh_150 mb-3"><span
+                                            class="d-lg-block">This
+                                            Is The Right Time to
+                                            Invest</span> In AI Stocks</p>
+                                    <p class="ff_montserrat fw-normal fs_xs text-white lh_150 mb-4 pb-2">In a
+                                        matter of
+                                        minutes, one
+                                        of our AI mentors will contact you, No Experience
+                                        Required!</p>
+                                    <div class="d-flex flex-column gap-3">
+                                        <input required type="text" placeholder="First Name"
+                                            class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
+                                        <input required type="text" placeholder="Last name"
+                                            class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
+                                        <input required type="text" placeholder="E-mail"
+                                            class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
+                                        <input required type="text" placeholder="Phone Number"
+                                            class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
+                                        <input type="submit" value="Sign Up"
+                                            class="ff_montserrat text-capitalize text-center fw-bold text-white w-100 fs_xs lh_160 investform_btn">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-7"></div>
-                </div>
-            </div>
-        </section>
-        <!-- ========================================footer======================================== -->
-        <footer class="footer_padding position-relative z-2 overflow-hidden">
-            <img src="./assets/images/webp/footer-circle.webp" alt="footer_circle"
-                class="position-absolute w-100 top-0 z-0">
-            <img src="./assets/images/png/bg-footer.png" alt="bg_footer"
-                class="position-absolute bottom-0 start-0 object-fit-cover bg_footer w-100">
-            <div class="container custom_container position-relative z-2">
-                <div class="row justify-content-between flex-sm-row flex-column align-items-center pb-sm-4 mb-3">
-                    <div class="col-lg-4 col-sm-5 col-12 d-flex flex-column">
-                        <a href="#"
-                            class="ff_opensans fw-bold text-lg-start text-center fs_lg text-white mb-2 mb-xl-3 lh_137">
-                            AI
-                            STOCKS</a>
-                        <p
-                            class="ff_opensans text-lg-start text-center fw-normal fs_xs mb-sm-0 mb-2 text-white opacity_80 lh_163">
-                            Empowering Your Financial
-                            Future <span class="d-xl-block">with Intelligent Investments</span></p>
-                    </div>
-                    <div class="col-lg-3 col-sm-4 col-12 mt-2 mt-sm-0">
-                        <h3
-                            class="ff_opensans fw-semibold text-lg-start text-center fs_sm text-white mb-lg-3 lh_150 mb-sm-2 mb-3">
-                            Follow Us on</h3>
-                        <div class="d-flex gap_12 justify-content-lg-start justify-content-center">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <img src="./assets/images/svg/facebook.svg" alt="facebook" class="footer_sociallink">
-                            </a>
-                            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                                <img src="./assets/images/svg/instagram.svg" alt="instagram" class="footer_sociallink">
-                            </a>
-                            <a href="https://www.linkedin.com/login" target="_blank">
-                                <img src="./assets/images/svg/in.svg" alt="in" class="footer_sociallink">
-                            </a>
+                        <div class="col-lg-7 col-sm-11 col-12 mt-sm-5 mt-lg-0 pt-sm-5 pt-lg-0 earning_socialcircle">
+                            <div
+                                class="d-flex justify-content-center mt-sm-5 mt-lg-0 pt-sm-5 pt-lg-0 align-items-center position-relative earning_socialcircle">
+                                <img src="./assets/images/png/invest-img2.png" alt="invest-img2"
+                                    class="position-absolute w-100 invest_img2">
+                                <img src="./assets/images/png/invest-img3.png" alt="invest-img3"
+                                    class="position-absolute w-100 invest_img3 end-0">
+                                <img src="./assets/images/png/invest-img4.png" alt="invest-img4"
+                                    class="position-absolute w-100 invest_img4">
+                                <img src="./assets/images/png/invest-img5.png" alt="invest-img5"
+                                    class="position-absolute w-100 invest_img5">
+                                <img src="./assets/images/png/invest-img6.png" alt="invest-img6"
+                                    class="position-absolute w-100 invest_img6">
+                                <img src="./assets/images/png/invest-img1.png" alt="invest-img1"
+                                    class="w-100 invest_img1">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h3
-                    class="ff_opensans fw-bold text-lg-start text-center fs_sm text-white lh_140 mt-sm-0 mt-4 mb-2 mb-lg-3">
-                    Disclaimer
-                </h3>
-                <p
-                    class="ff_opensans fw-normal text-lg-start px-1 px-sm-0 text-center fs_xs opacity_80 text-white lh_163 mb-4">
-                    This website is not a news
-                    agency, information website, or blog. It is a webpage aimed at promotional publications
-                    that
-                    use the technique of storytelling to illustrate the scope of the services and products
-                    offered.
-                    Therefore, the story
-                    told on this page is an infomercial or advertisement for informational and functional
-                    purposes, for
-                    an
-                    understanding of
-                    the potential of what is proposed general, risk warning. Investing activities involve a
-                    high level
-                    of
-                    risk and may
-                    result in the total loss of the amount invested. For this reason, these activities may
-                    not be
-                    suitable
-                    for every type of
-                    investor. You should not invest money that you cannot afford to lose.</p>
-            </div>
+            </section>
+            <!-- ========================================footer======================================== -->
+            <footer class="footer_padding position-relative z-2 overflow-hidden">
+                <img src="./assets/images/webp/footer-circle.webp" alt="footer_circle"
+                    class="position-absolute w-100 top-0 z-0">
+                <img src="./assets/images/png/bg-footer.png" alt="bg_footer"
+                    class="position-absolute bottom-0 start-0 object-fit-cover bg_footer w-100">
+                <div class="container custom_container position-relative z-2">
+                    <div class="row justify-content-between flex-sm-row flex-column align-items-center pb-sm-4 mb-3">
+                        <div class="col-lg-4 col-sm-5 col-12 d-flex flex-column">
+                            <a href="#"
+                                class="ff_opensans fw-bold text-lg-start text-center fs_lg text-white mb-2 mb-xl-3 lh_137">
+                                AI
+                                STOCKS</a>
+                            <p
+                                class="ff_opensans text-lg-start text-center fw-normal fs_xs mb-sm-0 mb-2 text-white opacity_80 lh_163">
+                                Empowering Your Financial
+                                Future <span class="d-xl-block">with Intelligent Investments</span></p>
+                        </div>
+                        <div class="col-lg-3 col-sm-4 col-12 mt-2 mt-sm-0">
+                            <h3
+                                class="ff_opensans fw-semibold text-lg-start text-center fs_sm text-white mb-lg-3 lh_150 mb-sm-2 mb-3">
+                                Follow Us on</h3>
+                            <div class="d-flex gap_12 justify-content-lg-start justify-content-center">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="./assets/images/svg/facebook.svg" alt="facebook"
+                                        class="footer_sociallink">
+                                </a>
+                                <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+                                    <img src="./assets/images/svg/instagram.svg" alt="instagram"
+                                        class="footer_sociallink">
+                                </a>
+                                <a href="https://www.linkedin.com/login" target="_blank">
+                                    <img src="./assets/images/svg/in.svg" alt="in" class="footer_sociallink">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3
+                        class="ff_opensans fw-bold text-lg-start text-center fs_sm text-white lh_140 mt-sm-0 mt-4 mb-2 mb-lg-3">
+                        Disclaimer
+                    </h3>
+                    <p
+                        class="ff_opensans fw-normal text-lg-start px-1 px-sm-0 text-center fs_xs opacity_80 text-white lh_163 mb-4">
+                        This website is not a news
+                        agency, information website, or blog. It is a webpage aimed at promotional publications
+                        that
+                        use the technique of storytelling to illustrate the scope of the services and products
+                        offered.
+                        Therefore, the story
+                        told on this page is an infomercial or advertisement for informational and functional
+                        purposes, for
+                        an
+                        understanding of
+                        the potential of what is proposed general, risk warning. Investing activities involve a
+                        high level
+                        of
+                        risk and may
+                        result in the total loss of the amount invested. For this reason, these activities may
+                        not be
+                        suitable
+                        for every type of
+                        investor. You should not invest money that you cannot afford to lose.</p>
+                </div>
+                <div class="footerline mt-3"></div>
+                <div
+                    class="container custom_container d-flex flex-lg-row flex-column justify-content-between align-items-center py-3 py-sm-4 my-md-1">
+                    <p
+                        class="ff_opensans copyright_link cursor_pointer mb-0 fw-normal fs_xs text-white opacity_80 lh_163 mb-2">
+                        Privacy Policy
+                        | Conditions</p>
+                    <p
+                        class="ff_opensans cursor_pointer copyright_link mb-0 fw-normal fs_xs text-white opacity_80 lh_163">
+                        Report Abuse/ Spam |
+                        Copyright@2024</p>
+                </div>
 
-            <div class="footerline mt-3"></div>
-            <div
-                class="container custom_container d-flex flex-lg-row flex-column justify-content-between align-items-center py-3 py-sm-4 my-md-1">
-                <p
-                    class="ff_opensans copyright_link cursor_pointer mb-0 fw-normal fs_xs text-white opacity_80 lh_163 mb-2">
-                    Privacy Policy
-                    | Conditions</p>
-                <p class="ff_opensans cursor_pointer copyright_link mb-0 fw-normal fs_xs text-white opacity_80 lh_163">
-                    Report Abuse/ Spam |
-                    Copyright@2024</p>
-            </div>
-
-        </footer>
+            </footer>
+        </div>
     </div>
 
     <!-- bootstrap link -->
@@ -1844,6 +1874,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
         integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ===========================slick-slider=========================== -->
     <script>
         // ========slider=========
         $('.responsive').slick({
@@ -2059,7 +2090,6 @@
             micropopup.style.display = "none";
             document.body.style.overflow = "";
         }
-
         window.onclick = function (event) {
             if (event.target == micropopup) {
                 micropopup.style.display = "none";
@@ -2172,7 +2202,7 @@
             }
         }
     </script>
-    / ------------------- form validation------------------------------
+    <!-- / ------------------- form validation------------------------------ -->
     <script>
         function validateForm() {
             var firstName = document.getElementById('firstname').value.trim();
