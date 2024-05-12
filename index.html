@@ -163,6 +163,7 @@
                                             <input id="firstname" name="firstname" required type="text"
                                                 class="header_forminput w-100 ff_opensanssans fw-semibold fs_xxs text-black opacity_70">
                                         </div>
+                                        <div id="firstnameError" class="error"></div>
                                     </div>
                                     <div class="d-flex flex-column gap_6">
                                         <label class="ff_opensanssans fw-semibold fs_xxs text-black opacity_70 lh_130"
@@ -172,6 +173,7 @@
                                             <input id="lastname" name="lastname" required type="text"
                                                 class="header_forminput w-100 ff_opensanssans fw-semibold fs_xxs text-black opacity_70">
                                         </div>
+                                        <div id="lastnameError" class="error"></div>
                                     </div>
                                     <div class="d-flex flex-column gap_6">
                                         <label class="ff_opensanssans fw-semibold fs_xxs text-black opacity_70 lh_130"
@@ -180,6 +182,7 @@
                                             <input id="email" name="email" required type="text"
                                                 class="header_forminput w-100 ff_opensanssans fw-semibold fs_xxs text-black opacity_70">
                                         </div>
+                                        <div id="emailError" class="error"></div>
                                     </div>
                                     <div class="d-flex flex-column gap_6">
                                         <label class="ff_opensanssans fw-semibold fs_xxs text-black opacity_70 lh_130"
@@ -189,6 +192,7 @@
                                             <input required type="tel" id="phone" name="phone"
                                                 class="header_forminput w-100 ff_opensanssans fw-semibold fs_xxs text-black opacity_70">
                                         </div>
+                                        <div id="phoneError" class="error"></div>
                                     </div>
                                 </div>
                                 <button type="submit"
@@ -521,8 +525,6 @@
                     </a>
                 </div>
             </div>
-
-
         </section>
         <div class="bg_highreturn position-relative z-2">
             <!-- ==================================High Returns================================== -->
@@ -867,35 +869,37 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">First Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                            <form>
+                                                <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">First Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">Last Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">Last Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
-                                                </div>
-                                            </div>
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Email</label>
-                                            <input required type="text"
-                                                class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Phone Number</label>
-                                            <input required type="number"
-                                                class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
-                                            <button
-                                                class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
-                                                Trading With [Nvidia]</button>
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Email</label>
+                                                <input required type="text"
+                                                    class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Phone Number</label>
+                                                <input required type="number"
+                                                    class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
+                                                <button type="submit"
+                                                    class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
+                                                    Trading With [Nvidia]</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -963,36 +967,38 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">First Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                            <form>
+                                                <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">First Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">Last Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">Last Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
-                                                </div>
-                                            </div>
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Email</label>
-                                            <input required type="text"
-                                                class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Phone
-                                                Number</label>
-                                            <input required type="number"
-                                                class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
-                                            <button
-                                                class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
-                                                Trading With [Microsoft]</button>
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Email</label>
+                                                <input required type="text"
+                                                    class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Phone
+                                                    Number</label>
+                                                <input required type="number"
+                                                    class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
+                                                <button type="submit"
+                                                    class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
+                                                    Trading With [Microsoft]</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1061,36 +1067,38 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">First Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                            <form>
+                                                <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">First Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">Last Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">Last Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
-                                                </div>
-                                            </div>
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Email</label>
-                                            <input required type="text"
-                                                class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Phone
-                                                Number</label>
-                                            <input required type="number"
-                                                class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
-                                            <button
-                                                class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
-                                                Trading With [Amazon]</button>
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Email</label>
+                                                <input required type="text"
+                                                    class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Phone
+                                                    Number</label>
+                                                <input required type="number"
+                                                    class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
+                                                <button type="submit"
+                                                    class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
+                                                    Trading With [Amazon]</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1159,36 +1167,38 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">First Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                            <form>
+                                                <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">First Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">Last Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">Last Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
-                                                </div>
-                                            </div>
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Email</label>
-                                            <input required type="text"
-                                                class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Phone
-                                                Number</label>
-                                            <input required type="number"
-                                                class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
-                                            <button
-                                                class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
-                                                Trading With [Palantir]</button>
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Email</label>
+                                                <input required type="text"
+                                                    class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Phone
+                                                    Number</label>
+                                                <input required type="number"
+                                                    class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
+                                                <button type="submit"
+                                                    class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
+                                                    Trading With [Palantir]</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1259,36 +1269,38 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">First Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                            <form>
+                                                <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">First Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">Last Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">Last Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
-                                                </div>
-                                            </div>
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Email</label>
-                                            <input required type="text"
-                                                class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Phone
-                                                Number</label>
-                                            <input required type="number"
-                                                class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
-                                            <button
-                                                class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
-                                                Trading With [Palantir]</button>
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Email</label>
+                                                <input required type="text"
+                                                    class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Phone
+                                                    Number</label>
+                                                <input required type="number"
+                                                    class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
+                                                <button type="submit"
+                                                    class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
+                                                    Trading With [Palantir]</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1354,36 +1366,38 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">First Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                            <form>
+                                                <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">First Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">Last Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">Last Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
-                                                </div>
-                                            </div>
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Email</label>
-                                            <input required type="text"
-                                                class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Phone
-                                                Number</label>
-                                            <input required type="number"
-                                                class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
-                                            <button
-                                                class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
-                                                Trading With [UI Path]</button>
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Email</label>
+                                                <input required type="text"
+                                                    class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Phone
+                                                    Number</label>
+                                                <input required type="number"
+                                                    class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
+                                                <button type="submit"
+                                                    class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
+                                                    Trading With [UI Path]</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1448,36 +1462,38 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">First Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                            <form>
+                                                <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">First Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
+                                                    <div class="d-flex flex-column mw_230 w-100">
+                                                        <label
+                                                            class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                            for="">Last Name</label>
+                                                        <input required type="text"
+                                                            class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex flex-column mw_230 w-100">
-                                                    <label
-                                                        class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                        for="">Last Name</label>
-                                                    <input required type="text"
-                                                        class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
-                                                </div>
-                                            </div>
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Email</label>
-                                            <input required type="text"
-                                                class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
-                                            <label
-                                                class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
-                                                for="">Phone
-                                                Number</label>
-                                            <input required type="number"
-                                                class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
-                                            <button
-                                                class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
-                                                Trading With [UI Path]</button>
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Email</label>
+                                                <input required type="text"
+                                                    class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
+                                                <label
+                                                    class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
+                                                    for="">Phone
+                                                    Number</label>
+                                                <input required type="number"
+                                                    class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
+                                                <button type="submit"
+                                                    class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
+                                                    Trading With [UI Path]</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -1902,18 +1918,23 @@
                                         minutes, one
                                         of our AI mentors will contact you, No Experience
                                         Required!</p>
-                                    <div class="d-flex flex-column gap-3">
-                                        <input required type="text" placeholder="First Name"
+                                    <form id="investForm" onsubmit="return validateForm()"
+                                        class="d-flex flex-column gap-3">
+                                        <input id="first_name" required type="text" placeholder="First Name"
                                             class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
-                                        <input required type="text" placeholder="Last name"
+                                        <span id="first_name_error"></span>
+                                        <input id="last_name" required type="text" placeholder="Last name"
                                             class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
-                                        <input required type="text" placeholder="E-mail"
+                                        <span id="last_name_error"></span>
+                                        <input id="user_email" required type="text" placeholder="E-mail"
                                             class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
-                                        <input required type="text" placeholder="Phone Number"
+                                        <span id="user_email_error"></span>
+                                        <input required id="user_phone" type="text" placeholder="Phone Number"
                                             class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
+                                        <span id="user_phone_error"></span>
                                         <input type="submit" value="Sign Up"
                                             class="ff_montserrat text-capitalize text-center fw-bold text-white w-100 fs_xs lh_160 investform_btn">
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -2281,14 +2302,13 @@
     <!-- / ------------------- form validation------------------------------ -->
     <script>
         function validateForm() {
+            event.preventDefault();
             var firstName = document.getElementById('firstname').value.trim();
             var lastName = document.getElementById('lastname').value.trim();
             var email = document.getElementById('email').value.trim();
             var phone = document.getElementById('phone').value.trim();
 
             var isValid = true;
-
-            // First Name validation
             var firstNameError = document.getElementById('firstnameError');
             if (!firstName) {
                 firstNameError.textContent = 'First Name is required';
@@ -2296,8 +2316,6 @@
             } else {
                 firstNameError.textContent = '';
             }
-
-            // Last Name validation
             var lastNameError = document.getElementById('lastnameError');
             if (!lastName) {
                 lastNameError.textContent = 'Last Name is required';
@@ -2305,8 +2323,6 @@
             } else {
                 lastNameError.textContent = '';
             }
-
-            // Email validation
             var emailError = document.getElementById('emailError');
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
@@ -2315,8 +2331,6 @@
             } else {
                 emailError.textContent = '';
             }
-
-            // Phone Number validation
             var phoneError = document.getElementById('phoneError');
             var phoneRegex = /^\d{10}$/;
             if (!phoneRegex.test(phone)) {
@@ -2326,10 +2340,63 @@
                 phoneError.textContent = '';
             }
 
+            if (isValid) {
+                clearForm();
+                openPopup();
+            }
+
             return isValid;
         }
 
+        function clearForm() {
+            document.getElementById('myForm').reset();
+        }
+
+        function openPopup() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Form submitted successfully!',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
     </script>
+    <!-- =====================invest form===================== -->
+    <script>
+        function validateForm() {
+            event.preventDefault(); // Prevent default form submission
+
+            var firstName = document.getElementById('first_name').value.trim();
+            var lastName = document.getElementById('last_name').value.trim();
+            var email = document.getElementById('user_email').value.trim();
+            var phone = document.getElementById('user_phone').value.trim();
+
+            var isValid = true;
+
+            // Validation logic...
+
+            if (isValid) {
+                clearForm();
+                openPopup();
+            }
+
+            return isValid;
+        }
+
+        function clearForm() {
+            document.getElementById('investForm').reset(); // Reset the form fields
+        }
+
+        function openPopup() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Form submitted successfully!',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

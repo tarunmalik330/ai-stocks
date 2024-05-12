@@ -1993,3 +1993,8 @@ input[type=number] {
         height: 91px;
     }
 }
+
+.error {
+    color: red;
+    font-size: 12px;
+}
