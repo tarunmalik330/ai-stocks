@@ -357,16 +357,11 @@ body {
     transition: all .3s linear;
 }
 
-/* .header_forminput:hover {
-    border: transparent;
-} */
-
 .input_gradient {
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     position: relative;
-    /* padding: 1px; */
     max-width: 268px;
     transition: all .3s linear;
 }
@@ -464,6 +459,43 @@ body {
 
 .pb_2 {
     padding-bottom: 2px;
+}
+
+.slide_container {
+    width: calc(360px * 4);
+    -webkit-animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
+}
+
+.logo_gap {
+    gap: 20px;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-360px * 4));
+        transform: translateX(calc(-360px * 4));
+    }
+}
+
+.logo_size {
+    width: 340px;
+    background-color: #151515 !important;
+    padding: 16px;
+    height: 100px !important;
+}
+
+@media (min-width:1526px) {
+    .slide_container {
+        width: calc(244px * 12);
+        -webkit-animation: scroll 15s linear infinite;
+        animation: scroll 15s linear infinite;
+    }
 }
 
 /* ===================================High Returns=================================== */
@@ -616,6 +648,12 @@ body {
     border-radius: 10px;
     border: none;
     padding: 8px 0 13px 8px;
+}
+
+.buyingpower_layer {
+    background: linear-gradient(0deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    height: 84px;
+    bottom: -4%;
 }
 
 /* =================================Top 7 AI Stocks================================= */
@@ -906,11 +944,6 @@ input[type=number] {
     max-width: 814px;
 }
 
-.px_6 {
-    padding-left: 6px;
-    padding-right: 6px;
-}
-
 .earning_slide1 {
     width: calc(360px * 4);
     -webkit-animation: scroll 20s linear infinite;
@@ -954,6 +987,11 @@ input[type=number] {
     border-radius: 87px;
     transition: all .3s linear;
     border: none;
+}
+
+.average_learning_layer {
+    background: linear-gradient(0deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    height: 205px;
 }
 
 /* ===================================Statistics for Today=================================== */
@@ -1104,6 +1142,7 @@ input[type=number] {
 
 .invest_forminput:hover {
     background: white;
+    color: var(--color-purple) !important;
 }
 
 .invest_forminput:hover::placeholder {
@@ -1121,6 +1160,42 @@ input[type=number] {
     transition: all .3s linear;
 }
 
+.invest_img1 {
+    max-width: 146px;
+}
+
+.invest_img2 {
+    max-width: 173px;
+    right: 17%;
+    bottom: -1%;
+}
+
+.invest_img3 {
+    max-width: 220px;
+    top: 22%;
+}
+
+.invest_img4 {
+    max-width: 164px;
+    top: -2%;
+    right: 30%;
+}
+
+.invest_img5 {
+    max-width: 224px;
+    left: 6%;
+    top: 1%;
+}
+
+.invest_img6 {
+    max-width: 263px;
+    left: 3%;
+    bottom: 0;
+}
+
+.earning_socialcircle {
+    height: 578px;
+}
 
 /* =========================================footer========================================= */
 .footer_padding {
@@ -1210,6 +1285,11 @@ input[type=number] {
 }
 
 @media (min-width:576px) {
+    .px_6 {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
     .gradient_circle {
         width: 40px;
         height: 40px;
@@ -1257,9 +1337,37 @@ input[type=number] {
 }
 
 @media (max-width:1200px) {
+    .aitrade_padding {
+        padding-bottom: 105px;
+    }
+
+    .invest_img3 {
+        max-width: 185px;
+        top: 25%;
+    }
+
+    .invest_img5 {
+        max-width: 187px;
+        left: 3%;
+        top: 14%;
+    }
+
+    .invest_img6 {
+        max-width: 230px;
+        left: 4%;
+    }
+
+    .earning_circle {
+        top: -1%;
+    }
+
+    .earning_padding {
+        padding-top: 159px;
+    }
+
     .py_work {
         padding-top: 140px !important;
-        padding-bottom: 90px !important;
+        padding-bottom: 70px !important;
     }
 
     .popup_form {
@@ -1313,17 +1421,22 @@ input[type=number] {
     }
 
     .pt_highreturn,
-    .pt_buyingpower,
+    .pt_buyingpower {
+        padding-top: 70px;
+    }
+
     .commom_padding_aistocks {
         padding-top: 60px !important;
     }
 
-    .benefitcard {
+    .benefitcard,
+    .counter_box {
         margin-top: 60px !important;
     }
 
-    .aistocks {
-        margin-top: 90px;
+    .aistocks,
+    .Statistics {
+        margin-top: 70px;
     }
 
     .nvidia_ailogo {
@@ -1373,7 +1486,7 @@ input[type=number] {
     }
 
     .pb_aistocks {
-        padding-bottom: 60px !important;
+        padding-bottom: 70px !important;
     }
 
     .sunstars_img {
@@ -1385,8 +1498,8 @@ input[type=number] {
     }
 
     .faq {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     :root {
@@ -1398,6 +1511,14 @@ input[type=number] {
 }
 
 @media (max-width:992px) {
+    .earning_socialcircle {
+        height: 510px;
+    }
+
+    .earning_padding {
+        padding-top: 120px;
+    }
+
     .py_work {
         padding-top: 116px !important;
         padding-bottom: 50px !important;
@@ -1420,7 +1541,7 @@ input[type=number] {
 
     .popup-content {
         overflow-y: scroll !important;
-        height: 800px !important;
+        height: 630px !important;
     }
 
     .bg_popup {
@@ -1549,7 +1670,7 @@ input[type=number] {
     }
 
     .border_slide {
-        min-width: unset;
+        min-width: 323px;
     }
 
     .pt_buyingcard {
@@ -1594,6 +1715,27 @@ input[type=number] {
     }
 }
 
+@media (max-width:768px) {
+    .invest_img3 {
+        max-width: 158px;
+    }
+
+    .invest_img5 {
+        max-width: 176px;
+        left: -4%;
+        top: 20%;
+    }
+
+    .invest_img6 {
+        max-width: 192px;
+        left: -4%;
+    }
+
+    .invest_img2 {
+        right: 8%;
+    }
+}
+
 @media (max-width:576px) {
     :root {
         --fs-6md: 20px !important;
@@ -1606,6 +1748,61 @@ input[type=number] {
         --fs-3md: 16px !important;
         --fs-7md: 26.17px !important;
         --fs-xxl: 48.24px !important;
+    }
+
+    .bg_popup {
+        max-width: 355px !important;
+        padding: 20px !important;
+    }
+
+    .invest_img3 {
+        max-width: 100px;
+        top: 36%;
+        right: 17px !important;
+    }
+
+    .invest_img1 {
+        max-width: 100px;
+    }
+
+    .invest_img4 {
+        max-width: 120px;
+        top: 12%;
+        right: 33%;
+    }
+
+    .earning_socialcircle {
+        height: 498px;
+    }
+
+    .invest_img6 {
+        max-width: 125px;
+        left: 10%;
+        bottom: 9% !important;
+    }
+
+    .invest_img5 {
+        max-width: 114px;
+        left: 0%;
+        top: 41%;
+    }
+
+    .invest_img2 {
+        max-width: 115px;
+        right: 7%;
+        bottom: 17%;
+    }
+
+    .aitrade_padding {
+        padding-bottom: unset;
+    }
+
+    .earning_padding {
+        padding-top: 80px;
+    }
+
+    .earning_circle {
+        top: -2%;
     }
 
     .py_work {
@@ -1789,154 +1986,10 @@ input[type=number] {
     .counter_box {
         margin-top: 28px !important;
     }
-}
 
-.invest_img1 {
-    max-width: 146px;
-}
-
-.invest_img2 {
-    max-width: 173px;
-    right: 17%;
-    bottom: -1%;
-}
-
-.invest_img3 {
-    max-width: 220px;
-    top: 22%;
-}
-
-.invest_img4 {
-    max-width: 164px;
-    top: -2%;
-    right: 30%;
-}
-
-.invest_img5 {
-    max-width: 224px;
-    left: 6%;
-    top: 1%;
-}
-
-.invest_img6 {
-    max-width: 263px;
-    left: 3%;
-    bottom: 0;
-}
-
-.earning_socialcircle {
-    height: 578px;
-}
-
-@media (max-width:1200px) {
-    .aitrade_padding {
-        padding-bottom: 93px;
-    }
-
-    .invest_img3 {
-        max-width: 185px;
-        top: 25%;
-    }
-
-    .invest_img5 {
-        max-width: 187px;
-        left: 3%;
-        top: 14%;
-    }
-
-    .invest_img6 {
-        max-width: 230px;
-        left: 4%;
-    }
-
-    .earning_circle {
-        top: -1%;
-    }
-
-    .earning_padding {
-        padding-top: 159px;
-    }
-}
-
-@media (max-width:992px) {
-    .earning_socialcircle {
-        height: 510px;
-    }
-
-    .earning_padding {
-        padding-top: 120px;
-    }
-}
-
-@media (max-width:768px) {
-    .invest_img3 {
-        max-width: 158px;
-    }
-
-    .invest_img5 {
-        max-width: 176px;
-        left: -4%;
-        top: 20%;
-    }
-
-    .invest_img6 {
-        max-width: 192px;
-        left: -4%;
-    }
-
-    .invest_img2 {
-        right: 8%;
-    }
-}
-
-@media (max-width:576px) {
-    .invest_img3 {
-        max-width: 100px;
-        top: 36%;
-        right: 17px !important;
-    }
-
-    .invest_img1 {
-        max-width: 100px;
-    }
-
-    .invest_img4 {
-        max-width: 120px;
-        top: 12%;
-        right: 33%;
-    }
-
-    .earning_socialcircle {
-        height: 498px;
-    }
-
-    .invest_img6 {
-        max-width: 125px;
-        left: 10%;
-        bottom: 9% !important;
-    }
-
-    .invest_img5 {
-        max-width: 114px;
-        left: 0%;
-        top: 41%;
-    }
-
-    .invest_img2 {
-        max-width: 115px;
-        right: 7%;
-        bottom: 17%;
-    }
-
-    .aitrade_padding {
-        padding-bottom: unset;
-    }
-
-    .earning_padding {
-        padding-top: 80px;
-    }
-
-    .earning_circle {
-        top: -2%;
+    .earning_slide1 img,
+    .earning_slide2 img {
+        width: 190px;
+        height: 91px;
     }
 }
