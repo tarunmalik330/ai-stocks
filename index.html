@@ -37,7 +37,7 @@
 <body>
     <div class="mw_1920 mx-auto">
         <!-- ----------back to top---------- -->
-        <div id="backToTopBtn" class="back-to-top cursor_pointer justify-content-center align-items-center">
+        <div id="backToTopBtn" class="back_to_top cursor_pointer justify-content-center align-items-center">
             <img src="./assets/images/webp/BackToTop.png" alt="BackToTop" />
         </div>
         <!-- ===================================header=================================== -->
@@ -644,7 +644,7 @@
                             <div
                                 class="benefit_mobilecontent d-flex flex-column align-items-center justify-content-center">
                                 <img src="./assets/images/webp/ai-revolution.webp" alt="ai-revolution"
-                                    class="w-100 ai-revolution-img mb-lg-4 mb-3">
+                                    class="w-100 ai_revolution_img mb-lg-4 mb-3">
                                 <p
                                     class="text_lightblack ff_opensanssans fw-bold mt-lg-3 lh_136 fs_7md mb-xl-4 mb-2 mb-sm-3 pb-xl-1">
                                     Al
@@ -1581,8 +1581,9 @@
                                     <div
                                         class="counter_circle_border p-2 d-flex justify-content-center align-items-center">
                                         <div class="counter_circle  d-flex justify-content-center align-items-center">
-                                            <p class="mb-0 text-center text-white ff_montserrat fw-bold lh_120 fs_xxl">
-                                                01
+                                            <p class="mb-0 text-center text-white ff_montserrat fw-bold
+                                                lh_120 fs_xxl">0
+                                                <span class="counter" data-target="1">1</span>
                                             </p>
                                         </div>
                                     </div>
@@ -1596,7 +1597,7 @@
                                     <div
                                         class="counter_circle_border p-2 d-flex justify-content-center align-items-center">
                                         <div class="counter_circle  d-flex justify-content-center align-items-center">
-                                            <p class="mb-0 text-center text-white ff_montserrat fw-bold lh_120 fs_xxl">
+                                            <p  data-target="135" class="mb-0 counter text-center text-white ff_montserrat fw-bold lh_120 fs_xxl">
                                                 135
                                             </p>
                                         </div>
@@ -1613,7 +1614,7 @@
                                         class="counter_circle_border p-2 d-flex justify-content-center align-items-center">
                                         <div class="counter_circle  d-flex justify-content-center align-items-center">
                                             <p class="mb-0 text-center text-white ff_montserrat fw-bold lh_120 fs_xxl">
-                                                5X
+                                               <span data-target="5" class="counter">5</span>X
                                             </p>
                                         </div>
                                     </div>
@@ -1918,7 +1919,7 @@
                                         minutes, one
                                         of our AI mentors will contact you, No Experience
                                         Required!</p>
-                                    <form id="investForm" onsubmit="return validateForm()"
+                                    <form id="investForm" onsubmit="return investvalidateForm()"
                                         class="d-flex flex-column gap-3">
                                         <input id="first_name" required type="text" placeholder="First Name"
                                             class="ff_montserrat text-capitalize invest_forminput fw-semibold text-white w-100 fs_xs  lh_150">
@@ -2307,49 +2308,12 @@
             var lastName = document.getElementById('lastname').value.trim();
             var email = document.getElementById('email').value.trim();
             var phone = document.getElementById('phone').value.trim();
-
             var isValid = true;
-            var firstNameError = document.getElementById('firstnameError');
-            if (!firstName) {
-                firstNameError.textContent = 'First Name is required';
-                isValid = false;
-            } else {
-                firstNameError.textContent = '';
-            }
-            var lastNameError = document.getElementById('lastnameError');
-            if (!lastName) {
-                lastNameError.textContent = 'Last Name is required';
-                isValid = false;
-            } else {
-                lastNameError.textContent = '';
-            }
-            var emailError = document.getElementById('emailError');
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                emailError.textContent = 'Invalid email address';
-                isValid = false;
-            } else {
-                emailError.textContent = '';
-            }
-            var phoneError = document.getElementById('phoneError');
-            var phoneRegex = /^\d{10}$/;
-            if (!phoneRegex.test(phone)) {
-                phoneError.textContent = 'Invalid phone number';
-                isValid = false;
-            } else {
-                phoneError.textContent = '';
-            }
-
             if (isValid) {
                 clearForm();
                 openPopup();
             }
-
             return isValid;
-        }
-
-        function clearForm() {
-            document.getElementById('myForm').reset();
         }
 
         function openPopup() {
@@ -2360,10 +2324,13 @@
                 timer: 1500
             });
         }
+        function clearForm() {
+            document.getElementById('myForm').reset();
+        }
     </script>
     <!-- =====================invest form===================== -->
     <script>
-        function validateForm() {
+        function investvalidateForm() {
             event.preventDefault(); // Prevent default form submission
 
             var firstName = document.getElementById('first_name').value.trim();
@@ -2376,15 +2343,11 @@
             // Validation logic...
 
             if (isValid) {
-                clearForm();
+                clearInvestForm();
                 openPopup();
             }
 
             return isValid;
-        }
-
-        function clearForm() {
-            document.getElementById('investForm').reset(); // Reset the form fields
         }
 
         function openPopup() {
@@ -2395,6 +2358,28 @@
                 timer: 1500
             });
         }
+        function clearInvestForm() {
+            document.getElementById('investForm').reset(); // Reset the form fields
+        }
+    </script>
+    <!-- counter -->
+    <script>
+        const counters = document.querySelectorAll(".counter");
+        counters.forEach((counter) => {
+            counter.innerText = "0";
+            const updateCounter = () => {
+                const target = +counter.getAttribute("data-target");
+                const count = +counter.innerText;
+                const increment = target / 200;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCounter, 1);
+                } else counter.innerText = target;
+            };
+            setTimeout(() => {
+                updateCounter();
+            }, 2500);
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

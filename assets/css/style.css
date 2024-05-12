@@ -25,7 +25,7 @@ body {
 }
 
 /* ---------------------------------back-to-top------------------------------------ */
-.back-to-top {
+.back_to_top {
     display: none;
     position: fixed;
     bottom: 42px;
@@ -591,7 +591,7 @@ body {
     padding: 97.5px 24.78px 0 26.85px !important;
 }
 
-.ai-revolution-img {
+.ai_revolution_img {
     max-width: 429px;
     border-radius: 10.33px;
 }
@@ -844,10 +844,6 @@ input[type=number] {
     Padding: 13px 28px 13px 28px;
     border: none;
     border-radius: 100px;
-}
-
-.mw_230 {
-    max-width: 230px;
 }
 
 /* ========================================How it Works======================================== */
@@ -1263,6 +1259,10 @@ input[type=number] {
 }
 
 @media (min-width:1200px) {
+    .mw_230 {
+        max-width: 230px;
+    }
+
     .roadmap {
         margin-top: 73px !important;
     }
@@ -1301,6 +1301,10 @@ input[type=number] {
 
     .road_box {
         padding-left: 60px;
+    }
+
+    .mw_230 {
+        max-width: 194px !important;
     }
 }
 
@@ -1372,10 +1376,7 @@ input[type=number] {
 
     .popup_form {
         max-width: 457px !important;
-    }
-
-    .mw_230 {
-        max-width: 194px !important;
+        padding: 20px;
     }
 
     .bg_popup {
@@ -1448,7 +1449,7 @@ input[type=number] {
         padding-top: 160px;
     }
 
-    .ai-revolution-img {
+    .ai_revolution_img {
         max-width: 360px !important;
     }
 
@@ -1609,7 +1610,7 @@ input[type=number] {
         max-width: 390px;
     }
 
-    .ai-revolution-img {
+    .ai_revolution_img {
         max-width: 302px !important;
     }
 
@@ -1811,8 +1812,8 @@ input[type=number] {
     }
 
     .counter_circle_border {
-        width: 220px;
-        height: 220px;
+        width: 180px;
+        height: 180px;
         margin-bottom: 18px;
     }
 
@@ -1831,9 +1832,9 @@ input[type=number] {
         height: 220px;
     }
 
-    .mw_230 {
+    /* .mw_230 {
         max-width: unset !important;
-    }
+    } */
 
     .header_video {
         height: 198px;
@@ -1992,7 +1993,22 @@ input[type=number] {
         width: 190px;
         height: 91px;
     }
+
+    .back_to_top {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .back_to_top img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .invest_form_content {
+        padding: 20px !important;
+    }
 }
+
 
 .error {
     color: red;
