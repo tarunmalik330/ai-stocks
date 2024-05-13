@@ -339,7 +339,8 @@ body {
     max-width: 268px;
 }
 
-.headerform_btn:hover {
+.headerform_btn:hover,
+.popup_button:hover {
     background: #000000 !important;
     color: white !important;
 }
@@ -1216,45 +1217,7 @@ input[type=number] {
     --bg-lightblack: #171822;
 }
 
-@media (min-width:1930px) {
-    .header_bg {
-        min-height: 45vh !important;
-    }
-}
 
-@media (min-width:1200px) {
-    .lh_headings {
-        line-height: 150%;
-    }
-
-    .aitrade_padding {
-        padding-bottom: 190px !important;
-    }
-
-    .mw_230 {
-        max-width: 230px;
-    }
-
-    .roadmap {
-        margin-top: 73px !important;
-    }
-
-    .mw_1920 {
-        max-width: 1920px;
-    }
-
-    .mw_557 {
-        max-width: 557px;
-    }
-
-    .custom_container {
-        max-width: 1164px !important;
-    }
-
-    .mw_1120 {
-        max-width: 1120px !important;
-    }
-}
 
 @media (min-width:576px) {
     .aitrade_padding {
@@ -1281,6 +1244,46 @@ input[type=number] {
 
     .mw_230 {
         max-width: 194px !important;
+    }
+}
+
+@media (min-width:1930px) {
+    .header_bg {
+        min-height: 45vh !important;
+    }
+}
+
+@media (min-width:1200px) {
+    .lh_headings {
+        line-height: 150%;
+    }
+
+    .aitrade_padding {
+        padding-bottom: 190px !important;
+    }
+
+    .mw_230 {
+        max-width: 230px !important;
+    }
+
+    .roadmap {
+        margin-top: 73px !important;
+    }
+
+    .mw_1920 {
+        max-width: 1920px;
+    }
+
+    .mw_557 {
+        max-width: 557px;
+    }
+
+    .custom_container {
+        max-width: 1164px !important;
+    }
+
+    .mw_1120 {
+        max-width: 1120px !important;
     }
 }
 
