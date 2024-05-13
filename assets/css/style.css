@@ -1188,7 +1188,6 @@ input[type=number] {
 .bg_footer {
     height: 500px;
     background-position: center;
-
 }
 
 .copyright_link:hover {
@@ -1217,8 +1216,6 @@ input[type=number] {
     --color-white: #ffffffe6;
     --bg-lightblack: #171822;
 }
-
-
 
 @media (min-width:576px) {
     .aitrade_padding {
