@@ -228,7 +228,8 @@ body {
 .invest_forminput,
 .investform_btn,
 .footer_sociallink,
-.copyright_link {
+.copyright_link,
+.popup_button {
     transition: all .3s linear !important;
 }
 
