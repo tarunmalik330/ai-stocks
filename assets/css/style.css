@@ -73,8 +73,8 @@ body {
     font-size: var(--fs-xs);
 }
 
-.fs_8xs {
-    font-size: var(--fs-8xs);
+.fs_xsm {
+    font-size: var(--fs-xsm);
 }
 
 .fs_sm {
@@ -802,7 +802,7 @@ input[type=number] {
 }
 
 .bg_popup {
-    background-image: url('../images/png/popup-bg.png');
+    background-image: url('../images/webp/popup-bg.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -905,7 +905,7 @@ input[type=number] {
 
 /* ================================Average Earnings================================ */
 .earning_bg {
-    background-image: url('../images/png/bg-earning.png') !important;
+    background-image: url('../images/webp/bg-earning.webp') !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1199,7 +1199,7 @@ input[type=number] {
 :root {
     --fs-xxs: 12px;
     --fs-xs: 16px;
-    --fs-8xs: 18px;
+    --fs-xsm: 18px;
     --fs-sm: 20px;
     --fs-4sm: 24px;
     --fs-md: 32px;
@@ -1713,7 +1713,7 @@ input[type=number] {
     :root {
         --fs-6md: 20px !important;
         --fs-xs: 14px !important;
-        --fs-8xs: 14px !important;
+        --fs-xsm: 14px !important;
         --fs-4sm: 18px !important;
         --fs-md: 24px !important;
         --fs-lg: 24px !important;
