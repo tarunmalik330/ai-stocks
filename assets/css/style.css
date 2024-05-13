@@ -1856,7 +1856,7 @@ input[type=number] {
     }
 
     .py_work {
-        padding-top: 80px !important;
+        padding-top: 60px !important;
         padding-bottom: 48px !important;
     }
 
@@ -1936,7 +1936,7 @@ input[type=number] {
     .pt_buyingpower,
     .commom_padding_aistocks,
     .pt_nvidia {
-        padding-top: 42px !important;
+        padding-top: 48px !important;
     }
 
     .slider_padding,
@@ -1950,7 +1950,7 @@ input[type=number] {
 
     .header {
         padding-top: 24px !important;
-        padding-bottom: 248px !important;
+        padding-bottom: 290px !important;
     }
 
     .buyingpower_card {
