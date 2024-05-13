@@ -101,7 +101,7 @@
                                     <div
                                         class="countdown_gap countdown justify-content-center justify-content-sm-start d-flex">
                                         <div class="d-flex flex-column justify-content-center align-items-center ">
-                                            <p id="days"
+                                            <p id="desktopDays"
                                                 class="ff_montserrat fw-semibold text-white lh_122 mb_10 fs_xl">00
                                             </p>
                                             <p
@@ -110,7 +110,7 @@
                                             </p>
                                         </div>
                                         <div class="d-flex flex-column justify-content-center align-items-center">
-                                            <p id="hours"
+                                            <p id="desktopHours"
                                                 class="ff_montserrat fw-semibold text-white lh_122 mb_10 fs_xl">01
                                             </p>
                                             <p
@@ -119,7 +119,7 @@
                                             </p>
                                         </div>
                                         <div class="d-flex flex-column justify-content-center align-items-center ">
-                                            <p id="minutes"
+                                            <p id="desktopMinutes"
                                                 class="ff_montserrat fw-semibold text-white lh_122 mb_10 fs_xl">
                                                 26</p>
                                             <p
@@ -128,7 +128,7 @@
                                             </p>
                                         </div>
                                         <div class="d-flex flex-column justify-content-center align-items-center ">
-                                            <p id="seconds"
+                                            <p id="desktopSeconds"
                                                 class="ff_montserrat fw-semibold text-white lh_122 mb_10 fs_xl">
                                                 39</p>
                                             <p
@@ -213,7 +213,7 @@
                                         <div
                                             class="countdown_gap countdown justify-content-center justify-content-sm-start d-flex">
                                             <div class="d-flex flex-column justify-content-center align-items-center ">
-                                                <p id="day"
+                                                <p id="mobileDays"
                                                     class="ff_montserrat fw-semibold text-white lh_122 mb_10 fs_xl">
                                                     00</p>
                                                 <p
@@ -222,7 +222,7 @@
                                                 </p>
                                             </div>
                                             <div class="d-flex flex-column justify-content-center align-items-center">
-                                                <p id="hour"
+                                                <p id="mobileHours"
                                                     class="ff_montserrat fw-semibold text-white lh_122 mb_10 fs_xl">01
                                                 </p>
                                                 <p
@@ -231,7 +231,7 @@
                                                 </p>
                                             </div>
                                             <div class="d-flex flex-column justify-content-center align-items-center ">
-                                                <p id="minute"
+                                                <p id="mobileMintus"
                                                     class="ff_montserrat fw-semibold text-white lh_122 mb_10 fs_xl">26
                                                 </p>
                                                 <p
@@ -240,7 +240,7 @@
                                                 </p>
                                             </div>
                                             <div class="d-flex flex-column justify-content-center align-items-center ">
-                                                <p id="second"
+                                                <p id="mobileSeconds"
                                                     class="ff_montserrat fw-semibold text-white lh_122 mb_10 fs_xl">39
                                                 </p>
                                                 <p
@@ -793,8 +793,12 @@
                 Top 7
                 AI Stocks 
             </h2>
-            <img src="./assets/images/webp/stocks-circle.webp" alt="stocks-circle"
+            <img src="./assets/images/png/circle-aistocks.png" alt="stocks-circle"
                 class="position-absolute w-100 top-0 z-1">
+            <img src="./assets/images/png/7stocks-leftstars.png" alt="7stocks-leftstars"
+                class="position-absolute start-0 z-1 w-100 aistocks_leftstars">
+            <img src="./assets/images/png/7stocks-rightstars.png" alt="7stocks-rightstars"
+                class="position-absolute w-100 end-0 aistocks_rightstars">
             <div class="aistocks_bg position-relative pb_aistocks z-2">
                 <div class="position-absolute aistocks_layer w-100"></div>
                 <div class="position-absolute aistocks_bottomlayer w-100 bottom-0"></div>
@@ -2042,70 +2046,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!-- ===============================countdown=============================== -->
-    <script>
-        // ----------------------------countdown---------------------
-        function countdown() {
-            const endDate = new Date("2024-05-24 00:00:00").getTime();
-
-            const timer = setInterval(function () {
-                const now = new Date().getTime();
-                const distance = endDate - now;
-
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("days").innerHTML = formatTime(days);
-                document.getElementById("hours").innerHTML = formatTime(hours);
-                document.getElementById("minutes").innerHTML = formatTime(minutes);
-                document.getElementById("seconds").innerHTML = formatTime(seconds);
-
-                if (distance < 0) {
-                    clearInterval(timer);
-                    document.querySelector('.counter').innerHTML = '<div>Expired</div>';
-                }
-            }, 1000);
-        }
-
-        function formatTime(time) {
-            return time < 10 ? `0${time}` : time;
-        }
-
-        countdown();
-
-        // -------------------count-down---------------------
-        function counterapp() {
-            const endDate = new Date("2024-05-24 00:00:00").getTime();
-
-            const timer = setInterval(function () {
-                const now = new Date().getTime();
-                const distance = endDate - now;
-
-                const day = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hour = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minute = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const second = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("day").innerHTML = formatTime(day);
-                document.getElementById("hour").innerHTML = formatTime(hour);
-                document.getElementById("minute").innerHTML = formatTime(minute);
-                document.getElementById("second").innerHTML = formatTime(second);
-
-                if (distance < 0) {
-                    clearInterval(timer);
-                    document.querySelector('.counterapp').innerHTML = '<div>Expired</div>';
-                }
-            }, 1000);
-        }
-
-        function formatTime(time) {
-            return time < 10 ? `0${time}` : time;
-        }
-
-        counterapp();
-    </script>
     <!-- ------back to top----- -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -2381,6 +2321,7 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/countdown.js"></script>
 
 </body>
 

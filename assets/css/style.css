@@ -641,7 +641,7 @@ body {
 }
 
 .buyingpower_layer {
-    background: linear-gradient(0deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
+    background: linear-gradient(180deg, rgba(19, 18, 23, 0) 0%, #17151A 100%);
     height: 84px;
     bottom: -4%;
 }
@@ -1052,7 +1052,7 @@ input[type=number] {
     background-color: transparent !important;
     color: #000000;
     box-shadow: none !important;
-    padding: 20px 26px 14px 0px !important;
+    padding: 20px 26px 20px 0px !important;
 
 }
 
@@ -1427,9 +1427,18 @@ input[type=number] {
         margin-top: 60px !important;
     }
 
-    .aistocks,
+
     .Statistics {
         margin-top: 70px;
+    }
+
+    .aistocks {
+        margin-top: 140px;
+    }
+
+    .aistocks_leftstars,
+    .aistocks_rightstars {
+        max-width: 310px;
     }
 
     .nvidia_ailogo {
@@ -1502,6 +1511,16 @@ input[type=number] {
 @media (max-width:992px) {
     .earning_socialcircle {
         height: 510px;
+    }
+
+    .buyingpower_layer {
+        bottom: 0%;
+    }
+
+    .aistocks_leftstars,
+    .aistocks_rightstars {
+        max-width: 250px !important;
+        top: -1% !important;
     }
 
     .earning_padding {
@@ -1718,6 +1737,12 @@ input[type=number] {
         --fs-3md: 16px !important;
         --fs-7md: 26.17px !important;
         --fs-xxl: 48.24px !important;
+    }
+
+    .aistocks_leftstars,
+    .aistocks_rightstars {
+        max-width: 150px !important;
+        top: -0.5% !important;
     }
 
     .bg_popup {
@@ -1968,4 +1993,10 @@ input[type=number] {
     .invest_form_content {
         padding: 20px !important;
     }
+}
+
+.aistocks_leftstars,
+.aistocks_rightstars {
+    max-width: 438px;
+    top: -1.2%;
 }
