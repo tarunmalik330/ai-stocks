@@ -1214,6 +1214,13 @@ input[type=number] {
     color: var(--color-light-purple) !important;
 }
 
+.gradient_purple_text {
+    background: linear-gradient(180.02deg, #7A00F3 12.76%, #D221EB 91.81%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* ---------------------root------------------------ */
 :root {
     --fs-xxs: 12px;
@@ -1341,6 +1348,10 @@ input[type=number] {
 }
 
 @media (min-width:992px) {
+    .mw_678 {
+        max-width: 678px;
+    }
+
     .mw_814 {
         max-width: 814px;
     }
