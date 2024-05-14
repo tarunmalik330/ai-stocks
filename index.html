@@ -2165,18 +2165,16 @@
     <script>
         // STATISTICS COUNTER
         const options = {
-            threshold: 0.2, // Trigger when 20% of the element is visible
+            threshold: 0.2,
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    // Start counter animation
                     const target = entry.target.querySelector(".counter");
                     const countTo = parseInt(target.innerText);
 
                     if (target.id === "placesLeftCounter") {
-                        // For placesLeftCounter, count down
                         let currentCount = 10;
 
                         const counter = setInterval(() => {
@@ -2185,9 +2183,8 @@
                             } else {
                                 clearInterval(counter);
                             }
-                        }, 300); // Adjust speed here
+                        }, 300);
                     } else {
-                        // For registrationsPerDayCounter and earningsIncreaseCounter, count up
                         let currentCount = countTo - 5;
 
                         const counter = setInterval(() => {
@@ -2196,13 +2193,11 @@
                             } else {
                                 clearInterval(counter);
                             }
-                        }, 300); // Adjust speed here
+                        }, 300);
                     }
                 }
             });
         }, options);
-
-        // Observe each statistic card
         document.querySelectorAll(".statistics_cards_parent").forEach((card) => {
             observer.observe(card);
         });

@@ -36,8 +36,6 @@ function investvalidateForm() {
 
     var isValid = true;
 
-    // Validation logic...
-
     if (isValid) {
         clearInvestForm();
         openPopup();
@@ -55,7 +53,7 @@ function openPopup() {
     });
 }
 function clearInvestForm() {
-    document.getElementById('investForm').reset(); // Reset the form fields
+    document.getElementById('investForm').reset(); 
 }
 
 // -------------------ai-stocks forms-------------------
