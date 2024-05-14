@@ -451,8 +451,8 @@ body {
     background-repeat: no-repeat;
 }
 
-.pt_highreturn {
-    padding-top: 150px;
+.highreturn_padding {
+    padding-bottom: 200px;
 }
 
 .benefitcard {
@@ -1455,9 +1455,12 @@ input[type=number] {
         max-width: 410px !important;
     }
 
-    .pt_highreturn,
     .pt_buyingpower {
         padding-top: 70px;
+    }
+
+    .highreturn_padding {
+        padding-bottom: 70px;
     }
 
     .commom_padding_aistocks {
@@ -1674,7 +1677,6 @@ input[type=number] {
         padding: 50.5px 20.78px 24px 20.85px !important;
     }
 
-    .pt_highreturn,
     .pt_buyingpower {
         padding-top: 70px !important;
     }
@@ -1939,11 +1941,14 @@ input[type=number] {
         max-width: 299px !important;
     }
 
-    .pt_highreturn,
     .pt_buyingpower,
     .commom_padding_aistocks,
     .pt_nvidia {
         padding-top: 48px !important;
+    }
+
+    .highreturn_padding {
+        padding-bottom: 48px;
     }
 
     .slider_padding,
