@@ -162,13 +162,15 @@ body {
 .invest_forminput,
 .investform_btn,
 .copyright_link,
-.popup_button {
+.popup_button,
+.sign_up_btn {
     transition: all .3s linear !important;
 }
 
 .common_btn:hover,
 .investform_btn:hover,
-.register_btn:hover {
+.register_btn:hover,
+.sign_up_btn:hover {
     box-shadow: 0px 2px 10px 0px #ffffff !important;
 }
 
@@ -547,17 +549,10 @@ body {
     box-shadow: 0px 2px 10px 0px #AE01FF66;
 }
 
-/* .linear_bg {
-    background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
-} */
-
 .cursior_pointer {
     cursor: pointer;
 }
 
-.sign_up_btn:hover {
-    box-shadow: 23px 20px 20px 22px #0084ff inset !important;
-}
 
 /* TRADE LEVERAGE SECTION  */
 .trade_leverage_parent {
