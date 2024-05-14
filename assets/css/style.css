@@ -2290,3 +2290,14 @@ input[type=number] {
         max-height: 24px;
     }
 }
+
+
+
+
+.tab-pane {
+    display: none !important;
+}
+
+.tab-pane.active {
+    display: block !important;
+}
