@@ -42,7 +42,7 @@
         <header class="header_bg position-relative z-1">
             <img src="./assets/images/webp/sunimg.webp" alt="sunimg" class="position-absolute w-100 headersun_img">
             <div class="position-absolute w-100 header_layer bottom-0"></div>
-            <div class="nav_border">
+            <div class="nav_border nav_shadow">
                 <div class="container custom_container">
                     <nav class="nav_padding">
                         <div class="d-flex justify-content-between align-items-center">
@@ -55,15 +55,18 @@
                     </nav>
                 </div>
             </div>
-            <div class="container custom_container header position-relative z-1">
+            <div id="form" class="container custom_container header position-relative z-1">
                 <div class="d-flex flex-lg-row flex-column align-items-center justify-content-between mb_18">
-                    <h1
-                        class="ff_montserrat mb-lg-0 mb-3 fs_xl text-lg-start text-center fw-bold header_heading text-white">
-                        The
-                        <span class="gradient_purple_text">Top 7</span> Fastest-Growing
-                        <span class="gradient_purple_text">AI Stocks!</span>
-                    </h1>
-
+                    <div class="d-flex flex-column">
+                        <p class="text-white ff_opensans text-lg-start mb-0 text-center fs_sm fw-bold">Dive into the
+                            Explosive Momentum of 2024 with</p>
+                        <h1
+                            class="ff_montserrat mb-lg-0 mb-3 fs_xl mt-2 text-lg-start text-center fw-bold header_heading text-white">
+                            The
+                            <span class="gradient_purple_text">Top 7</span> Fastest-Growing
+                            <span class="gradient_purple_text">AI Stocks!</span>
+                        </h1>
+                    </div>
                     <p class="lh_150 mw_468 text-white ff_montserrat text-lg-start text-center fw-medium fs_xs mb-0">
                         Major
                         AI Stocks such as Microsoft
@@ -77,7 +80,9 @@
                     <div
                         class="col-lg-7 col-12 d-flex flex-column justify-content-lg-start justify-content-center align-items-lg-start align-items-center">
                         <div class="position-relative mw_655 mb-3 header_video">
-                            <div class="headervideo">
+                            <div class="headervideo position-relative">
+                                <img src="./assets/images/webp/live-img.webp" alt="live-img"
+                                    class="position-absolute video_live_img">
                                 <video id="videoPlayer" controls playsinline autoplay muted loop
                                     class="w-100 h-100 hero_vdio">
                                     <source type="video/mp4" src="https://aietf.ai/AI-ETF-v3/AI-ETF2.mp4">
@@ -535,7 +540,8 @@
                             Microsoft and Nvidia have surged over 80% in</span> the past year. This giants are expected
                         to
                         grow
-                        130.66% in 2024</p>
+                        <span class="text_purple">130.66%</span> in 2024
+                    </p>
                     <div class="row benefitcard justify-content-xl-between justify-content-center">
                         <div class="col-xl-6 col-12 d-flex flex-column">
                             <div class="row gap-xl-4">
@@ -695,8 +701,9 @@
                             </div>
 
                             <div class="leveraged_img leveraged_card">
-                                <p class="mb-3 ff_montserrat fw-bold fs_4sm lh_125 text_purplegradient">Non - Leveraged
-                                    Accounts</p>
+                                <p class="mb-3 ff_montserrat fw-bold fs_4sm lh_125 text-center text_purplegradient">
+                                    Without Leverage
+                                </p>
                                 <div class="d-flex justify-content-between mb_10">
                                     <p class="mb-0 text_lightblack opacity_70 ff_montserrat fw-normal fs_xs lh_160">John
                                         invested</p>
@@ -742,8 +749,8 @@
                                 </div>
                             </div>
                             <div class="leveraged_img leveraged_card">
-                                <p class="mb-3 ff_montserrat fw-bold fs_4sm lh_125 text_purplegradient">
-                                    Leveraged Accounts</p>
+                                <p class="mb-3 ff_montserrat text-center fw-bold fs_4sm lh_125 text_purplegradient">
+                                    With Leverage</p>
                                 <div class="d-flex justify-content-between mb_10">
                                     <p class="mb-0 text_lightblack opacity_70 ff_montserrat fw-normal fs_xs lh_160">Mike
                                         invested</p>
@@ -764,21 +771,22 @@
                                 </div>
                                 <img src="./assets/images/webp/graph-leveraged.webp" alt="graph-leveraged"
                                     class="w-100 mb-4">
-                                <button
+                                <a href="#form"
                                     class="earning_btn ff_montserrat fw-semibold fs_xsm lh_122 text_green w-100 d-flex gap-1 align-items-center"><span
                                         class="fs_md fw-bold lh_122">$1,200</span>
-                                    Mike achieved returns</button>
+                                    Mike achieved returns</a>
                             </div>
                         </div>
-
                     </div>
-                    <button
-                        class="text-capitalize d-flex justify-content-center mx-auto ff_montserrat fw-bold text-white fs_xs common_btn lh_160 mt-4 mt-xl-0">Maximize
-                        Your
-                        Profit</button>
-                    <p class="mt-3 mb-0 text-center text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">With
-                        Leveraged Accounts and Enhanced Buying Power
-                        Today!</p>
+                    <div class="align-items-center d-flex justify-content-center flex-column">
+                        <a href="#form"
+                            class="text-capitalize mx-auto ff_montserrat fw-bold text-white fs_xs common_btn lh_160 mt-4 mt-xl-0">Maximize
+                            Your
+                            Profit</a>
+                        <p class="mt-3 mb-0 text-center text-white opacity_80 ff_montserrat fw-normal fs_xs lh_150">With
+                            Leveraged Accounts and Enhanced Buying Power
+                            Today!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -867,32 +875,32 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <form>
+                                            <form id="nvidiaForm" onsubmit="return NvidiavalidateForm()">
                                                 <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">First Name</label>
-                                                        <input required type="text"
+                                                        <input id="first_name_nvidia" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">Last Name</label>
-                                                        <input required type="text"
+                                                        <input id="last_name_nvidia" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                 </div>
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Email</label>
-                                                <input required type="text"
+                                                <input id="user_email_nvidia" required type="text"
                                                     class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Phone Number</label>
-                                                <input required type="number"
+                                                <input id="user_phone_nvidia" required type="number"
                                                     class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
                                                 <button type="submit"
                                                     class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
@@ -965,33 +973,33 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <form>
+                                            <form id="microForm" onsubmit="return microvalidateForm()">
                                                 <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">First Name</label>
-                                                        <input required type="text"
+                                                        <input id="first_name_micro" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">Last Name</label>
-                                                        <input required type="text"
+                                                        <input id="last_name_micro" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                 </div>
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Email</label>
-                                                <input required type="text"
+                                                <input id="user_email_micro" required type="text"
                                                     class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Phone
                                                     Number</label>
-                                                <input required type="number"
+                                                <input id="user_phone_micro" required type="number"
                                                     class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
                                                 <button type="submit"
                                                     class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
@@ -1065,33 +1073,33 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <form>
+                                            <form id="amazonForm" onsubmit="return amazonvalidateForm()()">
                                                 <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">First Name</label>
-                                                        <input required type="text"
+                                                        <input id="first_name_aws" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">Last Name</label>
-                                                        <input required type="text"
+                                                        <input id="last_name_aws" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                 </div>
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Email</label>
-                                                <input required type="text"
+                                                <input id="user_email_aws" required type="text"
                                                     class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Phone
                                                     Number</label>
-                                                <input required type="number"
+                                                <input id="user_phone_aws" required type="number"
                                                     class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
                                                 <button type="submit"
                                                     class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
@@ -1165,33 +1173,33 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <form>
+                                            <form id="aiForm" onsubmit="return ailidateForm()">
                                                 <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">First Name</label>
-                                                        <input required type="text"
+                                                        <input id="first_name_ai" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">Last Name</label>
-                                                        <input required type="text"
+                                                        <input id="last_name_ai" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                 </div>
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Email</label>
-                                                <input required type="text"
+                                                <input id="user_email_ai" required type="text"
                                                     class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Phone
                                                     Number</label>
-                                                <input required type="number"
+                                                <input id="user_phone_ai" required type="number"
                                                     class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
                                                 <button type="submit"
                                                     class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
@@ -1267,33 +1275,33 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <form>
+                                            <form id="crowdForm" onsubmit="return crowdvalidateForm()">
                                                 <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">First Name</label>
-                                                        <input required type="text"
+                                                        <input id="first_name_crowd" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">Last Name</label>
-                                                        <input required type="text"
+                                                        <input id="last_name_crowd" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                 </div>
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Email</label>
-                                                <input required type="text"
+                                                <input id="user_email_crowd" required type="text"
                                                     class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Phone
                                                     Number</label>
-                                                <input required type="number"
+                                                <input id="user_phone_crowd" required type="number"
                                                     class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
                                                 <button type="submit"
                                                     class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
@@ -1364,33 +1372,33 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <form>
+                                            <form id="pathForm" onsubmit="return pathvalidateForm()">
                                                 <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">First Name</label>
-                                                        <input required type="text"
+                                                        <input id="first_name_path" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">Last Name</label>
-                                                        <input required type="text"
+                                                        <input id="last_name_path" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                 </div>
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Email</label>
-                                                <input required type="text"
+                                                <input id="user_email_path" required type="text"
                                                     class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Phone
                                                     Number</label>
-                                                <input required type="number"
+                                                <input id="user_phone_path" required type="number"
                                                     class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
                                                 <button type="submit"
                                                     class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
@@ -1460,33 +1468,33 @@
                                         <div class="popup_form">
                                             <p class="mb-4 pb-1 ff_opensans fw-bold text_lightblack fs_4sm lh_140">Start
                                                 Trading with AI Stocks !</p>
-                                            <form>
+                                            <form id="aristaForm" onsubmit="return aristavalidateForm()">
                                                 <div class="d-flex flex-sm-row flex-column gap-2 mb-2">
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">First Name</label>
-                                                        <input required type="text"
+                                                        <input id="first_name_arista" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                     <div class="d-flex flex-column mw_230 w-100">
                                                         <label
                                                             class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                             for="">Last Name</label>
-                                                        <input required type="text"
+                                                        <input id="last_name_arista" required type="text"
                                                             class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 ">
                                                     </div>
                                                 </div>
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Email</label>
-                                                <input required type="text"
+                                                <input id="user_email_arista" required type="text"
                                                     class="popup_input w-100 ff_opensans fw-normal mb-2 fs_xs text-black lh_120 ">
                                                 <label
                                                     class="ff_opensans fw-normal fs_xs text-black lh_120 text-capitalize mb-2"
                                                     for="">Phone
                                                     Number</label>
-                                                <input required type="number"
+                                                <input id="user_phone_arista" required type="number"
                                                     class="popup_input w-100 ff_opensans fw-normal fs_xs text-black lh_120 mb-sm-3">
                                                 <button type="submit"
                                                     class="ff_montserrat fw-bold w-100 mt-4 fs_xs text-white lh_160 popup_button">Start
@@ -1590,10 +1598,11 @@
                                 <div class="counter_card d-flex flex-column align-items-center">
                                     <div
                                         class="counter_circle_border p-2 d-flex justify-content-center align-items-center">
-                                        <div class="counter_circle  d-flex justify-content-center align-items-center">
-                                            <p class="mb-0 text-center text-white ff_montserrat fw-bold
-                                                lh_120 fs_xxl">0
-                                                <span class="counter" data-target="1">1</span>
+                                        <div
+                                            class="counter_circle statistics_cards_parent d-flex justify-content-center align-items-center">
+                                            <p class="mb-0 z counter text-center text-white ff_montserrat fw-bold
+                                                lh_120 fs_xxl">3
+
                                             </p>
                                         </div>
                                     </div>
@@ -1606,9 +1615,10 @@
                                 <div class="counter_card d-flex flex-column justify-content-center align-items-center">
                                     <div
                                         class="counter_circle_border p-2 d-flex justify-content-center align-items-center">
-                                        <div class="counter_circle  d-flex justify-content-center align-items-center">
-                                            <p data-target="135"
-                                                class="mb-0 counter text-center text-white ff_montserrat fw-bold lh_120 fs_xxl">
+                                        <div
+                                            class="counter_circle statistics_cards_parent   d-flex justify-content-center align-items-center">
+                                            <p
+                                                class="mb-0 registrationsPerDayCounter counter text-center text-white ff_montserrat fw-bold lh_120 fs_xxl">
                                                 135
                                             </p>
                                         </div>
@@ -1623,8 +1633,10 @@
                                 <div class="counter_card d-flex flex-column justify-content-center align-items-center">
                                     <div
                                         class="counter_circle_border p-2 d-flex justify-content-center align-items-center">
-                                        <div class="counter_circle  d-flex justify-content-center align-items-center">
-                                            <p class="mb-0 text-center text-white ff_montserrat fw-bold lh_120 fs_xxl">
+                                        <div
+                                            class="counter_circle statistics_cards_parent d-flex justify-content-center align-items-center">
+                                            <p
+                                                class="mb-0 text-center earningsIncreaseCounter text-white ff_montserrat fw-bold lh_120 fs_xxl">
                                                 <span data-target="5" class="counter">5</span>X
                                             </p>
                                         </div>
@@ -1789,16 +1801,17 @@
                         <span class="gradient_purple_text">Average Weekly Earnings</span> of a Registered User From a
                         $250 <span class="gradient_purple_text">investment = $521</span>
                     </h2>
-
-                    <button
-                        class="mt-3 text-white ff_montserrat fw-bold mx-lg-0 mx-auto d-flex justify-content-center justify-content-lg-start fs_xs lh_160 bg-transparent register_btn">Register
-                        Now</button>
+                    <div class="mx-lg-0 mx-auto d-flex justify-content-center justify-content-lg-start ">
+                        <a href="#form"
+                            class="mt-3 text-white ff_montserrat fw-bold fs_xs lh_160 bg-transparent register_btn">Register
+                            Now</a>
+                    </div>
                 </div>
             </div>
         </section>
         <div class="earning_bg position-relative z-1">
             <!-- ======================================Frequently Asked Questions====================================== -->
-            <section class="faq">
+            <div class="faq">
                 <div class="container custom_container">
                     <h2
                         class="ff_montserrat fw-bold text-white fs_lg lh_125 mb-xl-5 mb-sm-4 text-center position-relative z-1">
@@ -1899,9 +1912,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <!-- =============================== AI Stock Trading =============================== -->
-            <section class="aitrade_padding">
+            <div class="aitrade_padding">
                 <div class="container custom_container">
                     <h2 class="text-white text-center ff_montserrat mb-lg-4 mb-3 fs_lg lh_125 fw-bold">
                         <span class="gradient_purple_text">Take
@@ -1910,12 +1923,12 @@
                         <span class="gradient_purple_text">Stock Trading</span>
 
                     </h2>
-                    <p class="mt-1 mb-lg-5 mb-sm-4 ff_montserrat fw-normal fs_xs text-center text-white opacity_80">
+                    <p class="mt-1 mb-1 ff_montserrat fw-normal fs_xs text-center text-white opacity_80">
                         <span class="d-lg-block">In a matter of minutes, one of our AI mentors will contact
                             you,No</span>
                         Experience Required!
                     </p>
-                    <div class="row mt-sm-5 mt-4 justify-content-center align-items-center">
+                    <div class="row mt-sm-5 pt-md-5 mt-4 justify-content-center align-items-center">
                         <div class="col-lg-5 col-12 d-flex justify-content-lg-start justify-content-center">
                             <div class="invest_form w-100">
                                 <div class="invest_form_content">
@@ -1949,7 +1962,7 @@
                             </div>
                         </div>
                         <div
-                            class="col-lg-7 col-sm-9 col-12 mt-lg-5 mt-lg-0 pt-lg-5 pt-lg-0 earning_socialcircle mb-sm-0 mb-5">
+                            class="col-lg-7 col-sm-9 col-12 mt-sm-5 mt-lg-0 pt-sm-5 pt-lg-0 earning_socialcircle mb-sm-0 mb-5">
                             <div
                                 class="d-flex justify-content-center mt-sm-5 mt-lg-0 pt-sm-5 pt-lg-0 align-items-center position-relative earning_socialcircle">
                                 <img src="./assets/images/webp/invest-img2.webp" alt="invest-img2"
@@ -1968,7 +1981,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <!-- ========================================footer======================================== -->
             <footer class="footer_padding position-relative z-2">
                 <img src="./assets/images/webp/footer-left-star.webp" alt="footer-left-star"
@@ -1982,41 +1995,20 @@
                     class="position-absolute bottom-0 start-0 object-fit-cover bg_footer w-100">
                 <div class="container custom_container position-relative z-2">
                     <div class="row justify-content-between flex-sm-row flex-column align-items-center pb-sm-4 mb-3">
-                        <div class="col-lg-4 col-sm-5 col-12 d-flex flex-column">
-                            <a href="#"
-                                class="ff_opensans fw-bold text-lg-start text-center fs_lg text-white mb-2 mb-xl-3 lh_137">
+                        <div class="col-12 d-flex flex-column">
+                            <a href="#" class="ff_opensans fw-bold text-center fs_lg text-white mb-2 mb-xl-3 lh_137">
                                 AI
                                 STOCKS</a>
                             <p
-                                class="ff_opensans text-lg-start text-center fw-normal fs_xs mb-sm-0 mb-2 text-white opacity_80 lh_163">
+                                class="ff_opensans text-center fw-normal fs_xs mb-sm-0 mb-2 text-white opacity_80 lh_163">
                                 Empowering Your Financial
                                 Future <span class="d-xl-block">with Intelligent Investments</span></p>
                         </div>
-                        <div class="col-lg-3 col-sm-4 col-12 mt-2 mt-sm-0">
-                            <h3
-                                class="ff_opensans fw-semibold text-lg-start text-center fs_sm text-white mb-lg-3 lh_150 mb-sm-2 mb-3">
-                                Follow Us on</h3>
-                            <div class="d-flex gap_12 justify-content-lg-start justify-content-center">
-                                <a href="https://www.facebook.com/" target="_blank">
-                                    <img src="./assets/images/svg/facebook.svg" alt="facebook"
-                                        class="footer_sociallink">
-                                </a>
-                                <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-                                    <img src="./assets/images/svg/instagram.svg" alt="instagram"
-                                        class="footer_sociallink">
-                                </a>
-                                <a href="https://www.linkedin.com/login" target="_blank">
-                                    <img src="./assets/images/svg/in.svg" alt="in" class="footer_sociallink">
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                    <h3
-                        class="ff_opensans fw-bold text-lg-start text-center fs_sm text-white lh_140 mt-sm-0 mt-4 mb-2 mb-lg-3">
+                    <h3 class="ff_opensans fw-bold text-center fs_sm text-white lh_140 mt-sm-0 mt-4 mb-2 mb-lg-3">
                         Disclaimer
                     </h3>
-                    <p
-                        class="ff_opensans fw-normal text-lg-start px-1 px-sm-0 text-center fs_xs opacity_80 text-white lh_163 mb-4">
+                    <p class="ff_opensans fw-normal px-1 px-sm-0 text-center fs_xs opacity_80 text-white lh_163 mb-4">
                         This website is not a news
                         agency, information website, or blog. It is a webpage aimed at promotional publications
                         that
@@ -2038,18 +2030,9 @@
                         investor. You should not invest money that you cannot afford to lose.</p>
                 </div>
                 <div class="footerline mt-3"></div>
-                <div
-                    class="container custom_container d-flex flex-lg-row flex-column justify-content-between align-items-center py-3 py-sm-4 my-md-1">
-                    <p
-                        class="ff_opensans copyright_link cursor_pointer mb-0 fw-normal fs_xs text-white opacity_80 lh_163 mb-2">
-                        Privacy Policy
-                        | Conditions</p>
-                    <p
-                        class="ff_opensans cursor_pointer copyright_link mb-0 fw-normal fs_xs text-white opacity_80 lh_163">
-                        Report Abuse/ Spam |
-                        Copyright@2024</p>
-                </div>
-
+                <p
+                    class="ff_opensans text-center cursor_pointer copyright_link mb-0 fw-normal fs_xs text-white opacity_80 lh_163 py-3 py-sm-4 my-md-1">
+                    Copyright@2024</p>
             </footer>
         </div>
     </div>
@@ -2101,235 +2084,50 @@
             });
         });
     </script>
-    <!-- ===========================popup=========================== -->
-    <script>
-        // ----------------Nvidia-------------
-        var openButton = document.getElementById("openPopup");
-        var closeButton = document.getElementById("closePopup");
-        var popup = document.getElementById("popup");
-
-        openButton.onclick = function () {
-            popup.style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        closeButton.onclick = function () {
-            popup.style.display = "none";
-            document.body.style.overflow = "";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == popup) {
-                popup.style.display = "none";
-                document.body.style.overflow = "";
-            }
-        }
-
-        // ----------Microsoft-----------
-        var openButton = document.getElementById("microsoftOpenPopup");
-        var microClosePopup = document.getElementById("microClosePopup");
-        var micropopup = document.getElementById("micropopup");
-
-        openButton.onclick = function () {
-            micropopup.style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        microClosePopup.onclick = function () {
-            micropopup.style.display = "none";
-            document.body.style.overflow = "";
-        }
-        window.onclick = function (event) {
-            if (event.target == micropopup) {
-                micropopup.style.display = "none";
-                document.body.style.overflow = "";
-            }
-        }
-        // ------------------Amazon--------------
-        var openButton = document.getElementById("AmazonOpenPopup");
-        var amazonClosePopup = document.getElementById("amazonClosePopup");
-        var amazonpopup = document.getElementById("amazonpopup");
-
-        openButton.onclick = function () {
-            amazonpopup.style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        amazonClosePopup.onclick = function () {
-            amazonpopup.style.display = "none";
-            document.body.style.overflow = "";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == amazonpopup) {
-                amazonpopup.style.display = "none";
-                document.body.style.overflow = "";
-            }
-        }
-        // -----------------Palantir----------------
-        var openButton = document.getElementById("palantirOpenPopup");
-        var palantirClosePopup = document.getElementById("palantirClosePopup");
-        var palantirpopup = document.getElementById("palantirpopup");
-
-        openButton.onclick = function () {
-            palantirpopup.style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        palantirClosePopup.onclick = function () {
-            palantirpopup.style.display = "none";
-            document.body.style.overflow = "";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == palantirpopup) {
-                palantirpopup.style.display = "none";
-                document.body.style.overflow = "";
-            }
-        }
-        // ---------------------Cyber------------------------
-        var openButton = document.getElementById("cyberOpenPopup");
-        var cyberClosePopup = document.getElementById("cyberClosePopup");
-        var cyberpopup = document.getElementById("cyberpopup");
-
-        openButton.onclick = function () {
-            cyberpopup.style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        cyberClosePopup.onclick = function () {
-            cyberpopup.style.display = "none";
-            document.body.style.overflow = "";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == cyberpopup) {
-                cyberpopup.style.display = "none";
-                document.body.style.overflow = "";
-            }
-        }
-        // --------------------------Robotic---------------------
-        var openButton = document.getElementById("roboticOpenPopup");
-        var roboticClosePopup = document.getElementById("roboticClosePopup");
-        var roboticpopup = document.getElementById("roboticpopup");
-
-        openButton.onclick = function () {
-            roboticpopup.style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        roboticClosePopup.onclick = function () {
-            roboticpopup.style.display = "none";
-            document.body.style.overflow = "";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == roboticpopup) {
-                roboticpopup.style.display = "none";
-                document.body.style.overflow = "";
-            }
-        }
-        // -----------------Arista Networks-----------------
-        var openButton = document.getElementById("aristaOpenPopup");
-        var aristaClosePopup = document.getElementById("aristaClosePopup");
-        var aristapopup = document.getElementById("aristapopup");
-
-        openButton.onclick = function () {
-            aristapopup.style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        aristaClosePopup.onclick = function () {
-            aristapopup.style.display = "none";
-            document.body.style.overflow = "";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == aristacpopup) {
-                aristapopup.style.display = "none";
-                document.body.style.overflow = "";
-            }
-        }
-    </script>
-    <!-- / ------------------- form validation------------------------------ -->
-    <script>
-        function validateForm() {
-            event.preventDefault();
-            var firstName = document.getElementById('firstname').value.trim();
-            var lastName = document.getElementById('lastname').value.trim();
-            var email = document.getElementById('email').value.trim();
-            var phone = document.getElementById('phone').value.trim();
-            var isValid = true;
-            if (isValid) {
-                clearForm();
-                openPopup();
-            }
-            return isValid;
-        }
-
-        function openPopup() {
-            Swal.fire({
-                icon: 'success',
-                title: 'Form submitted successfully!',
-                showConfirmButton: false,
-                timer: 1500
-            });
-        }
-        function clearForm() {
-            document.getElementById('myForm').reset();
-        }
-    </script>
-    <!-- =====================invest form===================== -->
-    <script>
-        function investvalidateForm() {
-            event.preventDefault(); // Prevent default form submission
-
-            var firstName = document.getElementById('first_name').value.trim();
-            var lastName = document.getElementById('last_name').value.trim();
-            var email = document.getElementById('user_email').value.trim();
-            var phone = document.getElementById('user_phone').value.trim();
-
-            var isValid = true;
-
-            // Validation logic...
-
-            if (isValid) {
-                clearInvestForm();
-                openPopup();
-            }
-
-            return isValid;
-        }
-
-        function openPopup() {
-            Swal.fire({
-                icon: 'success',
-                title: 'Form submitted successfully!',
-                showConfirmButton: false,
-                timer: 1500
-            });
-        }
-        function clearInvestForm() {
-            document.getElementById('investForm').reset(); // Reset the form fields
-        }
-    </script>
     <!-- counter -->
     <script>
-        const counters = document.querySelectorAll(".counter");
-        counters.forEach((counter) => {
-            counter.innerText = "0";
-            const updateCounter = () => {
-                const target = +counter.getAttribute("data-target");
-                const count = +counter.innerText;
-                const increment = target / 200;
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + increment);
-                    setTimeout(updateCounter, 1);
-                } else counter.innerText = target;
-            };
-            setTimeout(() => {
-                updateCounter();
-            }, 2500);
+        // STATISTICS COUNTER
+        const options = {
+            threshold: 0.2, // Trigger when 20% of the element is visible
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Start counter animation
+                    const target = entry.target.querySelector(".counter");
+                    const countTo = parseInt(target.innerText);
+
+                    if (target.id === "placesLeftCounter") {
+                        // For placesLeftCounter, count down
+                        let currentCount = 10;
+
+                        const counter = setInterval(() => {
+                            if (currentCount >= countTo) {
+                                target.innerText = currentCount--;
+                            } else {
+                                clearInterval(counter);
+                            }
+                        }, 300); // Adjust speed here
+                    } else {
+                        // For registrationsPerDayCounter and earningsIncreaseCounter, count up
+                        let currentCount = countTo - 5;
+
+                        const counter = setInterval(() => {
+                            if (currentCount <= countTo) {
+                                target.innerText = currentCount++;
+                            } else {
+                                clearInterval(counter);
+                            }
+                        }, 300); // Adjust speed here
+                    }
+                }
+            });
+        }, options);
+
+        // Observe each statistic card
+        document.querySelectorAll(".statistics_cards_parent").forEach((card) => {
+            observer.observe(card);
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -2337,7 +2135,9 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- MOBILE LOTTIE ANIMATION  -->
     <script src="./assets/js/trade.js"></script>
-    <script src="./assets/countdown.js"></script>
+    <script src="./assets/js/countdown.js"></script>
+    <script src="./assets/js/formvalidate.js"></script>
+    <script src="./assets/js/aipopup.js"></script>
 
 </body>
 
