@@ -540,46 +540,266 @@ body {
     border-radius: 10.33px;
 }
 
-.ai_blue_stock .trade_line_first::after,
-.ai_blue_stock .active_timeline_dot::before,
-.ai_blue_stock .trade_timeline_gradient::after,
-.ai_blue_stock .trade_line_second::after {
-    background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
-}
-
-.ai_blue_stock .trade_shares_btns {
-    border-radius: 400px;
-    padding: 0 32px;
-    background-color: var(--darkbalticSea) !important;
-}
-
-.ai_blue_stock .trade_shares_active_btns {
-    background: linear-gradient(#29292C, #29292C) padding-box,
-        linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%) border-box !important;
-    opacity: 100%;
-    font-weight: 700 !important;
-}
-
-.ai_blue_stock .trade_shares_active_btns .gradient_blue_text_active {
-    background: linear-gradient(103.62deg, #AE00FF -12.64%, rgba(5, 0, 255, 0.35) 109.1%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700 !important;
-}
-
-.ai_blue_stock .sign_up_btn {
+/* =====================================trade-long===================================== */
+.sign_up_btn {
+    padding: 12px 30px;
     background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
     box-shadow: 0px 2px 10px 0px #AE01FF66;
 }
 
-.bg_balticsea {
-    background-color: var(--balticSea);
+/* .linear_bg {
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
+} */
+
+.cursior_pointer {
+    cursor: pointer;
 }
 
-.bg_darkbalticSea {
-    background-color: var(--darkbalticSea);
+.sign_up_btn:hover {
+    box-shadow: 23px 20px 20px 22px #0084ff inset !important;
 }
+
+/* TRADE LEVERAGE SECTION  */
+.trade_leverage_parent {
+    max-width: 617px;
+}
+
+
+.timeline_dot {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #939393;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+
+.timeline_dot::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%);
+    /* Adjust as needed */
+    border-radius: 50%;
+    width: 20px;
+    /* Adjust as needed */
+    height: 20px;
+    /* Adjust as needed */
+    top: -20px;
+    transition: all 0.3s ease;
+}
+
+.trade_shares {
+    gap: 25px;
+}
+
+.trade_shares_btns {
+    padding: 16px 0 16px 33px;
+    background: #FFFFFF0D;
+    width: 519px;
+    border-radius: 400px;
+    height: 60px;
+}
+
+.trade_timeline {
+    max-width: 478px;
+}
+
+.trade_timeline::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    /* Adjust as needed */
+    right: -99px;
+    transform: translateY(-50%);
+    /* Adjust as needed */
+    width: 1px;
+    /* Adjust as needed */
+    height: 60%;
+    transition: all 0.3s ease;
+    background: #939393;
+    z-index: 0;
+}
+
+.trade_line_first::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    /* Adjust as needed */
+    right: 8px;
+    width: 1px;
+    /* Adjust as needed */
+    height: 0%;
+    transition: all 0.3s ease;
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
+    z-index: 1;
+}
+
+.trade_border {
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
+}
+
+
+.trade_line_second::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    /* Adjust as needed */
+    right: 8px;
+    width: 1px;
+    /* Adjust as needed */
+    height: 0%;
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
+    z-index: 1;
+}
+
+.tradeLineSecondAfter::after {
+    height: 120% !important;
+}
+
+.trade_timeline_gradient::after {
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
+}
+
+.tradeLinetransitionFirst::after {
+    height: 120% !important;
+    transition: all 6s ease-in;
+}
+
+.trade_shares_active_btns {
+    /* background:
+        linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%) border-box; */
+    background: #FFFFFF0D;
+    border: 1px solid #AE00FF;
+    background: linear-gradient(103.62deg, #AE00FF -12.64%, rgba(5, 0, 255, 0.35) 109.1%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.active_timeline_dot {
+    border-color: transparent;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.active_timeline_dot::before {
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
+    top: 0;
+    z-index: -1;
+    /* Push the pseudo-element behind the content */
+}
+
+.d_none {
+    display: none;
+}
+
+@media (max-width: 1199.9px) {
+    .trade_shares_btns {
+        width: 388px;
+    }
+
+    .trade_timeline::after {
+        right: 22px;
+    }
+}
+
+@media (max-width: 991.9px) {
+    .start_trading_box {
+        max-width: none;
+        padding: 16px;
+    }
+
+    .trade_shares {
+        row-gap: 15px;
+        column-gap: 12px;
+    }
+
+    .trade_shares_btns {
+        width: 290px;
+        height: 45px;
+        /* border: 1px solid #AE00FF; */
+        box-shadow: 0px 0px 7.3px 2px #0000000d;
+    }
+
+    .phone_bubble {
+        width: 90%;
+        height: 350px;
+    }
+
+    .trade_timeline::after {
+        right: 24px;
+    }
+}
+
+@media (max-width: 767.9px) {
+    .phone_bubble {
+        width: 100%;
+        height: 350px;
+    }
+
+    .trade_timeline::after {
+        right: 85px;
+    }
+}
+
+@media (max-width: 575.9px) {
+
+    .rounded_15 {
+        border-radius: 12px;
+    }
+
+    .rounded_14 {
+        border-radius: 12px;
+    }
+
+    .trade_shares_last_btn {
+        width: 100%;
+        max-width: 327px;
+    }
+
+    .trade_shares {
+        max-width: 351px;
+        margin: 0 auto;
+    }
+
+    .trade_timeline::after {
+        right: 21px;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero_video {
+        height: 190px;
+        max-width: 327px;
+    }
+
+    .hero_video2 {
+        height: 190px;
+        max-width: 327px;
+    }
+}
+
+.travel_phone_image {
+    max-width: 422px;
+}
+
+@media (max-width: 767.9px) {
+    .travel_phone_image {
+        padding-top: 19px;
+        padding-bottom: 11px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .travel_phone_image {
+        max-width: 327px;
+    }
+}
+
 
 
 /* ============================Buying Power============================ */
