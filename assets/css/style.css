@@ -761,6 +761,11 @@ body {
     .trade_timeline::after {
         right: 21px;
     }
+
+    .sign_up_btn {
+        max-width: 218px;
+        margin: auto;
+    }
 }
 
 @media (max-width: 450px) {
