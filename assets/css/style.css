@@ -553,9 +553,6 @@ body {
 .cursior_pointer {
     cursor: pointer;
 }
-
-
-/* TRADE LEVERAGE SECTION  */
 .trade_leverage_parent {
     max-width: 617px;
 }
@@ -574,15 +571,11 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    /* Adjust as needed */
     left: 50%;
     transform: translate(-50%);
-    /* Adjust as needed */
     border-radius: 50%;
     width: 20px;
-    /* Adjust as needed */
     height: 20px;
-    /* Adjust as needed */
     top: -20px;
     transition: all 0.3s ease;
 }
@@ -599,12 +592,9 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    /* Adjust as needed */
     right: -99px;
     transform: translateY(-50%);
-    /* Adjust as needed */
     width: 1px;
-    /* Adjust as needed */
     height: 60%;
     transition: all 0.3s ease;
     background: #939393;
@@ -615,10 +605,8 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    /* Adjust as needed */
     right: 8px;
     width: 1px;
-    /* Adjust as needed */
     height: 0%;
     transition: all 0.3s ease;
     background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
@@ -634,10 +622,8 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    /* Adjust as needed */
     right: 8px;
     width: 1px;
-    /* Adjust as needed */
     height: 0%;
     background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
     z-index: 1;
