@@ -1,5 +1,4 @@
 //   < !-- =========================== popup =========================== -->
-
 // ----------------Nvidia-------------
 var openButton = document.getElementById("openPopup");
 var closeButton = document.getElementById("closePopup");

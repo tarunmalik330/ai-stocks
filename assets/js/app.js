@@ -1,4 +1,4 @@
-//    < !-- ------back to top----- -->
+// ------------------------back to top------------------------
 
 document.addEventListener("DOMContentLoaded", function () {
     var backToTopBtn = document.getElementById("backToTopBtn");
