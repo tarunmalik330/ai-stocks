@@ -495,8 +495,9 @@ body {
     --rotation: 0deg;
     top: calc(-1 * var(--radius));
     left: calc(-1 * var(--radius));
-
 }
+
+
 
 @keyframes rotate-border {
     to {
@@ -590,14 +591,6 @@ body {
     gap: 25px;
 }
 
-.trade_shares_btns {
-    padding: 16px 0 16px 33px;
-    background: #FFFFFF0D;
-    width: 519px;
-    border-radius: 400px;
-    height: 60px;
-}
-
 .trade_timeline {
     max-width: 478px;
 }
@@ -664,14 +657,34 @@ body {
 }
 
 .trade_shares_active_btns {
-    /* background:
-        linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%) border-box; */
     background: #FFFFFF0D;
-    border: 1px solid #AE00FF;
     background: linear-gradient(103.62deg, #AE00FF -12.64%, rgba(5, 0, 255, 0.35) 109.1%) !important;
     background-clip: text !important;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    max-width: 519px;
+}
+
+.trade_shares_active_btns::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    padding: inherit;
+    inset: 0;
+    padding: inherit;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    background: linear-gradient(149.31deg, #AE00FF 28.09%, rgba(5, 0, 255, 0.35) 81.38%);
+}
+
+.trade_shares_btns {
+    background: #FFFFFF0D;
+    width: 519px;
+    border-radius: 400px;
+    padding: 1px;
+    height: 60px;
+    position: relative;
 }
 
 .active_timeline_dot {
@@ -685,7 +698,6 @@ body {
     background: linear-gradient(149.31deg, #AE00FF 28.09%, #0500FF 81.38%);
     top: 0;
     z-index: -1;
-    /* Push the pseudo-element behind the content */
 }
 
 .d_none {
