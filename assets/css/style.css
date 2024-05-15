@@ -553,10 +553,10 @@ body {
 .cursior_pointer {
     cursor: pointer;
 }
+
 .trade_leverage_parent {
     max-width: 617px;
 }
-
 
 .timeline_dot {
     width: 18px;
@@ -714,7 +714,6 @@ body {
     .trade_shares_btns {
         width: 290px;
         height: 45px;
-        /* border: 1px solid #AE00FF; */
         box-shadow: 0px 0px 7.3px 2px #0000000d;
     }
 
@@ -793,7 +792,11 @@ body {
     }
 }
 
-
+@media (max-width: 374.9px) {
+    .trade_shares_btns {
+        width: 235px;
+    }
+}
 
 /* ============================Buying Power============================ */
 .pt_buyingpower {
@@ -1476,6 +1479,10 @@ input[type=number] {
 }
 
 @media (min-width:1200px) {
+    .trade_timeline::after {
+        top: 44% !important;
+    }
+
     .lh_headings {
         line-height: 150%;
     }

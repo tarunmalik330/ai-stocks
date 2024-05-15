@@ -141,3 +141,9 @@
         --fs-xxl: 48.24px !important;
     }
 }
+
+@media (max-width:375px) {
+    :root {
+        --fs-sm: 14px !important;
+    }
+}
